@@ -1,5 +1,4 @@
-
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../fixtures/softfoam.fixture';
 import { routes } from '../../data/routes';
 
 test('SF-001: el artículo SoftFoam carga correctamente', async ({ page }) => {
@@ -17,73 +16,54 @@ test('SF-001: el artículo SoftFoam carga correctamente', async ({ page }) => {
 });
 
 
-test('SF-002: el usuario puede seleccionar una talla MX', async ({ page }) => {
-    // ARRANGE: abrir el artículo
-    await page.goto(
-      'https://sportlandmx.com' + routes.softfoamArticle
-    );
+
+
+test('SF-002: el usuario puede seleccionar una talla MX', async ({ softfoamArticle }) => {
+
+    // ARRANGE: navegar al artículo
+    await softfoamArticle.goto();
   
-    // Localizar el selector
-    const sizeSelector = page.locator('#sf3-size-choice');
+    // ASSERT: comprobar que el selector está disponible
+    await expect(softfoamArticle.sizeSelector).toBeVisible();
+    await expect(softfoamArticle.sizeSelector).toBeEnabled();
   
-    // ASSERT: debe existir y estar disponible
-    await expect(sizeSelector).toBeVisible();
-    await expect(sizeSelector).toBeEnabled();
-  
-    // Obtener las opciones con un valor no vacío
-    const sizes = await sizeSelector.locator('option').evaluateAll(
-      options => options
-        .map(option => (option as HTMLOptionElement).value)
-        .filter(value => value !== '')
-    );
-  
-    expect(sizes.length).toBeGreaterThan(0);
-  
-    // ACT: seleccionar la primera opción válida
+    // ARRANGE: obtener tallas seleccionables
+    const sizes = await softfoamArticle.getAvailableSizes();
     const selectedSize = sizes[0];
-    await sizeSelector.selectOption(selectedSize);
   
-    // ASSERT: comprobar que se seleccionó
-    await expect(sizeSelector).toHaveValue(selectedSize);
+    // ACT: seleccionar una talla
+    await softfoamArticle.selectSize(selectedSize);
+  
+    // ASSERT: verificar la selección
+    await expect(softfoamArticle.sizeSelector).toHaveValue(selectedSize);
   });
+  
+  
 
-
-test('SF-003: la talla se transmite a la colección', async ({ page }) => {
-    // ARRANGE: abrir el artículo
-    await page.goto(
-      'https://sportlandmx.com' + routes.softfoamArticle
-    );
   
-    const sizeSelector = page.locator('#sf3-size-choice');
+test('SF-003: la talla se transmite a la colección', async ({ page, softfoamArticle }) => {
+    // ARRANGE
+    await softfoamArticle.goto();
   
-    // Obtener una talla válida
-    const sizes = await sizeSelector.locator('option').evaluateAll(
-      options => options
-        .map(option => (option as HTMLOptionElement).value)
-        .filter(value => value !== '')
-    );
-  
-    expect(sizes.length).toBeGreaterThan(0);
+    const sizes = await softfoamArticle.getAvailableSizes();
     const selectedSize = sizes[0];
   
-    // ACT: seleccionar talla y enviar el formulario
-    await sizeSelector.selectOption(selectedSize);
+    // ACT
+    await softfoamArticle.selectSize(selectedSize);
+    await softfoamArticle.submitSize();
   
-    const form = page.locator('#sf3-size-form');
-    await form.locator('button[type="submit"], input[type="submit"]').click();
+    // ASSERT: verificar navegación
+    await expect(page).toHaveURL(
+      /\/collections\/tenis-puma-con-softfoam-y-softfoam/
+    );
   
-    // ASSERT: comprobar la colección destino
-    await expect(page).toHaveURL(/\/collections\/tenis-puma-con-softfoam-y-softfoam/);
-  
-    // Comprobar filtro de disponibilidad
+    // ASSERT: verificar reglas de negocio
     const destination = new URL(page.url());
-    // DEBUG: observar qué información recibe Shopify
-    
-  expect(
-    destination.searchParams.get('filter.v.option.tamaño')
-  ).toBe(selectedSize);
   
-    expect(destination.searchParams.get('filter.v.availability')).toBe('1');
+    expect(
+      destination.searchParams.get('filter.v.option.tamaño')
+    ).toBe(selectedSize);
+    expect(
+      destination.searchParams.get('filter.v.availability')
+    ).toBe('1');
   });
-
-
