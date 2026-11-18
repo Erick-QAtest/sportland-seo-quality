@@ -1,6 +1,16 @@
 import { defineConfig, devices } from '@playwright/test';
 import path from 'node:path';
 
+const isCI = Boolean(process.env.CI);
+
+const unitTestPattern = /.*\.unit\.spec\.ts/;
+const setupTestPattern = /.*\.setup\.ts/;
+
+const nonBrowserTests = [
+  unitTestPattern,
+  setupTestPattern,
+];
+
 const marketState = path.join(
   __dirname,
   'playwright/.auth/mexico.json'
@@ -10,10 +20,13 @@ export default defineConfig({
   testDir: './tests',
 
   fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  forbidOnly: isCI,
+  retries: isCI ? 2 : 0,
+  workers: isCI ? 1 : undefined,
+
+  reporter: [
+    ['html', { open: 'never' }],
+  ],
 
   use: {
     baseURL: 'https://sportlandmx.com',
@@ -27,11 +40,17 @@ export default defineConfig({
 
   projects: [
     {
+      name: 'unit',
+      testMatch: unitTestPattern,
+    },
+    {
       name: 'setup-market',
-      testMatch: /.*\.setup\.ts/,
+      testMatch: setupTestPattern,
+      dependencies: ['unit'],
     },
     {
       name: 'chromium',
+      testIgnore: nonBrowserTests,
       use: {
         ...devices['Desktop Chrome'],
         storageState: marketState,
@@ -40,6 +59,7 @@ export default defineConfig({
     },
     {
       name: 'firefox',
+      testIgnore: nonBrowserTests,
       use: {
         ...devices['Desktop Firefox'],
         storageState: marketState,
@@ -48,6 +68,7 @@ export default defineConfig({
     },
     {
       name: 'webkit',
+      testIgnore: nonBrowserTests,
       use: {
         ...devices['Desktop Safari'],
         storageState: marketState,
