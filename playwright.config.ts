@@ -1,13 +1,22 @@
-import { defineConfig, devices } from '@playwright/test';
+import {
+  defineConfig,
+  devices,
+} from '@playwright/test';
+
 import path from 'node:path';
 
 const isCI = Boolean(process.env.CI);
 
-const unitTestPattern = /.*\.unit\.spec\.ts/;
-const setupTestPattern = /.*\.setup\.ts/;
-const auditTestPattern = /.*\.audit\.spec\.ts/;
+const unitTestPattern =
+  /.*\.unit\.spec\.ts/;
 
-const nonBrowserTests = [
+const setupTestPattern =
+  /.*\.setup\.ts/;
+
+const auditTestPattern =
+  /.*\.audit\.spec\.ts/;
+
+const browserRegressionIgnoredTests = [
   unitTestPattern,
   setupTestPattern,
   auditTestPattern,
@@ -35,7 +44,8 @@ export default defineConfig({
     locale: 'es-MX',
     timezoneId: 'America/Mexico_City',
     extraHTTPHeaders: {
-      'Accept-Language': 'es-MX,es;q=0.9',
+      'Accept-Language':
+        'es-MX,es;q=0.9',
     },
     trace: 'on-first-retry',
   },
@@ -53,11 +63,16 @@ export default defineConfig({
     {
       name: 'sitemap-audit',
       testMatch: auditTestPattern,
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: marketState,
+      },
       dependencies: ['setup-market'],
     },
     {
       name: 'chromium',
-      testIgnore: nonBrowserTests,
+      testIgnore:
+        browserRegressionIgnoredTests,
       use: {
         ...devices['Desktop Chrome'],
         storageState: marketState,
@@ -66,7 +81,8 @@ export default defineConfig({
     },
     {
       name: 'firefox',
-      testIgnore: nonBrowserTests,
+      testIgnore:
+        browserRegressionIgnoredTests,
       use: {
         ...devices['Desktop Firefox'],
         storageState: marketState,
@@ -75,7 +91,8 @@ export default defineConfig({
     },
     {
       name: 'webkit',
-      testIgnore: nonBrowserTests,
+      testIgnore:
+        browserRegressionIgnoredTests,
       use: {
         ...devices['Desktop Safari'],
         storageState: marketState,
