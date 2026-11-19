@@ -5,6 +5,8 @@ import {
 
   import {
     auditInternationalSeoCluster,
+    type InternationalMarket,
+    type InternationalMarketExpectation,
     type InternationalSeoExpectation,
     type InternationalSeoSnapshot,
   } from '../../services/international-seo-auditor';
@@ -13,48 +15,105 @@ import {
     captureInternationalSeoSnapshot,
   } from '../../services/international-seo-extractor';
 
-  const MX_URL =
-    'https://sportlandmx.com/pages/2do-suscribete';
+  interface MarketConfig {
+    market: InternationalMarket;
+    prefix: string;
+    htmlLang: string;
+    hreflang: string;
+  }
 
-  const US_URL =
-    'https://sportlandmx.com/en-us/pages/2do-suscribete';
+  interface RouteCluster {
+    name: string;
+    pathname: string;
+  }
 
-  const DE_URL =
-    'https://sportlandmx.com/de-de/pages/2do-suscribete';
+  const SPORTLAND_ORIGIN =
+    'https://sportlandmx.com';
 
-  const EXPECTATION: InternationalSeoExpectation = {
-    markets: [
+  const MARKET_CONFIGS:
+    readonly MarketConfig[] = [
       {
         market: 'mx-default',
-        url: MX_URL,
+        prefix: '',
         htmlLang: 'es',
         hreflang: 'es',
       },
       {
         market: 'en-US',
-        url: US_URL,
+        prefix: '/en-us',
         htmlLang: 'en',
         hreflang: 'en-US',
       },
       {
         market: 'de-DE',
-        url: DE_URL,
+        prefix: '/de-de',
         htmlLang: 'de',
         hreflang: 'de-DE',
       },
-    ],
-    xDefaultUrl: MX_URL,
-  };
+    ];
+
+  const ROUTE_CLUSTERS:
+    readonly RouteCluster[] = [
+      {
+        name: 'hub de tecnologías',
+        pathname: '/pages/tecnologias-de-tenis',
+      },
+      {
+        name: 'artículo de SoftFoam',
+        pathname:
+          '/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma',
+      },
+      {
+        name: 'colección de SoftFoam',
+        pathname:
+          '/collections/tenis-puma-con-softfoam-y-softfoam',
+      },
+      {
+        name: 'producto Adidas Advantage K',
+        pathname: '/products/adidas-advantage-k',
+      },
+    ];
+
+  function buildMarketUrl(
+    prefix: string,
+    pathname: string
+  ): string {
+    return `${SPORTLAND_ORIGIN}${prefix}${pathname}`;
+  }
+
+  function buildExpectation(
+    pathname: string
+  ): InternationalSeoExpectation {
+    const markets:
+      InternationalMarketExpectation[] =
+      MARKET_CONFIGS.map(config => ({
+        market: config.market,
+        url: buildMarketUrl(
+          config.prefix,
+          pathname
+        ),
+        htmlLang: config.htmlLang,
+        hreflang: config.hreflang,
+      }));
+
+    return {
+      markets,
+      xDefaultUrl: buildMarketUrl(
+        '',
+        pathname
+      ),
+    };
+  }
 
   test.describe(
     'SEO-007: señales SEO internacionales',
     () => {
-      test.setTimeout(90_000);
+      test.setTimeout(120_000);
 
-      test(
-        'valida el clúster MX, US y DE',
-        async ({ page }) => {
-          await page.route('**/*', async route => {
+      test.beforeEach(async ({ page }) => {
+        await page.route(
+          '**/*',
+          async route => {
             const resourceType =
               route.request().resourceType();
 
@@ -70,87 +129,108 @@ import {
             }
 
             await route.continue();
-          });
-
-          const snapshots:
-            InternationalSeoSnapshot[] = [];
-
-          for (
-            const marketExpectation
-            of EXPECTATION.markets
-          ) {
-            await test.step(
-              `Capturar ${marketExpectation.market}`,
-              async () => {
-                const snapshot =
-                  await captureInternationalSeoSnapshot(
-                    page,
-                    marketExpectation.market,
-                    marketExpectation.url
-                  );
-
-                snapshots.push(snapshot);
-              }
-            );
           }
+        );
+      });
 
-          console.table(
-            snapshots.map(snapshot => ({
-              market: snapshot.market,
-              status: snapshot.status,
-              htmlLang: snapshot.htmlLang,
-              title: snapshot.title,
-              canonicalCount:
-                snapshot.canonicals.length,
-              hreflangs:
-                snapshot.alternates
-                  .map(alternate =>
-                    alternate.hreflang
-                  )
-                  .join(', '),
-            }))
-          );
+      for (const routeCluster of ROUTE_CLUSTERS) {
+        test(
+          `valida ${routeCluster.name}`,
+          async ({ page }) => {
+            const expectation =
+              buildExpectation(
+                routeCluster.pathname
+              );
 
-          const audit =
-            auditInternationalSeoCluster(
-              snapshots,
-              EXPECTATION
+            const snapshots:
+              InternationalSeoSnapshot[] = [];
+
+            for (
+              const marketExpectation
+              of expectation.markets
+            ) {
+              await test.step(
+                `Capturar ${marketExpectation.market}`,
+                async () => {
+                  const snapshot =
+                    await captureInternationalSeoSnapshot(
+                      page,
+                      marketExpectation.market,
+                      marketExpectation.url
+                    );
+
+                  snapshots.push(snapshot);
+                }
+              );
+            }
+
+            const audit =
+              auditInternationalSeoCluster(
+                snapshots,
+                expectation
+              );
+
+            console.log(
+              `Clúster: ${routeCluster.name}`
             );
 
-          console.log(
-            'Resumen SEO internacional:',
-            {
-              snapshots: snapshots.length,
-              findings: audit.findings.length,
-              errors: audit.errors.length,
-              warnings: audit.warnings.length,
-              blocksGate: audit.blocksGate,
-            }
-          );
-
-          if (audit.findings.length > 0) {
             console.table(
-              audit.findings.map(finding => ({
-                severity: finding.severity,
-                code: finding.code,
-                market:
-                  finding.market ?? 'cluster',
-                url: finding.url ?? '',
-                message: finding.message,
+              snapshots.map(snapshot => ({
+                market: snapshot.market,
+                status: snapshot.status,
+                htmlLang: snapshot.htmlLang,
+                title: snapshot.title,
+                canonicalCount:
+                  snapshot.canonicals.length,
+                hreflangs:
+                  snapshot.alternates
+                    .map(alternate =>
+                      alternate.hreflang
+                    )
+                    .join(', '),
               }))
             );
+
+            console.log(
+              'Resumen SEO internacional:',
+              {
+                findings:
+                  audit.findings.length,
+                errors: audit.errors.length,
+                warnings:
+                  audit.warnings.length,
+                blocksGate:
+                  audit.blocksGate,
+              }
+            );
+
+            if (audit.findings.length > 0) {
+              console.table(
+                audit.findings.map(
+                  finding => ({
+                    severity:
+                      finding.severity,
+                    code: finding.code,
+                    market:
+                      finding.market ??
+                      'cluster',
+                    message:
+                      finding.message,
+                  })
+                )
+              );
+            }
+
+            expect(
+              audit.errors,
+              `${routeCluster.name} contiene errores técnicos`
+            ).toEqual([]);
+
+            expect(
+              audit.blocksGate
+            ).toBe(false);
           }
-
-          expect(
-            audit.errors,
-            'El clúster internacional contiene errores técnicos'
-          ).toEqual([]);
-
-          expect(
-            audit.blocksGate,
-            'Los errores internacionales no deben permitir continuar'
-          ).toBe(false);
-        }
-      );
+        );
+      }
     }
   );
