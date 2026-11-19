@@ -5,10 +5,12 @@ const isCI = Boolean(process.env.CI);
 
 const unitTestPattern = /.*\.unit\.spec\.ts/;
 const setupTestPattern = /.*\.setup\.ts/;
+const auditTestPattern = /.*\.audit\.spec\.ts/;
 
 const nonBrowserTests = [
   unitTestPattern,
   setupTestPattern,
+  auditTestPattern,
 ];
 
 const marketState = path.join(
@@ -47,6 +49,11 @@ export default defineConfig({
       name: 'setup-market',
       testMatch: setupTestPattern,
       dependencies: ['unit'],
+    },
+    {
+      name: 'sitemap-audit',
+      testMatch: auditTestPattern,
+      dependencies: ['setup-market'],
     },
     {
       name: 'chromium',
