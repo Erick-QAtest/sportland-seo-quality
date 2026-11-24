@@ -1,0 +1,96 @@
+{
+  "schema": "sportland-air-force-1-review-v1",
+  "snapshot_date": "2026-11-20",
+  "search_console_window": "2026-08-19 a 2026-11-18; exportación Web DE/US/ES (solo países disponibles)",
+  "gsc_note": "No se suman fragmentos de URL ni métricas como visitantes únicos. No hay datos de GA4 atribuidos al cluster.",
+  "audit_summary": {
+    "primary_spanish_article": "gid://shopify/Article/587240440031",
+    "independent_german_article": "gid://shopify/Article/590594375903",
+    "spanish_main_published": true,
+    "german_independent_published": true,
+    "german_translation": {
+      "exists": true,
+      "body_html_outdated": true,
+      "meta_title_outdated": true
+    },
+    "english_translation": {
+      "exists": true,
+      "body_html_outdated": true,
+      "meta_title_outdated": true
+    },
+    "shopify_mutations": 0,
+    "markets_deactivated": false
+  },
+  "decision": "KEEP_ES_DE_EN_PROVISIONALLY",
+  "release_gate": "NO_GO",
+  "pending": [
+    "Verificar HTTP/canonical/lang/hreflang con Playwright desde Mac",
+    "Comparar y corregir traducciones DE/EN marcadas outdated",
+    "Revisar criterios absolutos del artículo DE independiente",
+    "Elegir UNA URL alemana canónica de largo plazo con preservación de tráfico",
+    "Verificar cadena de redirección /de-us/how-to",
+    "Evaluar monetización y conversiones por país"
+  ],
+  "pages": [
+    {
+      "kind": "ES_MAIN",
+      "path": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+      "country": "DE/US/ES",
+      "clicks": 7,
+      "impressions": 811,
+      "decision": "PROTECT",
+      "expected_lang": "es",
+      "expected_status": 200
+    },
+    {
+      "kind": "DE_TRANSLATION",
+      "path": "/de-de/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+      "country": "DE",
+      "clicks": 7,
+      "impressions": 351,
+      "decision": "PROTECT_TEMPORARILY",
+      "expected_lang": "de",
+      "expected_status": 200
+    },
+    {
+      "kind": "DE_INDEPENDENT",
+      "path": "/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+      "country": "DE",
+      "clicks": 1,
+      "impressions": 17,
+      "decision": "PROTECT_TEMPORARILY",
+      "expected_lang": "de",
+      "expected_status": 200
+    },
+    {
+      "kind": "EN_TRANSLATION",
+      "path": "/en-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+      "country": "US",
+      "clicks": 1,
+      "impressions": 76,
+      "decision": "PROTECT_TEMPORARILY",
+      "expected_lang": "en",
+      "expected_status": 200
+    },
+    {
+      "kind": "DE_US_LEGACY",
+      "path": "/de-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+      "country": "DE",
+      "clicks": 1,
+      "impressions": 252,
+      "decision": "AUDIT_REDIRECT_CHAIN",
+      "expected_lang": "de",
+      "expected_status": 301
+    },
+    {
+      "kind": "DE_US_DE_LEGACY",
+      "path": "/de-us/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+      "country": "DE",
+      "clicks": 0,
+      "impressions": 23,
+      "decision": "AUDIT_REDIRECT_CHAIN",
+      "expected_lang": "de",
+      "expected_status": 301
+    }
+  ]
+}

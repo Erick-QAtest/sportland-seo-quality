@@ -1,0 +1,563 @@
+﻿resolucion,motivo,destino_sugerido,path,title,idioma,blog,tema,marca_tec,inventario,skus_en_stock,clics_3m,clics_ruta_principal,clics_prefijos_regionales,impresiones_3m,palabras,enlaces_entrantes,enlaces_producto,enlaces_coleccion,afiliados_amazon,canonical_ok
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/noticias/como-saber-si-mis-air-force-1-son-originales,"Cómo saber si tus Air Force 1 son originales (test gratis)
+ – SPORTLAND MX",es,noticias,autenticidad,air force 1,SIN_INVENTARIO,0,368,351,17,55529,2450,13,0,0,3,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios,"Cloudfoam Adidas: qué es, beneficios y ¿vale la pena?
+ – SPORTLAND MX",es,noticias,tecnologia,cloudfoam,PARCIAL,3,199,147,52,29520,2554,6,3,1,2,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma,"Plantillas Soft Foam PUMA: qué son, beneficios y repuesto
+ – SPORTLAND MX",es,noticias,tecnologia,softfoam,FUERTE,20,190,133,57,11481,1880,11,0,1,9,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada,"Etiqueta de Converse originales: cómo revisarla | Sportland MX
+ – SPORTLAND MX",es,originales-o-fake,autenticidad,converse,PARCIAL,5,187,84,103,16509,1912,3,0,1,0,True
+EXTRANJERO_DECIDIR,Tráfico extranjero relevante: consolidar en español o monetizar con afiliado local (destino sugerido automáticamente: revisar),/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma,/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile,"PUMA Soft Foam Einlegesohlen: Vorteile, SOFTFOAM+ & Unterschiede
+ – SPORTLAND MX",de,noticias,tecnologia,softfoam,FUERTE,20,117,48,69,5675,944,0,0,0,0,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad,"Etiqueta de Jordan 1 originales: cómo revisarla | Sportland MX
+ – SPORTLAND MX",es,originales-o-fake,autenticidad,jordan,SIN_INVENTARIO,0,99,99,0,11260,2196,2,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto,"QR Converse VMDMX: ¿son originales o falsos? | Sportland MX
+ – SPORTLAND MX",es,originales-o-fake,autenticidad,converse,PARCIAL,5,83,75,8,2007,1648,3,0,1,0,True
+EXTRANJERO_DECIDIR,Tráfico extranjero relevante: consolidar en español o monetizar con afiliado local (destino sugerido automáticamente: revisar),/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada,/blogs/sneakers-blog/the-qr-code-of-your-converse-leads-to-vmdmx-have-to-know-this,"▷ The QR Code of your CONVERSE Leads to VMDMX? Have to know this
+ – SPORTLAND MX",en,sneakers-blog,autenticidad,converse,PARCIAL,5,80,73,7,1582,208,1,0,0,0,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales,"¿Cómo saber si mis Jordan 4 son originales? | Sportland MX
+ – SPORTLAND MX",es,noticias,autenticidad,jordan,SIN_INVENTARIO,0,76,74,2,15567,1927,6,0,1,1,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu,"Mejores tenis para hacer pierna en el gym: cuál usar
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,45,45,0,6764,264,3,1,0,8,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/c-mo-saber-si-mis-converse-son-originales,"¿Cómo saber si mis Converse son originales? | Sportland MX
+ – SPORTLAND MX",es,noticias,autenticidad,converse,PARCIAL,5,42,33,9,8333,1890,9,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,"¿Cuál Es La Diferencia Entre Los Tenis Nike De Hombre y De Mujer?
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,41,41,0,6044,580,2,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,"Cómo Combinar Tenis Negros para Hombre | Sportland MX
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,39,37,2,18190,1697,2,0,1,6,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales,"¿Dónde se fabrican los tenis FILA originales? | Sportland MX
+ – SPORTLAND MX",es,noticias,autenticidad,fila,MINIMO,1,33,31,2,7453,1652,0,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene,"Suela vulcanizada: qué es, ventajas y desventajas
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,32,32,0,3615,1156,2,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/como-saber-si-mis-ultraboost-son-originales,"¿Cómo saber si mis Ultraboost son originales? | Sportland MX
+ – SPORTLAND MX",es,noticias,autenticidad,,GENERICO,110,26,19,7,648,2148,2,0,1,0,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion,"¿Cómo saber si mis jordan retro 11 son originales? Solución a un Click
+ – SPORTLAND MX",es,noticias,autenticidad,jordan,SIN_INVENTARIO,0,25,23,2,3917,795,0,0,0,4,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales,"➡️ Suela De Converse: ¿qué las hace suela tan especiales?
+ – SPORTLAND MX",es,noticias,tecnologia,converse,PARCIAL,5,25,23,2,3724,619,1,0,0,1,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/athleisure/mejores-tenis-que-parecen-zapatos-top-5,"Tenis que parecen zapatos: modelos para hombre y mujer
+ – SPORTLAND MX",es,athleisure,listado,,GENERICO,110,23,23,0,3414,261,0,0,0,40,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/como-saber-si-mis-tenis-son-originales,"¿Cómo saber si tus tenis son originales? | Sportland MX
+ – SPORTLAND MX",es,noticias,autenticidad,,GENERICO,110,23,23,0,2617,2203,8,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/evertrack-descubre-la-tecnologia-que-puma-pone-a-tus-pies,"PUMA EverTrack: qué es, cómo funciona y beneficios
+ – SPORTLAND MX",es,noticias,tecnologia,puma,FUERTE,48,22,6,16,1655,1153,2,0,2,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/tenis-para-parkour-top-5,"Mejores tenis para Parkour: 5 opciones | Sportland
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,21,21,0,2620,1249,0,0,1,10,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/originales-o-fake/como-saber-si-mis-jordan-1-son-originales-o-piratas-revisa-esto,"¿Cómo saber si mis Jordan 1 son originales? | Sportland MX
+ – SPORTLAND MX",es,originales-o-fake,autenticidad,jordan,SIN_INVENTARIO,0,21,19,2,5068,2471,7,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/vestir-camisa-con-tenis-primero-debes-saber-esto,"¿Cómo y Cuándo Vestir Camisa Con Tenis? Debes Saber Esto ✓
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,16,16,0,6474,663,3,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/reebok-fuel-foam-sneakers-collection-fuel-foam,"REEBOK FUEL FOAM sneakers | Fuel Foam Technology
+ – SPORTLAND MX",en,noticias,tecnologia,reebok,PARCIAL,7,15,14,1,1657,322,0,0,0,1,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/noticias/cu-les-son-los-materiales-de-los-tenis-nike,"¿De qué están hechos los tenis Nike? Materiales y partes
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,14,13,1,4802,1275,3,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/padel-vs-paddle-tennis-wichtige-unterschiede-die-sie-kennen-mussen,"Padel vs. Paddle Tennis: Wichtige Unterschiede, die Sie kennen müssen
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,14,4,10,888,688,0,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario relacionado: bloque de productos y colección,,/blogs/athleisure/tenis-que-parecen-calcetines-top-5,"Tenis tipo calcetín: 5 modelos que parecen calcetines
+ – SPORTLAND MX",es,athleisure,listado,,GENERICO,110,13,13,0,2203,1352,0,0,1,5,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/what-is-a-vulcanized-sole-and-what-are-its-benefits,"What is a vulcanized sole and what are its benefits?
+ – SPORTLAND MX",en,sneakers-blog,tecnologia,,GENERICO,110,12,9,3,2663,636,1,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad,/blogs/noticias/how-to-know-if-my-jordan-retro-4-are-authentic-discover-it-in-5-steps,"How to know if my Jordan Retro 4 are authentic? Discover it in 5 steps
+ – SPORTLAND MX",en,noticias,autenticidad,jordan,SIN_INVENTARIO,0,11,5,6,2514,1139,0,1,0,9,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/tenis-adidas-superstar-concha,"Adidas Superstar: la icónica suela de concha | Sportland MX
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,11,10,1,2220,2072,0,0,1,11,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/reviews/asics-gel-rocket-reviews-opinions-and-features,"Asics Gel Rocket Review, Opinions, and Features ✅
+ – SPORTLAND MX",en,reviews,general,asics,SIN_INVENTARIO,0,11,5,6,1762,786,4,0,0,5,True
+NUCLEO_AFILIADO,Tráfico sin inventario: afiliado con divulgación y enlace a alternativas propias,,/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,"▷ Tenis Nike Air Force 1: Reseña detallada ¿valen la pena?
+ – SPORTLAND MX",es,nike,general,air force 1,SIN_INVENTARIO,0,10,5,5,552,865,3,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/adidas/adidas-climacool-que-es-y-que-beneficios-tiene,"Adidas Climacool: qué es y sus beneficios | Sportland MX
+ – SPORTLAND MX",es,adidas,tecnologia,adidas,FUERTE,18,9,9,0,4415,1403,2,0,0,2,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,/blogs/noticias/how-to-match-my-black-sneakers-2021-outfits-for-men,"HOW TO MATCH MY BLACK SNEAKERS? 2025 - OUTFITS FOR MEN
+ – SPORTLAND MX",en,noticias,outfit,,GENERICO,110,9,8,1,3902,647,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-que-cambian-de-color-con-el-sol-top-5,"Tenis que cambian de color con el sol: 5 modelos
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,9,5,4,1224,1440,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/was-ist-der-unterschied-zwischen-herren-und-damen-sneakers-von-nike,"WAS IST DER UNTERSCHIED ZWISCHEN HERREN- UND DAMEN-SNEAKERS VON NIKE?
+ – SPORTLAND MX",de,noticias,general,nike,PARCIAL,5,9,4,5,1595,484,1,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/como-saber-si-mis-ultraboost-son-originales,/blogs/noticias/how-to-know-if-my-sneakers-are-original-find-out-in-5-steps,"How to know if my sneakers are real? Find out in 5 steps
+ – SPORTLAND MX",en,noticias,autenticidad,,GENERICO,110,8,7,1,1161,864,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/suelas-antiderrapante-que-son-y-como-identificarlas,"➜ Suelas antiderrapante: ¿Qué son y como identificarlas?
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,8,8,0,1820,678,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/sneakers-blog/what-are-the-materials-of-nike-sneakers,"What Are the Materials of Nike Sneakers?
+ – SPORTLAND MX",en,sneakers-blog,general,nike,PARCIAL,5,8,2,6,2535,406,0,0,0,3,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/nahrungserganzungsmittel/die-all-court-sohle-was-ist-das-und-wofur-wird-sie-verwendet,"Die All Court-Sohle: Was ist das und wofür wird sie verwendet?
+ – SPORTLAND MX",de,nahrungserganzungsmittel,tecnologia,,GENERICO,110,6,0,6,431,402,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/todo-lo-que-debes-saber-sobre-tenis-deportivos-guia-completa-para-principiantes-y-expertos,"Todo lo que debes saber sobre tenis deportivos: Guía completa para pri
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,6,6,0,62,915,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/top-5-tenis-mas-resistentes-para-2023,"Tenis más resistentes: 5 opciones duraderas | Sportland
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,6,6,0,378,1444,0,0,1,10,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/resenas/adidas-stan-smith-resena-detallada,"Adidas Stan Smith: características, materiales, comodidad y para qué s
+ – SPORTLAND MX",es,resenas,general,adidas,FUERTE,18,6,5,1,385,2116,2,0,1,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/reviews/adidas-ligra-7-review-features-and-opinions,"Adidas Ligra 7 Review, Features and Opinions ✅
+ – SPORTLAND MX",en,reviews,general,adidas,FUERTE,18,6,3,3,1579,639,4,0,0,5,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/the-all-court-sole-what-is-it-and-what-is-it-used-for,"The All Court sole: What is it and what is it used for?
+ – SPORTLAND MX",en,sneaker-sohlen,tecnologia,,GENERICO,110,6,6,0,386,667,1,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/qu-es-dri-fit-la-tecnolog-a-de-nike,"¿Qué es Nike Dri-FIT y cómo funciona? Beneficios y cuidados
+ – SPORTLAND MX",es,noticias,tecnologia,nike,PARCIAL,5,5,4,1,2932,1590,1,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-con-casquillo-top-5,"Mejores tenis con casquillo: 5 opciones para trabajo
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,5,4,1,609,1316,0,0,0,10,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/what-is-the-difference-between-mens-and-womens-nike-sneakers,"What is the difference betwen men's and women's Nike sneakers?
+ – SPORTLAND MX",en,noticias,general,nike,PARCIAL,5,5,5,0,2365,556,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/die-besten-nike-volleyballschuhe-fur-2023-und-warum,"Die besten Nike Volleyballschuhe für 2025 und warum
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,nike,PARCIAL,5,5,0,5,253,1615,0,0,0,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023,"Schuhe für lange Zeit im Stehen TOP 5 - 2023
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,5,0,5,1069,865,0,0,1,13,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-air-zoom-winflo-8-resena-y-opiniones,"Nike Air Zoom Winflo 8 - Caracteristicas, Reseña y Opiniones
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,4,4,0,333,708,1,0,1,6,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,"Rick and Morty y PUMA colaboran para lanzar estos tenis [2025]
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,4,4,0,196,427,0,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/suela-all-court-que-es-y-para-que-sirve,"Suela All Court: ¿Qué es y para qué sirve?
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,4,3,1,687,877,4,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/suela-de-espiga-que-es-y-que-beneficios-tiene,"Suela de Espiga: ¿Qué es y que beneficios tiene?
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,4,4,0,373,717,0,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/tecnologia-ignite-puma-que-es-y-cuales-son-sus-beneficios,"PUMA IGNITE: qué es, cómo funciona y beneficios
+ – SPORTLAND MX",es,noticias,tecnologia,puma,FUERTE,48,4,4,0,1593,1220,4,0,1,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/reviews/nike-zoom-hyperace-detailed-review,"Nike Zoom HyperAce Review: Volleyball Fit, Grip & Performance
+ – SPORTLAND MX",en,reviews,deporte,nike,PARCIAL,5,4,0,4,612,731,6,0,0,6,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/nike-zoom-hyperace-uberprufung-funktionen-und-meinungen,"Nike Zoom HyperAce: Überprüfung, Funktionen und Meinungen
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,nike,PARCIAL,5,4,3,1,60,624,1,0,0,6,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/la-bola-de-nieve-de-los-simpson-se-convierte-en-un-superstar-de-adidas,"La bola de nieve de Los Simpsons se convierte en un Superstar de adida
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,3,3,0,116,208,0,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/la-colaboracion-puma-x-minecraft-que-todos-estabamos-esperando,"La colaboración PUMA x 'Minecraft' que todos estábamos esperando
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,3,3,0,256,252,0,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/los-mejores-zapatos-de-voleibol-nike-para-2023-y-por-que,"Mejores tenis Nike para voleibol | Guía Sportland
+ – SPORTLAND MX",es,noticias,deporte,nike,PARCIAL,5,3,3,0,541,441,1,0,0,10,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10,"Mejores tenis para voleibol: 5 opciones | Sportland
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,3,3,0,376,441,3,0,0,10,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios,"Suela EVA en tenis: qué es, beneficios y diferencias
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,3,3,0,993,1322,29,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-nike-anchos-que-mejorarian-tu-calidad-de-vida-top-3,"Tenis para pies anchos: guía y opciones Nike | Sportland
+ – SPORTLAND MX",es,noticias,salud,nike,PARCIAL,5,3,3,0,548,752,0,0,0,3,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad,/blogs/noticias/wie-erkenne-ich-ob-meine-jordan-retro-4-sneakers-original-sind-entdecke-es-in-5-schritten,"Wie erkenne ich, ob meine Jordan Retro 4 Sneakers original sind? Entde
+ – SPORTLAND MX",de,noticias,autenticidad,jordan,SIN_INVENTARIO,0,3,1,2,389,1159,0,0,0,11,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/como-saber-si-mis-air-force-1-son-originales,/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind,"Nike Air Force 1 original erkennen: So prüfst du dein Paar
+ – SPORTLAND MX",de,noticias,autenticidad,air force 1,SIN_INVENTARIO,0,3,1,2,456,569,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/resenas/nike-kyrie-infinity-review-features-and-opinions,"Nike Kyrie Infinity / Review, Features, and Opinions
+ – SPORTLAND MX",en,resenas,general,nike,PARCIAL,5,3,1,2,265,635,1,0,0,13,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/resenas/nike-zoom-hyperace-resena-caracteristicas-y-opiniones,"Nike Zoom HyperAce: reseña para voleibol | Sportland
+ – SPORTLAND MX",es,resenas,deporte,nike,PARCIAL,5,3,3,0,334,1121,2,0,1,1,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/resenas/resena-de-rendimiento-de-nike-react-hyperset-en-volleyball,"Nike React Hyperset: reseña para voleibol | Sportland
+ – SPORTLAND MX",es,resenas,deporte,nike,PARCIAL,5,3,3,0,62,226,4,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/resenas/tenis-converse-chuck-taylor-resena-caracteristicas-y-opiniones,"▷ Converse Chuck Taylor: Reseña, Características y Opiniones
+ – SPORTLAND MX",es,resenas,general,converse,PARCIAL,5,3,3,0,434,642,2,0,2,5,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/reviews/nike-kd-15-review-features-and-opinions,"Nike KD 15 Review: Cushioning, Traction, Fit & Performance
+ – SPORTLAND MX",en,reviews,general,nike,PARCIAL,5,3,2,1,408,693,5,0,0,8,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum,"Die 5 besten Schuhe für Beintraining und warum
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,3,1,2,208,843,0,0,2,15,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/the-top-5-best-shoes-for-leg-training-and-why,"The Top 5 Best Shoes for Leg Training and Why
+ – SPORTLAND MX",en,sneakers-blog,deporte,,GENERICO,110,3,2,1,428,831,1,0,2,25,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/adidas-advantage-vs-stan-smith,"Adidas Advantage vs Stan Smith: diferencias, talla y comodidad
+ – SPORTLAND MX",es,noticias,tallas,adidas,FUERTE,18,2,2,0,90,835,3,1,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/beneficios-de-andar-en-bicicleta-10-mejores-beneficios,"Beneficios De Andar En Bicicleta | TOP 10
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,2,2,0,105,848,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/cuales-son-los-peores-tenis-del-mundo,"¿Cuáles son los peores tenis del mundo? No compres sin antes leer esto
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,2,2,0,263,636,0,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/cuales-son-los-tenis-mas-caros-del-mundo,"¿Cuáles Son Los Tenis Más Caros Del Mundo? Top 5 2022
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,2,0,2,308,675,1,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023,"Los Mejores Tenis para CrossFit de Mujer | TOP 5 [2024]
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,2,2,0,611,820,0,0,0,7,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-disena-detalles-de-gamuza-en-la-parte-superior-del-uptempo,"Nike Diseña Detalles De Gamuza En La Parte Superior Del Uptempo
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,2,2,0,181,298,0,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/tenis-de-billie-elisih-top-4-adidas-2022-donde-comprar-precio,"▷ TENIS DE BILLIE ELISIH | TOP 3 | NIKE 2022 | DONDE COMPRAR | PRECIO
+ – SPORTLAND MX",es,noticias,deporte,adidas,FUERTE,18,2,2,0,245,799,0,0,1,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/what-kind-of-adidas-sneakers-are-there,"What Kind Of Adidas Sneakers Are There?
+ – SPORTLAND MX",en,noticias,general,adidas,FUERTE,18,2,2,0,1991,474,0,0,0,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/resenas/tenis-puma-rickie-todo-lo-que-tienes-que-saber-resena,"⭐ Tenis Puma Rickie: Todo lo que tienes que saber | RESEÑA
+ – SPORTLAND MX",es,resenas,general,puma,FUERTE,48,2,1,1,186,405,2,1,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/reviews/nike-react-hyperset,"Nike React Hyperset Review: Volleyball Fit, Grip & Performance
+ – SPORTLAND MX",en,reviews,deporte,nike,PARCIAL,5,2,1,1,389,705,13,0,0,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/wie-kombiniere-ich-meine-schwarzen-turnschuhe-2023-outfits-fur-manner,"Wie kombiniere ich meine schwarzen Turnschuhe? 2023 - Outfits für Männ
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,2,1,1,577,585,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/spike-sole-what-is-it-and-what-are-its-benefits,"Spike Sole: What Is It and What Are Its Benefits?
+ – SPORTLAND MX",en,sneakers-blog,general,,GENERICO,110,2,1,1,1999,510,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/the-best-basketball-shoes-top-5-2023,"The Best Basketball Shoes TOP 5 - 2023
+ – SPORTLAND MX",en,sneakers-blog,deporte,,GENERICO,110,2,1,1,647,627,0,0,0,20,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/cricket/descubre-como-se-juega-el-cricket-todo-lo-que-necesitas-saber,"Descubre Cómo se Juega el Cricket: Todo Lo Que Necesitas Saber
+ – SPORTLAND MX",es,cricket,deporte,,GENERICO,110,1,1,0,1517,873,0,0,0,6,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/5-colaboraciones-de-tenis-mas-raras-inspiradas-en-comida,"Las 5 Colaboraciones De Tenis Mas Raras Inspiradas En Comida
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,1,1,0,107,649,1,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/adidas-response-caracteristicas-comodidad-amortiguacion-y-para-que-sirven,"Adidas Response: características, comodidad, amortiguación y para qué 
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,1,1,0,216,1719,0,0,1,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/bad-bunnys-sneakers-top-4-and-where-to-buy-them-2022,"▷ BAD BUNNY'S Shoes TOP 4 ADIDAS | Where to BUY THEM? 2025
+ – SPORTLAND MX",en,noticias,listado,adidas,FUERTE,18,1,1,0,31,854,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/como-blanquear-tenis-de-tela,"¿Cómo Blanquear Tenis De Tela?
+ – SPORTLAND MX",es,noticias,cuidado,,GENERICO,110,1,1,0,19,470,1,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,/blogs/noticias/como-combinar-mis-tenis-blancos-1,"👉🏻 ¿Cómo Combinar Mis Tenis Blancos En 2022?
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,1,0,1,202,832,3,0,2,4,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/como-saber-que-talla-de-tenis-soy,"¿Cómo Saber Que Talla De Tenis Soy? Descúbrelo en 4 pasos
+ – SPORTLAND MX",es,noticias,tallas,,GENERICO,110,1,1,0,387,668,2,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/juego-de-padel-smash-todo-lo-que-debes-saber,"Juego de Padel Smash: Todo lo que Debes Saber
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,1,1,0,120,992,1,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/lanzamiento-de-air-jordan-11-s-en-cool-grey,"Diciembre: Lanzamiento de Air Jordan 11´s en ""cool grey""
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,1,1,0,178,203,0,0,0,2,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022,"Los Mejores Tenis Para Basketball TOP 5 - 2025
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,1,0,1,53,714,0,0,0,8,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/los-mejores-tenis-para-enfermeras-y-porqu,"Los Mejores Tenis Para Enfermeras Y Porqué
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,1,1,0,25,16,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/mejores-tenis-contra-el-agua-top-5-2022,"Tenis contra el agua: 5 opciones impermeables | Sportland
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,1,1,0,68,1452,1,0,1,10,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/puma-slipstream-caracteristicas-materiales-comodidad-y-para-que-sirven,"Puma Slipstream: características, materiales, comodidad y para qué sir
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,1,1,0,85,1796,1,0,1,1,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/que-es-la-suela-clay-y-para-que-sirve-descubre-sus-beneficios,"Suela Clay ¿Qué es la suela Clay y para qué sirve?
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,1,1,0,566,1153,3,0,0,1,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/que-es-puma-netfit,"¿Que es el Ajuste NETFIT DE PUMA y Cuáles Son Sus Beneficios?
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,1,1,0,96,342,1,0,2,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/suela-boost-todo-sobre-la-suela-boost-adidas,"Boost Adidas: qué es, beneficios y cómo funciona | Sportland MX
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,1,1,0,260,1554,4,0,1,0,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/noticias/tenis-de-bad-bunny-top-4-y-donde-comprarlos-2022,"▷ Tenis De BAD BUNNY TOP 7 | ADIDAS 2025 | Donde Comprar | Precio
+ – SPORTLAND MX",es,noticias,deporte,adidas,FUERTE,18,1,1,0,247,1350,2,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-mas-comodos-del-2022-top-5,"Tenis más cómodos: 5 opciones para uso diario | Sportland
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,1,1,0,753,1380,4,0,2,10,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021,"Tenis para estar de pie mucho tiempo: 5 opciones | Sportland
+ – SPORTLAND MX",es,noticias,salud,,GENERICO,110,1,1,0,304,1343,3,0,1,10,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/top-5-mejores-tenis-para-saltar-cuerda-en-2022,"Top 5 Mejores Tenis Para Saltar Cuerda En 2025
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,1,1,0,53,18,2,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel/padel-smash-spiel-alles-was-du-wissen-musst,"Padel Smash Spiel: Alles, was du wissen musst
+ – SPORTLAND MX",de,padel,deporte,,GENERICO,110,1,0,1,139,867,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/resenas/nike-kyrie-infinity-resena-caracteristicas-y-opiniones,"Nike Kyrie Infinity: reseña, ajuste, amortiguación y tracción
+ – SPORTLAND MX",es,resenas,tecnologia,nike,PARCIAL,5,1,1,0,770,722,1,0,0,13,True
+NUCLEO_INVENTARIO,Tráfico con inventario propio: enlazar a colección y productos en stock,,/blogs/resenas/resena-opiniones-y-caracteristicas-puma-rebound-joy,"Puma Rebound Joy: reseña, comodidad, ajuste y materiales
+ – SPORTLAND MX",es,resenas,general,puma,FUERTE,48,1,1,0,27,578,2,0,2,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/was-sind-die-materialien-der-nike-sneakers,"Was sind die Materialien der Nike-Sneakers?
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,nike,PARCIAL,5,1,0,1,885,377,0,0,0,3,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/best-sneakers-that-change-color-2022,"→ Best SNEAKERS That Change Color | 2022
+ – SPORTLAND MX",en,sneakers-blog,listado,,GENERICO,110,1,1,0,249,781,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/best-sneakers-that-tie-themselves-top-3,"▷ Best sneakers that tie themselves [TOP 3]
+ – SPORTLAND MX",en,sneakers-blog,listado,,GENERICO,110,1,0,1,92,452,0,0,0,5,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/sneakers-with-toe-cap-top-5-2023,"Sneakers with toe cap | TOP 5 | 2023
+ – SPORTLAND MX",en,sneakers-blog,listado,,GENERICO,110,1,0,1,17,859,0,0,0,9,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/volleyball/best-volleyball-shoes-of-2023-top-5,"Best Volleyball Shoes of 2024 [TOP 5]
+ – SPORTLAND MX",en,volleyball,deporte,,GENERICO,110,1,0,1,1678,743,4,0,0,18,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D9%88%D9%84%D9%81/%D9%83%D9%8A%D9%81-%D9%8A%D9%85%D9%83%D9%86-%D8%A3%D9%86-%D8%A3%D8%B9%D8%B1%D9%81-%D8%A5%D8%B0%D8%A7-%D9%83%D8%A7%D9%86%D8%AA-%D8%AC%D9%88%D8%B1%D8%AF%D8%A7%D9%86-%D8%B1%D9%8A%D8%AA%D8%B1%D9%88-4-%D8%A3%D8%B5%D9%84%D9%8A%D8%A9-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%87%D8%A7-%D9%81%D9%8A-5-%D8%AE%D8%B7%D9%88%D8%A7%D8%AA,"كيف يمكن أن أعرف إذا كانت جوردان ريترو 4 أصلية؟ اكتشفها في 5 خطوات
+ – SPORTLAND MX",es,%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D9%88%D9%84%D9%81,general,,GENERICO,110,0,0,0,0,909,0,0,0,0,False
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/%F0%9F%91%89-tenis-pokemon/%E2%9E%A1%EF%B8%8F-nuevo-lanzamiento-de-tenis-pokemon-puma-2022,"➡️ Nuevo Lanzamiento de Tenis POKEMÓN | PUMA | 2023
+ – SPORTLAND MX",es,%F0%9F%91%89-tenis-pokemon,general,puma,FUERTE,48,0,0,0,0,374,1,0,0,0,False
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/%F0%9F%91%89-tenis-pokemon/tenis-pokemon-adidas-colaboracion,"Tenis Pokemón | Adidas | Colaboración
+ – SPORTLAND MX",es,%F0%9F%91%89-tenis-pokemon,general,adidas,FUERTE,18,0,0,0,0,249,2,0,0,1,False
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/adidas/bad-bunny-y-sus-tenis-campus-moon-in-cloud-white-x-adidas,"Bad Bunny y sus Tenis Campus Moon In Cloud White x Adidas
+ – SPORTLAND MX",es,adidas,general,adidas,FUERTE,18,0,0,0,102,305,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-de-billie-elisih-top-4-adidas-2022-donde-comprar-precio,/blogs/adidas/tenis-de-bad-bunny-blancos-x-adidas-nueva-colaboracion,"Tenis de Bad Bunny ""Blancos"" x Adidas | Nueva colaboración
+ – SPORTLAND MX",es,adidas,deporte,adidas,FUERTE,18,0,0,0,336,286,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/athleisure/mejores-tenis-retro-top-5-2022,"▷ Mejores Tenis Retro | TOP 5 | tendencia 2022 🥇
+ – SPORTLAND MX",es,athleisure,listado,,GENERICO,110,0,0,0,36,616,0,0,0,11,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,/blogs/athleisure/sneakers-that-look-like-dress-shoes-top-5-2022,"▷ sneakers that look like dress shoes TOP 5 | 2022
+ – SPORTLAND MX",en,athleisure,outfit,,GENERICO,110,0,0,0,67,750,0,0,0,6,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/erganzungen/nike-kd-15-bewertung-eigenschaften-und-meinungen,"Nike KD 15 / Bewertung, Eigenschaften und Meinungen
+ – SPORTLAND MX",de,erganzungen,salud,nike,PARCIAL,5,0,0,0,0,673,1,0,0,8,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,/blogs/nike/%E2%9C%85-3-formas-de-como-quitar-arrugas-de-nike-air-force-1-4-minutos-%E2%8F%B0,"3 formas de cómo quitar ARRUGAS de NIKE AIR FORCE 1【4 minutos ⏰】
+ – SPORTLAND MX",es,nike,general,air force 1,SIN_INVENTARIO,0,0,0,0,0,518,1,0,0,2,False
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/noticias/%D9%83%D9%8A%D9%81-%D8%A3%D8%B9%D8%B1%D9%81-%D9%85%D8%A7-%D8%A5%D8%B0%D8%A7-%D9%83%D8%A7%D9%86-%D8%AD%D8%B0%D8%A7%D8%A6%D9%8A-%D8%A3%D8%B5%D9%84%D9%8A%D9%8B%D8%A7-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D9%81%D9%8A-5-%D8%AE%D8%B7%D9%88%D8%A7%D8%AA,"كيف أعرف ما إذا كان حذائي أصليًا؟ اكتشف في 5 خطوات
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,670,0,0,0,0,False
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/a-la-luz-nuevas-imagenes-de-air-jordan-4-golf,"""A LA LUZ"" NUEVAS IMAGENES DE AIR JORDAN 4 GOLF
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,255,0,0,0,3,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/a-punto-de-lanzarse-nueva-version-de-air-jordan-11-dark-powder-blue,"A punto de lanzarse: Nueva versión de Air Jordan 11 'Dark Powder Blue
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,179,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/adidas-anuncia-el-lanzamiento-de-los-tenis-adifomq,"Adidas anuncia El Lanzamiento De Los Tenis adiFOMQ
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,97,249,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/adidas-cancela-contrato-de-kanye-west-adios-yeezy,"Adidas Cancela contrato de Kanye West ¿adiós Yeezy?
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,794,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/adidas-originals-en-el-metaverso-colecci-n-nft,"Adidas Originals En El Metaverso; Colección NFT
+ – SPORTLAND MX",es,noticias,autenticidad,adidas,FUERTE,18,0,0,0,0,16,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/adidas-yeezy-lanzamientos-2022,"Adidas Yeezy: Lanzamientos 2022
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,43,289,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,/blogs/noticias/ahora-los-air-force-1-low-sera-otros-de-los-tenis-sostenible-de-nike,"Los Air Force 1 Low Serán Otros De Los Tenis Sustentables De Nike
+ – SPORTLAND MX",es,noticias,general,air force 1,SIN_INVENTARIO,0,0,0,0,0,203,0,0,0,1,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,/blogs/noticias/air-force-1-luis-vouitton-subasta-alcanza-hasta-65-000-en-subasta,"Air Force 1 Louis Vouitton, alcanza hasta $ 65,000 en subasta
+ – SPORTLAND MX",es,noticias,general,air force 1,SIN_INVENTARIO,0,0,0,0,0,278,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/air-jordan-11-retro-cherry-lanzamiento-2022,"Air Jordan 11 Retro ""Cherry"" Lanzamiento 2022
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,140,280,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/air-jordan-retro-lanzamientos-2022,"Air Jordan Retro, Lanzamientos 2022
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,220,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/air-max-day-sabias-que-hay-un-dia-del-air-max-nike-conoce-todo-aqui,"Air Max Day ✅ ¿Sabías Que Se Celebra Un Día Air Max De Nike?
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,238,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/asics-garantizara-que-los-ninos-usen-la-talla-correcta-de-calzado-con-stepnote,"ASICS garantizará que los niños usen la talla correcta de calzado con 
+ – SPORTLAND MX",es,noticias,tallas,asics,SIN_INVENTARIO,0,0,0,0,0,250,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/asics-protoblast-se-lanza-en-dos-combinaciones-de-colores-futuristas,"ASICS PROTOBLAST se lanzá en dos combinaciones de colores futuristas
+ – SPORTLAND MX",es,noticias,general,asics,SIN_INVENTARIO,0,0,0,0,0,198,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/athleisure-la-nueva-tendencia-entre-lo-deportivo-y-lo-casual,"Athleisure ✓ La nueva tendencia entre lo deportivo y lo casual.
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,162,608,3,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/bad-bunny-revela-colorway-el-nuevo-adidas-response,"Bad Bunny revela ""Colorway"" el nuevo Adidas Response
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,237,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/bad-bunny-y-adidas-lo-vuelven-a-hacer-con-daddys-shoes,"Bad Bunny y Adidas lo vuelven a hacer con ""Daddy's Shoes""
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,301,0,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/best-waterproof-senakers-top-5-2022,"☞ Best WATERPROOF senakers TOP 5 | 2022
+ – SPORTLAND MX",en,noticias,listado,,GENERICO,110,0,0,0,0,644,0,0,1,8,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/beste-paddle-tennis-balle-und-warum-2023,"Beste Paddle Tennis Bälle und Warum [2023]
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,0,0,0,77,1820,0,0,0,15,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/c-mo-quitar-lo-amarillo-de-los-tenis-de-tela-de-c,"▷Cómo Quitar Lo Amarillo De Los Tenis De Tela De C
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,20,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/colaboracion-tenis-vans-crayola-sk8-hi-old-skool-authentic-y-slip-on,"Colaboración Tenis VANS / CRAYOLA; Sk8-Hi, Old Skool, Authentic y Slip
+ – SPORTLAND MX",es,noticias,autenticidad,vans,PARCIAL,3,0,0,0,133,209,0,0,1,2,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/coleccion-converse-weatherised-chuck,"Colección: CONVERSE WEATHERISED CHUCK (afronta el mal tiempo)
+ – SPORTLAND MX",es,noticias,general,converse,PARCIAL,5,0,0,0,0,430,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,/blogs/noticias/coleccion-puma-fenty-by-rihanna-i-todo-lo-que-debes-saber,"Colección PUMA FENTY BY RIHANNA I todo lo que debes saber
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,0,0,0,62,604,1,0,1,3,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-agrandar-tenis,"Cómo agrandar tenis fácil y rápido
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,103,513,0,0,0,2,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,/blogs/noticias/como-combinar-mis-tenis-de-bota-en-2022,"▷ ¿Cómo combinar mis TENIS DE BOTA en 2022?
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,0,0,0,163,582,2,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-elegir-mis-tenis-deportivos-ideales,"¿Cómo elegir mis tenis deportivos ideales?
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,621,3,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-empezar-a-correr,"👉🏻 Cómo empezar a correr: todo lo que debes saber
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,2870,0,0,2,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-lavar-tenis-de-lona-blancos,"como lavar tenis de lona blancos
+ – SPORTLAND MX",es,noticias,cuidado,,GENERICO,110,0,0,0,0,15,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-lavar-tenis-en-lavadora,"¿Cómo lavar tenis en lavadora?
+ – SPORTLAND MX",es,noticias,cuidado,,GENERICO,110,0,0,0,37,14,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/como-saber-si-unos-tenis-adidas-son-originales,"Cómo saber si unos tenis Adidas son originales: guía de autenticidad
+ – SPORTLAND MX",es,noticias,autenticidad,adidas,FUERTE,18,0,0,0,87,779,2,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/converse-celebra-el-dia-del-orgullo-lgbt-con-esta-coleccion,"Converse Celebra El Día Del Orgullo LGBT Con Esta Colección
+ – SPORTLAND MX",es,noticias,general,converse,PARCIAL,5,0,0,0,39,312,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/correr-o-saltar-la-cuerda-baja-tu-peso-corporal-con-la-mejor-alternativa,"Correr o Saltar La Cuerda: Baja Tu Peso Corporal Con La Mejor Alternat
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,201,2015,1,0,2,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/cuales-son-los-jordan-m-s-baratos,"¿Cuales Son Los Jordan Más Baratos?
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,15,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/cuales-son-los-tenis-mas-vendidos-en-2021,"¿Cuáles Son Los Tenis Más Vendidos En 2025?
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,540,1,1,1,8,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/despues-de-8-anos-de-espera-adidas-wings-4-0-jeremy-scott,"Después De 8 años De Espera; Adidas Wings 4.0 Jeremy Scott
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,217,294,0,0,2,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/die-besten-padel-tennisschuhe-kluge-auswahl-fur-optimale-leistung,"Die besten Padel-Tennisschuhe: Kluge Auswahl für optimale Leistung
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,0,0,0,0,638,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-adidas-superstar-concha,/blogs/noticias/el-adidas-yeezy-foam-runner-se-lanzara-en-una-combinacion-de-colores-sulphur,"El ADIDAS Yeezy Foam Runner se lanzará en color SULPHUR
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,0,0,0,0,223,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/el-auge-de-las-apuestas-deportivas-online,"El auge de las apuestas deportivas online
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,491,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/encuentra-los-mejores-leggins-deportivos-de-mujer-para-tu-entrenamiento,"Encuentra los mejores leggins deportivos de mujer para tu entrenamient
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,955,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/entrevista-la-marea-alta-para-patta-en-2021-nike-air-max,"ENTREVISTA: LA MAREA ALTA PARA PATTA EN 2021 NIKE AIR MAX
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,1134,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-adidas-superstar-concha,/blogs/noticias/es-hoy-se-lanzan-los-adidas-yeezy-foam-runner-mx-sand-grey-y-ocre,"¡ES HOY! se lanzan los adidas YEEZY Foam Runner MX Sand Grey y Ocre
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,0,0,0,0,206,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/estos-cordones-cuestan-250-us-los-pagarias,"Estos Cordones cuestan $250 us ¿Los pagarías?
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,205,0,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/eva-sole-what-is-it-and-what-are-its-benefits,"EVA sole What is it and what are its benefits?
+ – SPORTLAND MX",en,noticias,tecnologia,,GENERICO,110,0,0,0,394,298,4,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/fila-disruptor-caracteristicas-materiales-comodidad-y-para-que-sirven,"Fila Disruptor: características, materiales, comodidad y para qué sirv
+ – SPORTLAND MX",es,noticias,general,fila,MINIMO,1,0,0,0,0,1957,0,0,1,1,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/guia-definitiva-para-elegir-usar-y-cuidar-tus-tenis-deportivos-2025,"Guía Definitiva Para Elegir, Usar y Cuidar Tus Tenis Deportivos [2025]
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,1668,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/how-and-when-to-wear-a-shirt-with-sneakers-you-must-know-this,"HOW AND WHEN TO WEAR A SHIRT WITH SNEAKERS? YOU MUST KNOW THIS ✓
+ – SPORTLAND MX",en,noticias,general,,GENERICO,110,0,0,0,308,622,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/how-to-wash-sneakers-in-washine-machine,"How to wash sneakers in washine machine
+ – SPORTLAND MX",es,noticias,cuidado,,GENERICO,110,0,0,0,0,16,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/imagenes-oficiales-nike-air-max-penny-1-rattan,"Imágenes Oficiales: Nike Air Max Penny 1 ‘Rattan’
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,148,155,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-adidas-superstar-concha,/blogs/noticias/imagenes-oficiales-yeezy-boost-350-v2-beluga-reflectiv,"Imágenes oficiales: YEEZY BOOST 350 V2 “Beluga Reflectiv""
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,0,0,0,75,203,0,0,0,0,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/noticias/juveniles-outfits-con-jeans-y-tenis-top-5-2022-%F0%9F%8E%96%EF%B8%8F,"Juveniles Outfits Con Jeans Y Tenis I TOP 5 (2025) 🎖️
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,0,0,0,0,529,0,1,1,5,False
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/la-adidas-yeezy-500-ash-grey-se-lanza-manana,"La adidas Yeezy 500 ""Ash Grey"" se lanza mañana
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,194,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/la-revolucion-de-las-apuestas-online-y-los-juegos-de-crash,"La Revolución de las apuestas online y: los juegos de Crash
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,527,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/lanzamiento-bad-bunny-y-adidas-forum-pwr-catch-and-throw,"Lanzamiento: Bad Bunny y adidas Forum PWR 'Catch and Throw'
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,141,384,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/lebron-james-se-burla-de-las-nike-lebron-20,"LeBron James se burla de las Nike LeBron 20
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,203,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/los-5-mejores-tenis-para-skate-y-porqu,"▷ Los 5 Mejores Tenis Para Skate y Porqué
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,17,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/los-barberos-aman-a-nike-y-nike-se-inspiro-en-ellos-para-crear-estos-tenis,"Los Barberos Aman a Nike y Nike Se Inspiró En Ellos Para Crear Estos T
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,99,212,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/los-mejores-tenis-de-nike-de-2021,"Los Mejores Tenis De Nike De 2025
+ – SPORTLAND MX",es,noticias,deporte,nike,PARCIAL,5,0,0,0,0,691,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/los-mejores-tenis-para-halterofilia-y-porqu,"Los Mejores Tenis Para Halterofilia Y porqué
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,16,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/los-mejores-tenis-supinadores-y-porque,"Tenis para supinadores: qué buscar y 5 opciones
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,1597,2,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/los-tenis-air-jordan-1-acclimate-son-los-tenis-perfectos-para-la-nieve,"Los Air Jordan 1 Acclimate Son Los Tenis Perfectos Para El Invierno
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,243,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/mejora-tus-outfits-con-air-force-1-nike,"▷ Mejora tus outfits con air force 1 NIKE
+ – SPORTLAND MX",es,noticias,outfit,air force 1,SIN_INVENTARIO,0,0,0,0,0,17,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/mejores-tenis-para-caminar,"Mejores tenis para caminar: cómo elegir según comodidad, distancia y u
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,146,889,2,0,3,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/mejores-tenis-precio-calidad-2022,"Mejores tenis precio calidad 2025
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,14,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/mejores-tenis-que-se-amarran-solos-top-3,"▷ Mejores Tenis Que Se Amarran Solos [TOP 3]
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,85,465,0,0,0,6,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/mira-como-vans-esta-celebrando-su-tercer-aniversario-del-dia-tablero-de-ajedrez,"Mira cómo Vans está celebrando su tercer aniversario del día del table
+ – SPORTLAND MX",es,noticias,general,vans,PARCIAL,3,0,0,0,0,241,0,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/neuer-air-max-neue-zusammenarbeit-von-nike-und-hello-kitty,"Neuer Air MAX - Neue Zusammenarbeit von Nike und Hello Kitty
+ – SPORTLAND MX",de,noticias,general,nike,PARCIAL,5,0,0,0,0,223,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-air-max,"""La historia detrás de la revolución de las zapatillas: Nike Air Max""
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,657,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-air-more-uptempo-slide-vaya-nueva-creacion,"Nike Air More Uptempo Slide | ¡Vaya nueva creación!
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,262,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-flyknit-qu-es-y-cuales-son-sus-beneficios,"Nike FlYKNIT; ¿Qué es y cuales son sus beneficios?
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,18,1,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-kd-15-resena-caracteristicas-y-opiniones,"Nike KD 15 / Reseña, Características y Opiniones
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,1135,719,0,0,0,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-kyrie-infinity-bewertung-merkmale-und-meinungen,"Nike Kyrie Infinity / Bewertung, Merkmale und Meinungen
+ – SPORTLAND MX",de,noticias,general,nike,PARCIAL,5,0,0,0,0,652,1,0,0,13,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-lanza-sus-tenis-betrue,"Nike lanza sus tenis ""BETRUE"" en homenaje a la comunidad LGBTQ
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,185,366,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/nike-lebron-20-amortiguacion-traccion-talla-y-caracteristicas,"Nike LeBron 20: amortiguación, tracción, talla y características
+ – SPORTLAND MX",es,noticias,tecnologia,nike,PARCIAL,5,0,0,0,59,1635,0,0,1,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-lebron-20-bewertung-die-perfekte-mischung-aus-komfort-und-leistung,"Nike LeBron 20 Bewertung: Die perfekte Mischung aus Komfort und Leistu
+ – SPORTLAND MX",de,noticias,general,nike,PARCIAL,5,0,0,0,0,981,1,0,0,6,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/nike-promueve-la-inclusion-con-everybody-s-nike-running-club,"Nike promueve la inclusión con “Everybody’s Nike Running Club”
+ – SPORTLAND MX",es,noticias,deporte,nike,PARCIAL,5,0,0,0,0,143,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-revolution-5-resena,"🎖 Nike Revolution 5: Reseña Y Caracterisitcas
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,171,824,0,0,0,1,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-se-prepara-para-el-metaverso,"Nike Se Prepara Para El Metaverso
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,658,0,0,1,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nike-zoom-gravity-resena-opiniones-y-caracteristicas,"🎖 Nike Zoom Gravity Reseña, Opiniones y Características
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,315,750,0,0,0,8,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nikeland-el-nuevo-mundo-de-nike-en-roblox-metaverso,"NIKELAND; El nuevo mundo de nike en Roblox: Metaverso
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,102,394,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/nuevos-air-max-nike-y-hello-kitty-nueva-colab,"Nuevos Air MAX - Nike Y Hello Kitty Nueva Colaboración
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,48,249,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,/blogs/noticias/outfit-con-falda-de-cuero-y-tenis-top-5,"OUTFIT con falda de CUERO y TENIS TOP 5 🏆
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,0,0,0,0,18,0,0,0,0,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/noticias/outfit-con-short-y-tenis-top-5-ideas-2022-%F0%9F%8E%96%EF%B8%8F,"OUTFIT Con Short Y Tenis TOP 5 ideas 🏆 [ 2022]
+ – SPORTLAND MX",es,noticias,outfit,,GENERICO,110,0,0,0,0,639,3,0,0,3,False
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/padel-guia-completa-para-entender-jugar-y-elegir-el-mejor-equipo,"Pádel: Guía Completa para Entender, Jugar y Elegir el Mejor Equipo
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,725,9,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/padel-tennis-regeln-vereinfacht-dein-tor-zum-platz-triumph,"Padel Tennis Regeln vereinfacht!: Dein Tor zum Platz-Triumph
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,0,0,0,38,936,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/padel-tennisplatz-alles-was-du-wissen-musst,"Padel Tennisplatz: Alles, was du wissen musst
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,0,0,0,525,654,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/padel-vs-paddle-tennis-diferencias-claves-que-necesitas-saber,"Padel vs Paddle Tennis: Diferencias Claves que Necesitas Saber
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,257,824,1,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/padel-vs-pickleball-wesentliche-unterschiede-die-sie-kennen-sollten,"Padel vs. Pickleball: Wesentliche Unterschiede, die Sie kennen sollten
+ – SPORTLAND MX",de,noticias,deporte,,GENERICO,110,0,0,0,69,709,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/primeras-imagenes-air-jordan-5-racer-blue,"Primeras imagenes: Air Jordan 5 ""Racer Blue""
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,16,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/primeras-imagenes-bad-bunny-lo-vuelve-a-hacer-con-adidas,"Primeras imágenes; Bad bunny lo vuelve a hacer con Adidas 2025
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,168,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/pronaci-n-que-es-y-que-tenis-debo-usar,"Pronación: qué es y qué tenis usar | Sportland
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,98,1478,5,0,0,3,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,/blogs/noticias/puma-caven-caracteristicas-materiales-comodidad-y-para-que-sirven,"Puma Caven: características, materiales, comodidad y para qué sirven
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,0,0,0,90,1687,0,0,2,1,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,/blogs/noticias/puma-roma-caracteristicas-materiales-comodidad-y-para-que-sirven,"Puma Roma: características, materiales, comodidad y para qué sirven
+ – SPORTLAND MX",es,noticias,general,puma,FUERTE,48,0,0,0,208,1925,0,0,1,1,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/que-son-lo-tenis-sneakers,"👉🏻 ¿Qué son lo tenis ""SNEAKERS""?
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,533,138,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/running-or-jumping-rope-lower-your-body-weight-with-the-best-alternative,"Running or Jumping Rope: LOSE WEIGHT With The Best Alternative
+ – SPORTLAND MX",en,noticias,deporte,,GENERICO,110,0,0,0,0,2004,0,0,1,0,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/noticias/se-el-mejor-maestro-pokemon-con-esta-nueva-colab-de-converse,"Sé el mejor maestro Pokémon con esta nueva colaboración de Converse
+ – SPORTLAND MX",es,noticias,general,converse,PARCIAL,5,0,0,0,53,293,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,/blogs/noticias/se-revela-colaboracion-de-billie-eilish-y-air-force-1,"Se revela colaboración de Billie Eilish y Air Force 1
+ – SPORTLAND MX",es,noticias,general,air force 1,SIN_INVENTARIO,0,0,0,0,0,184,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tendencias-de-ropa-deportiva-para-mujer-en-2024,"Tendencias de Ropa Deportiva para Mujer en 2025
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,565,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-adidas-superstar-concha,/blogs/noticias/tenis-adidas-yeezy-boost-700-v2-vanta-regresan-en-agosto,"Tenis adidas Yeezy Boost 700 v2 ""Vanta"" regresan en agosto
+ – SPORTLAND MX",es,noticias,tecnologia,adidas,FUERTE,18,0,0,0,98,259,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-air-jordan-1-mid-llegaron-para-quedarse,"TENIS AIR JORDAN 1 MID LLEGARON PARA QUEDARSE
+ – SPORTLAND MX",es,noticias,general,jordan,SIN_INVENTARIO,0,0,0,0,0,17,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/tenis-de-billie-elisih-top-4-adidas-2022-donde-comprar-precio,/blogs/noticias/tenis-de-bad-bunny-ahora-en-azul-adidas-forum-buckle,"Tenis de Bad Bunny ahora en azul: Adidas forum buckle
+ – SPORTLAND MX",es,noticias,deporte,adidas,FUERTE,18,0,0,0,70,209,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-de-cardi-b-reebok-lanza-su-primera-coleccion-let-me-be-enchanted,"¿Tenis de Cardi B? Reebok Lanza su primera colección ""Let Me Be... Enc
+ – SPORTLAND MX",es,noticias,deporte,reebok,PARCIAL,7,0,0,0,0,215,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-de-kanye-west-mejores-colaboraciones,"▷ Tenis De Kanye West |Mejores Colaboraciones
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,15,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-lgbt,"TENIS LGBT
+ – SPORTLAND MX",es,noticias,general,,GENERICO,110,0,0,0,0,11,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-mas-vendidos-en-2022-top-5,"➤ Tenis más vendidos en 2023 | TOP 5 🥇
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,76,648,0,0,0,16,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/noticias/tenis-nike-para-hombre,"Tenis Nike para hombre
+ – SPORTLAND MX",es,noticias,general,nike,PARCIAL,5,0,0,0,0,472,0,0,0,0,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/tenis-para-alto-impacto-top-4-2022,"➜ TENIS PARA ALTO IMPACTO | TOP 4 | 2022 🏆
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,346,554,0,0,1,8,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-para-correr-en-pavimento-top-5-2022,"Tenis para correr en pavimento: 5 opciones para asfalto
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,46,1296,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-para-correr-largas-distancias-de-mujer-top-5,"Tenis para correr largas distancias para mujer | Guía 2026
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,1170,3,0,2,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-para-tenis-top-5-2022,"Tenis Para Tenis TOP 5 - 2025
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,15,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-para-zumba-top-5-2022,"Tenis para ZUMBA TOP 5 - 2025
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,15,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tenis-que-combinan-con-todo-top-4-2022,"▷ Tenis Que Combinan Con Todo | TOP 4 | 2022 🏆
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,0,470,0,0,1,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/the-best-shoes-for-weightlifting-and-why,"➡️ Best Shoes For Weightlifting And Why 🥇TOP 5 [2024]
+ – SPORTLAND MX",en,noticias,listado,,GENERICO,110,0,0,0,943,500,0,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/the-best-sneakers-for-standing-longtime-top-5-2022,"Best Sneakers for Standing LongTime TOP 5 - 2025
+ – SPORTLAND MX",en,noticias,listado,,GENERICO,110,0,0,0,0,653,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,/blogs/noticias/tipos-de-air-force-1-tenis-nike-2022,"Tipos De Air Force 1 -Tenis Nike 2025
+ – SPORTLAND MX",es,noticias,general,air force 1,SIN_INVENTARIO,0,0,0,0,0,17,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/tipos-de-suelas-para-calzado-deportivo,"Tipos De Suelas Para Calzado Deportivo
+ – SPORTLAND MX",es,noticias,tecnologia,,GENERICO,110,0,0,0,41,15,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/tipos-de-tenis-adidas,"Tipos De Tenis Adidas
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,13,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/top-5-mejores-tenis-de-marvel,"Top 5 Mejores Tenis De Marvel
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,15,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/top-5-mejores-tenis-para-usar-en-pareja-enero-2022,"Top 5 Mejores Tenis Para Usar En Pareja Enero 2025
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,104,19,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/noticias/top-de-los-mejores-tenis-del-2021,"TOP de los mejores tenis del 2025
+ – SPORTLAND MX",es,noticias,deporte,,GENERICO,110,0,0,0,0,700,1,0,0,5,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/noticias/top-mejores-marcas-de-tenis-en-2022,"→ Mejores Marcas De Tenis en 2023 TOP 5 🥇
+ – SPORTLAND MX",es,noticias,listado,,GENERICO,110,0,0,0,328,623,0,0,2,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/noticias/what-are-the-most-expensive-sneakers-in-the-world-2022,"What are the Most Expensive Sneakers in the World? 2022
+ – SPORTLAND MX",en,noticias,general,,GENERICO,110,0,0,0,52,636,0,0,1,0,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/noticias/what-are-the-worst-sneakers-in-the-world-read-this-%F0%9F%94%B4-before-buy-again,"what are the worst sneakers in the world? Read this 🔴 before buy again
+ – SPORTLAND MX",en,noticias,general,,GENERICO,110,0,0,0,0,617,0,0,1,0,False
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,/blogs/noticias/what-is-puma-netfit-and-what-is-it-for,"What is Puma NETFIT and what is it for?
+ – SPORTLAND MX",en,noticias,general,puma,FUERTE,48,0,0,0,54,316,0,0,0,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/como-saber-si-mis-ultraboost-son-originales,/blogs/noticias/wie-erkenne-ich-ob-meine-sneakers-echt-sind-finden-sie-es-in-5-schritten-heraus,"WIE ERKENNE ICH, OB MEINE SNEAKERS ECHT SIND? FINDEN SIE ES IN 5 SCHRI
+ – SPORTLAND MX",de,noticias,autenticidad,,GENERICO,110,0,0,0,214,767,0,0,1,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/resenas/adidas-stan-smith-resena-detallada,/blogs/noticias/ya-viste-los-nuevos-adidas-superstar-de-kyle-de-south-park,"¿Ya Viste Los Nuevos Adidas Superstar De Kyle De South Park?
+ – SPORTLAND MX",es,noticias,general,adidas,FUERTE,18,0,0,0,0,295,1,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/best-paddle-tennis-balls-and-why-2023,"Best Padel Balls: How to Choose the Right Ball
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,285,1840,12,0,0,17,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/best-padel-shoes,"➡️ The Best Padel Tennis Shoes: Choose Wisely for Optimal Performance
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,1593,715,6,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/padel-smash-game,"Padel Smash Game: All You Have to Know [2023]
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,138,881,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/padel-tennis-court-everything-you-need-to-know,"Padel Tennis Court: Everything You Need to Know 🟢
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,1890,697,8,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/padel-tennis-rules-simplified-your-gateway-to-court-triumph,"Padel Tennis Rules Simplified!: Your Gateway to Court Triumph
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,50,964,10,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/padel-vs-paddle-tennis,"Padel vs Paddle Tennis: Vital Differences You Need to Know [2023 ]
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,501,719,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/padel-tennis/padel-vs-pickleball,"Padel vs Pickleball: Key Differences You Need to Know [2023]
+ – SPORTLAND MX",en,padel-tennis,deporte,,GENERICO,110,0,0,0,0,704,0,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/padel/cancha-de-padel-tennis-todo-lo-que-necesitas-saber,"Cancha de Padel Tennis: Todo lo que Necesitas Saber
+ – SPORTLAND MX",es,padel,deporte,,GENERICO,110,0,0,0,143,822,5,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo,"Los Mejores Tenis Para Pádel: Elige Sabiamente para un Rendimiento Ópt
+ – SPORTLAND MX",es,padel,deporte,,GENERICO,110,0,0,0,129,775,9,0,0,10,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/padel/padel-tennis-rules-made-easy-your-gateway-to-court-triumph,"Reglas del pádel: explicadas de forma sencilla
+ – SPORTLAND MX",es,padel,deporte,,GENERICO,110,0,0,0,45,1042,6,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/padel/padel-vs-pickleball-diferencias-clave-que-necesitas-saber,"Padel vs Pickleball: Diferencias Clave que Necesitas Saber
+ – SPORTLAND MX",es,padel,deporte,,GENERICO,110,0,0,0,248,833,1,0,0,0,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/padel/pelotas-de-padel-de-alta-calidad-y-por-que-2023,"Pelotas de pádel: cómo elegir y qué revisar antes de comprar
+ – SPORTLAND MX",es,padel,deporte,,GENERICO,110,0,0,0,0,2171,5,0,0,14,True
+MEJORAR_O_FUSIONAR,Señal baja: fusionar con el artículo más fuerte del mismo tema o reescribir,,/blogs/resenas/resena-de-nike-lebron-20-la-combinacion-perfecta-de-comodidad-y-rendimiento,"Nike LeBron 20: reseña, amortiguación, tracción y ajuste
+ – SPORTLAND MX",es,resenas,tecnologia,nike,PARCIAL,5,0,0,0,328,1076,1,0,0,7,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410 (destino sugerido automáticamente: revisar),/blogs/noticias/evertrack-descubre-la-tecnologia-que-puma-pone-a-tus-pies,/blogs/resenas/tenis-puma-retaliate-v2-resena-detallada,"Puma Retaliate 2: reseña, amortiguación, comodidad y ajuste
+ – SPORTLAND MX",es,resenas,tecnologia,puma,FUERTE,48,0,0,0,50,792,2,1,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/reviews/mizuno-wave-horizon-review-features-and-opinions,"Mizuno Wave Horizon Review, Features and Opinions ✅
+ – SPORTLAND MX",en,reviews,general,mizuno,SIN_INVENTARIO,0,0,0,0,102,971,0,0,0,2,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,/blogs/reviews/nike-lebron-20-review-the-perfect-blend-of-comfort-and-performance,"Nike LeBron 20 Review: Cushioning, Traction, Fit & Performance
+ – SPORTLAND MX",en,reviews,general,nike,PARCIAL,5,0,0,0,544,987,5,0,0,6,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/beste-volleyballschuhe-2023-top-5,"Beste Volleyballschuhe 2023 [TOP 5]
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,0,0,0,122,766,0,0,0,20,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/como-agrandar-tenis-1,"Schuhe vergrößern
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,0,0,0,0,511,0,0,0,2,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/die-bequemsten-schuhe-des-jahres-2023-top-5,"Die bequemsten Schuhe des Jahres 2023 TOP 5
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,0,0,0,437,601,0,0,0,9,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/nike-react-hyperset-volleyball-leistungsuberprufung,"Nike React Hyperset: Volleyball-Leistungsüberprüfung
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,nike,PARCIAL,5,0,0,0,0,684,1,0,0,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/spikesohle-was-ist-das-und-welche-vorteile-hat-sie,"Spikesohle: Was ist das und welche Vorteile hat sie?
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,0,0,0,88,512,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneaker-sohlen/welche-vorteile-haben-sneakers-mit-einer-eva-sohle,"Welche Vorteile haben Sneakers mit einer EVA-Sohle?
+ – SPORTLAND MX",de,sneaker-sohlen,tecnologia,,GENERICO,110,0,0,0,64,272,0,0,1,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/best-womens-shoes-for-crossfit-and-why-2023,"➡️ Best Women's Shoes For Crossfit And Why [2023]
+ – SPORTLAND MX",en,sneakers-blog,deporte,,GENERICO,110,0,0,0,171,680,0,0,0,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe (destino sugerido automáticamente: revisar),/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada,/blogs/sneakers-blog/der-qr-code-ihres-converse-fuhrt-zu-vmdmx-muss-das-wissen,"▷ DER QR-CODE IHRES CONVERSE FÜHRT ZU VMDMX? MUSS DAS WISSEN
+ – SPORTLAND MX",de,sneakers-blog,autenticidad,converse,PARCIAL,5,0,0,0,47,205,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/most-comfortable-sneakers-of-2023-top-5,"Most Comfortable Sneakers of 2025 TOP 5
+ – SPORTLAND MX",en,sneakers-blog,listado,,GENERICO,110,0,0,0,0,652,0,0,0,7,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/s,"➜ Anti-slip soles: what are they and how to identify them?
+ – SPORTLAND MX",en,sneakers-blog,general,,GENERICO,110,0,0,0,570,661,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/shoe-sole-for-flat-feet-which-one-is-the-best-and-why,"Shoe Sole For Flat Feet: Which One is the Best and Why? [2023]
+ – SPORTLAND MX",en,sneakers-blog,salud,,GENERICO,110,0,0,0,216,1085,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/sneakers-blog/stretching-sneakers,"Stretching Sneakers
+ – SPORTLAND MX",en,sneakers-blog,general,,GENERICO,110,0,0,0,630,495,0,0,0,2,True
+RETIRAR_410,Fuera del tema de la tienda,,/blogs/squid-game-causa-aumento-de-7-800-en-ventas-de-vans-slip-on-blancos/squid-game-causa-aumento-de-7-800-en-ventas-de,"""Squid game"" causa aumento de 7,800% en ventas de
+ – SPORTLAND MX",es,squid-game-causa-aumento-de-7-800-en-ventas-de-vans-slip-on-blancos,general,vans,PARCIAL,3,0,0,0,0,371,0,0,0,1,True
+PODAR,Sin clics ni impresiones relevantes: 301 al hub del tema o 410,,/blogs/tenis-vans/mejores-tenis-vans-top-5-2022,"➡️ Mejores Tenis Vans TOP 5 | 2022 🏆
+ – SPORTLAND MX",es,tenis-vans,listado,vans,PARCIAL,3,0,0,0,65,884,0,0,0,11,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/volleyball/best-colorful-volleyball-shoes,"➜ Top 5 best Colorful Volleyball Shoes [2025]
+ – SPORTLAND MX",en,volleyball,deporte,,GENERICO,110,0,0,0,312,1112,0,0,0,0,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/volleyball/best-nike-volleyball-shoes,"→ Best Nike Volleyball Shoes For 2024 And Why
+ – SPORTLAND MX",en,volleyball,deporte,nike,PARCIAL,5,0,0,0,469,1546,9,0,0,1,True
+EXTRANJERO_CONSOLIDAR,Idioma distinto al mercado; 301 al equivalente en español o 410 si no existe,,/blogs/volleyball/the-best-asics-volleyball-shoes-in-2023,"→ The 3 Best Asics Volleyball Shoes in 2024
+ – SPORTLAND MX",en,volleyball,deporte,asics,SIN_INVENTARIO,0,0,0,0,617,540,1,0,0,5,True

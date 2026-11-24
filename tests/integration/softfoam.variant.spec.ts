@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 
 test('SF-005: la variante 22 coincide con Shopify', async ({
   page,
-  request
+  request,
 }) => {
   // ARRANGE: producto y variante investigados
   const productPath =
@@ -12,68 +12,73 @@ test('SF-005: la variante 22 coincide con Shopify', async ({
   const selectedSize = '22';
   const variantId = '46698382426335';
 
-  const productUrl = new URL(
-    productPath,
-    'https://sportlandmx.com'
-  );
+  const baseUrl = 'https://sportlandmx.com';
+
+  const productUrl = new URL(productPath, baseUrl);
 
   productUrl.searchParams.set('variant', variantId);
   productUrl.searchParams.set('size', selectedSize);
 
-  
-const endpoint = `https://sportlandmx.com${productPath}.js`;
+  // ACT 1: consultar los datos públicos del producto
+  const endpoint = `${baseUrl}${productPath}.js`;
 
-let response = await request.get(endpoint);
+  const response = await request.get(endpoint, {
+    timeout: 10_000,
+    failOnStatusCode: false,
+  });
 
-if (response.status() === 429) {
-  const retryAfter = Number(
-    response.headers()['retry-after'] ?? '60'
-  );
+  // BLOCKER: límite de solicitudes de Shopify
+  if (response.status() === 429) {
+    const retryAfter =
+      response.headers()['retry-after'] ?? 'no indicado';
 
-  if (!Number.isFinite(retryAfter) ||
-      retryAfter < 0 ||
-      retryAfter > 120) {
-    throw new Error('Retry-After inválido o excesivo');
+    throw new Error(
+      `BLOCKED — RATE_LIMITED: Shopify respondió HTTP 429. ` +
+      `Retry-After: ${retryAfter}. ` +
+      `No fue posible verificar la variante ${variantId}.`
+    );
   }
 
-  console.log(`Rate limited. Retry after ${retryAfter}s`);
-
-  await new Promise(resolve =>
-    setTimeout(resolve, retryAfter * 1000)
-  );
-
-  response = await request.get(endpoint);
-}
-
-expect(
-  response.status(),
-  'Shopify debe responder HTTP 200'
-).toBe(200);
+  // ASSERT 1: respuesta HTTP correcta
+  expect(
+    response.status(),
+    `El endpoint respondió HTTP ${response.status()}`
+  ).toBe(200);
 
   const product = await response.json();
 
-  // ASSERT: identificar la variante seleccionada
+  // ASSERT 2: encontrar la variante
   const variant = product.variants.find(
     (v: { id: number }) =>
       String(v.id) === variantId
   );
 
-  expect(variant).toBeDefined();
+  if (!variant) {
+    throw new Error(
+      `La variante ${variantId} no existe en el producto`
+    );
+  }
+
+  // ASSERT 3: validar talla y disponibilidad
   expect(variant.title).toBe(selectedSize);
   expect(variant.available).toBe(true);
 
   // ACT 2: abrir la ficha de producto
-  await page.goto(productUrl.toString());
-
-  // ASSERT: la URL conserva la variante
-  await expect(page).toHaveURL(
-    /variant=46698382426335/
+  const pageResponse = await page.goto(
+    productUrl.toString()
   );
 
-  // ASSERT: el botón de compra está habilitado
+  expect(pageResponse?.status()).toBe(200);
+
+  // ASSERT 4: conservar la variante seleccionada
+  await expect(page).toHaveURL(
+    new RegExp(`variant=${variantId}`)
+  );
+
+  // ASSERT 5: permitir iniciar la compra
   await expect(
     page.getByRole('button', {
-      name: /Agregar al carrito/i
+      name: /Agregar al carrito/i,
     })
   ).toBeEnabled();
 });

@@ -14,4 +14,11 @@ export const linkingRules = [
     target: routes.softfoamCollection,
     type: 'commercial',
   },
+  {
+    id: 'LINK-003',
+    source: routes.technologiesHub,
+    target: routes.softfoamArticle,
+    type: 'editorial',
+  },
 ] as const;
+
