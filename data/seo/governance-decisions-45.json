@@ -1,0 +1,2145 @@
+{
+ "schema": "sportland-seo-governance-v1",
+ "snapshot_date": "2026-11-20",
+ "source_notes": "GSC DE/US/ES Web 19-ago–18-nov-2026 (exportaciones históricas), Shopify Admin 20-nov-2026. Los clicks de páginas y fragmentos no se suman. Mercados activos. AF1 versiones publicadas; traducciones DE/EN marcadas outdated=true.",
+ "release_policy": "NO_GO mientras queden decisiones pendientes o cambios sin QA post-cambio.",
+ "records": [
+  {
+   "id": "SEO-001",
+   "priority": "P0",
+   "cluster": "SoftFoam PUMA",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "path": "/de-us/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "prefix": "de-us",
+   "base_path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "baseline_clicks": 22,
+   "baseline_impressions": 449,
+   "metrics": {
+    "DE": {
+     "clicks": 22,
+     "impressions": 448,
+     "position": 4.65
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 29.0
+    }
+   },
+   "evidence_clicks_three_countries": 22,
+   "baseline_http": 301,
+   "baseline_result": "REDIRECT_OK",
+   "baseline_location": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "decision": "REDIRECT_ES_APLICADO",
+   "approved_destination": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "El reporte anterior registró 301 al español equivalente.",
+   "next_qa": "Revalidar 301 directo, destino 200, enlaces, canonical.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-002",
+   "priority": "P0",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "path": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "prefix": "",
+   "base_path": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "baseline_clicks": 17,
+   "baseline_impressions": 928,
+   "metrics": {
+    "DE": {
+     "clicks": 17,
+     "impressions": 927,
+     "position": 5.19
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 3.0
+    }
+   },
+   "evidence_clicks_three_countries": 17,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "PROTEGER_DE",
+   "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "approval": "PROTEGIDA",
+   "evidence": "17 clics DE y 927 impresiones (exportación GSC); publicada en Shopify tras restauración.",
+   "next_qa": "Validar 200, lang=de, canonical propio, hreflang y rastreo.",
+   "note_prev": "No redirigir automáticamente: comparar con equivalente español",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE_PUBLICO",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-003",
+   "priority": "P0",
+   "cluster": "Cloudfoam Adidas",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "path": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "prefix": "",
+   "base_path": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "baseline_clicks": 16,
+   "baseline_impressions": 1014,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 10,
+     "position": 12.2
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 203,
+     "position": 12.22
+    },
+    "ES": {
+     "clicks": 15,
+     "impressions": 801,
+     "position": 5.0
+    }
+   },
+   "evidence_clicks_three_countries": 16,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-004",
+   "priority": "P0",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/de-de/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "path": "/de-de/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "prefix": "de-de",
+   "base_path": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "baseline_clicks": 13,
+   "baseline_impressions": 525,
+   "metrics": {
+    "DE": {
+     "clicks": 13,
+     "impressions": 525,
+     "position": 8.18
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 13,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REDIRECT_A_DE_APLICADO",
+   "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
+   "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
+   "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-005",
+   "priority": "P0",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/de-us/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "path": "/de-us/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "prefix": "de-us",
+   "base_path": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "baseline_clicks": 9,
+   "baseline_impressions": 1038,
+   "metrics": {
+    "DE": {
+     "clicks": 9,
+     "impressions": 1037,
+     "position": 8.61
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 11.0
+    }
+   },
+   "evidence_clicks_three_countries": 9,
+   "baseline_http": 301,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "/de-de/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "/de-de/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "decision": "REDIRECT_A_DE_APLICADO",
+   "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
+   "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
+   "note_prev": "Variante regional (HTTP 301) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-006",
+   "priority": "P0",
+   "cluster": "Air Force 1 originales",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "path": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "prefix": "",
+   "base_path": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "baseline_clicks": 7,
+   "baseline_impressions": 811,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 7,
+     "position": 10.86
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 201,
+     "position": 8.57
+    },
+    "ES": {
+     "clicks": 5,
+     "impressions": 603,
+     "position": 6.57
+    }
+   },
+   "evidence_clicks_three_countries": 7,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "approval": "PROTEGIDA",
+   "evidence": "Artículo ES extenso publicado: protegido. Revalidar 200, canonical, indexabilidad y conversión.",
+   "next_qa": "Comprobar 200, canonical español, indexabilidad, enlaces y resultado comercial.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "EVALUAR_CONVERSIONES",
+   "qa_evidence": "QA_HTTP_PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00",
+   "review_batch": "AF1_L3_2026-11-20",
+   "release_gate": "NO_CAMBIO",
+   "source_system": "Shopify Admin article/translation/URL redirect + exportación GSC por país"
+  },
+  {
+   "id": "SEO-007",
+   "priority": "P0",
+   "cluster": "Air Force 1 originales",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-de/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "path": "/de-de/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "prefix": "de-de",
+   "base_path": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "baseline_clicks": 7,
+   "baseline_impressions": 351,
+   "metrics": {
+    "DE": {
+     "clicks": 7,
+     "impressions": 351,
+     "position": 6.0
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 7,
+   "baseline_http": 200,
+   "baseline_result": "LOCALE_ACTIVE",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "old_destination": "",
+   "decision": "PROTEGER_DE_TRADUCCION",
+   "approved_destination": "/de-de/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "7 clics/351 impresiones DE. Shopify: DE body_html y meta marcados outdated=true. No retirar hasta resolver calidad/canonical y duplicación alemana.",
+   "next_qa": "Mejorar traducción alemana; inspeccionar canonical/hreflang; proteger hasta decisión de duplicidad DE.",
+   "note_prev": "Versión regional aún publicada; comprobar 301 después de retirar mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA_DESACTUALIZADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "QA_HTTP_PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null,
+   "review_batch": "AF1_L3_2026-11-20",
+   "release_gate": "NO_GO_RETIRO",
+   "source_system": "Shopify Admin article/translation/URL redirect + exportación GSC por país"
+  },
+  {
+   "id": "SEO-008",
+   "priority": "P0",
+   "cluster": "Cloudfoam Adidas",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "path": "/de-us/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "prefix": "de-us",
+   "base_path": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "baseline_clicks": 7,
+   "baseline_impressions": 151,
+   "metrics": {
+    "DE": {
+     "clicks": 7,
+     "impressions": 149,
+     "position": 6.89
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 33.0
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 7,
+   "baseline_http": 301,
+   "baseline_result": "REDIRECT_OK",
+   "baseline_location": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "old_proposed_target": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "old_destination": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "decision": "REDIRECT_ES_APLICADO",
+   "approved_destination": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "El reporte anterior registró 301 al español equivalente.",
+   "next_qa": "Revalidar 301 directo, destino 200, enlaces, canonical.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-009",
+   "priority": "P0",
+   "cluster": "Suela vulcanizada",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "path": "/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "prefix": "",
+   "base_path": "/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "baseline_clicks": 6,
+   "baseline_impressions": 160,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 1.0
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": 6,
+     "impressions": 159,
+     "position": 29.46
+    }
+   },
+   "evidence_clicks_three_countries": 6,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-010",
+   "priority": "P0",
+   "cluster": "SoftFoam PUMA",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "prefix": "",
+   "base_path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "baseline_clicks": 5,
+   "baseline_impressions": 494,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 4.5
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 13,
+     "position": 5.38
+    },
+    "ES": {
+     "clicks": 5,
+     "impressions": 479,
+     "position": 7.65
+    }
+   },
+   "evidence_clicks_three_countries": 5,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-011",
+   "priority": "P0",
+   "cluster": "Cloudfoam Adidas",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-de/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "path": "/de-de/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "prefix": "de-de",
+   "base_path": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "baseline_clicks": 5,
+   "baseline_impressions": 330,
+   "metrics": {
+    "DE": {
+     "clicks": 5,
+     "impressions": 300,
+     "position": 10.16
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 28,
+     "position": 17.89
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 16.0
+    }
+   },
+   "evidence_clicks_three_countries": 5,
+   "baseline_http": 200,
+   "baseline_result": "LOCALE_ACTIVE",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "old_destination": "",
+   "decision": "REVISAR_VARIANTE_ES",
+   "approved_destination": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+   "approval": "PENDIENTE",
+   "evidence": "URL regional activa, requiere revisar idioma real y canonical.",
+   "next_qa": "Probar htmlLang, canonical, hreflang y posible retiro de mercado.",
+   "note_prev": "Versión regional aún publicada; comprobar 301 después de retirar mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-012",
+   "priority": "P1",
+   "cluster": "SoftFoam PUMA",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-de/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "path": "/de-de/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "prefix": "de-de",
+   "base_path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "baseline_clicks": 4,
+   "baseline_impressions": 198,
+   "metrics": {
+    "DE": {
+     "clicks": 4,
+     "impressions": 198,
+     "position": 4.74
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 4,
+   "baseline_http": 200,
+   "baseline_result": "LOCALE_ACTIVE",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REVISAR_VARIANTE_ES",
+   "approved_destination": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "approval": "PENDIENTE",
+   "evidence": "URL regional activa, requiere revisar idioma real y canonical.",
+   "next_qa": "Probar htmlLang, canonical, hreflang y posible retiro de mercado.",
+   "note_prev": "Versión regional aún publicada; comprobar 301 después de retirar mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-013",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/en-us/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "path": "/en-us/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "prefix": "en-us",
+   "base_path": "/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "baseline_clicks": 3,
+   "baseline_impressions": 231,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 10,
+     "position": 7.1
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 220,
+     "position": 9.35
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 2.0
+    }
+   },
+   "evidence_clicks_three_countries": 3,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REVISAR_TRADUCCION_EN",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Variante regional de contenido inglés despublicado; no forzar destino español.",
+   "next_qa": "Decidir si recuperar artículo inglés principal o mantener redirección existente.",
+   "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-014",
+   "priority": "P1",
+   "cluster": "Jordan 4 originales",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+   "path": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+   "prefix": "",
+   "base_path": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+   "baseline_clicks": 3,
+   "baseline_impressions": 181,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 2,
+     "position": 7.5
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 75,
+     "position": 5.39
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 104,
+     "position": 9.41
+    }
+   },
+   "evidence_clicks_three_countries": 3,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-015",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/en-us/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "path": "/en-us/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "prefix": "en-us",
+   "base_path": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "baseline_clicks": 3,
+   "baseline_impressions": 71,
+   "metrics": {
+    "DE": {
+     "clicks": 3,
+     "impressions": 71,
+     "position": 5.01
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 3,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REDIRECT_A_DE_APLICADO",
+   "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
+   "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
+   "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-016",
+   "priority": "P1",
+   "cluster": "QR Converse",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "path": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "prefix": "",
+   "base_path": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "baseline_clicks": 3,
+   "baseline_impressions": 34,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 17,
+     "position": 19.88
+    },
+    "ES": {
+     "clicks": 3,
+     "impressions": 17,
+     "position": 8.35
+    }
+   },
+   "evidence_clicks_three_countries": 3,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-017",
+   "priority": "P1",
+   "cluster": "SoftFoam PUMA",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "path": "/en-us/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "prefix": "en-us",
+   "base_path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "baseline_clicks": 2,
+   "baseline_impressions": 252,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 9,
+     "position": 11.22
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 233,
+     "position": 10.76
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 10,
+     "position": 2.7
+    }
+   },
+   "evidence_clicks_three_countries": 2,
+   "baseline_http": 200,
+   "baseline_result": "LOCALE_ACTIVE",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REVISAR_VARIANTE_ES",
+   "approved_destination": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "approval": "PENDIENTE",
+   "evidence": "URL regional activa, requiere revisar idioma real y canonical.",
+   "next_qa": "Probar htmlLang, canonical, hreflang y posible retiro de mercado.",
+   "note_prev": "Versión regional aún publicada; comprobar 301 después de retirar mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-018",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "path": "/de-us/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "prefix": "de-us",
+   "base_path": "/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "baseline_clicks": 2,
+   "baseline_impressions": 205,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 5,
+     "position": 28.6
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 195,
+     "position": 5.13
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 5,
+     "position": 3.8
+    }
+   },
+   "evidence_clicks_three_countries": 2,
+   "baseline_http": 301,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "/de-de/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "old_proposed_target": "",
+   "old_destination": "/de-de/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-019",
+   "priority": "P1",
+   "cluster": "Etiqueta Converse",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "path": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "prefix": "",
+   "base_path": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "baseline_clicks": 2,
+   "baseline_impressions": 149,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 13,
+     "position": 6.85
+    },
+    "ES": {
+     "clicks": 2,
+     "impressions": 136,
+     "position": 6.91
+    }
+   },
+   "evidence_clicks_three_countries": 2,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-020",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Página sin prefijo",
+   "source": "https://sportlandmx.com/blogs/noticias/tenis-para-parkour-top-5",
+   "path": "/blogs/noticias/tenis-para-parkour-top-5",
+   "prefix": "",
+   "base_path": "/blogs/noticias/tenis-para-parkour-top-5",
+   "baseline_clicks": 2,
+   "baseline_impressions": 46,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 14.0
+    },
+    "ES": {
+     "clicks": 2,
+     "impressions": 45,
+     "position": 14.09
+    }
+   },
+   "evidence_clicks_three_countries": 2,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "REVISAR_CONTENIDO",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Artículo sin prefijo; no se asume que sea duplicado.",
+   "next_qa": "Revisar calidad, intención, tráfico de 90 días y conversiones.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-021",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/de-de/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "path": "/de-de/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "prefix": "de-de",
+   "base_path": "/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "baseline_clicks": 2,
+   "baseline_impressions": 43,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 24,
+     "position": 16.17
+    },
+    "US": {
+     "clicks": 2,
+     "impressions": 17,
+     "position": 5.65
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 2.5
+    }
+   },
+   "evidence_clicks_three_countries": 2,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REVISAR_TRADUCCION_EN",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Variante regional de contenido inglés despublicado; no forzar destino español.",
+   "next_qa": "Decidir si recuperar artículo inglés principal o mantener redirección existente.",
+   "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-022",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Página sin prefijo",
+   "source": "https://sportlandmx.com/blogs/cricket/descubre-como-se-juega-el-cricket-todo-lo-que-necesitas-saber",
+   "path": "/blogs/cricket/descubre-como-se-juega-el-cricket-todo-lo-que-necesitas-saber",
+   "prefix": "",
+   "base_path": "/blogs/cricket/descubre-como-se-juega-el-cricket-todo-lo-que-necesitas-saber",
+   "baseline_clicks": 1,
+   "baseline_impressions": 657,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 9.0
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 25,
+     "position": 39.0
+    },
+    "ES": {
+     "clicks": 1,
+     "impressions": 631,
+     "position": 46.23
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "REVISAR_CONTENIDO",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Artículo sin prefijo; no se asume que sea duplicado.",
+   "next_qa": "Revisar calidad, intención, tráfico de 90 días y conversiones.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-023",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023",
+   "path": "/de-us/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023",
+   "prefix": "de-us",
+   "base_path": "/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023",
+   "baseline_clicks": 1,
+   "baseline_impressions": 340,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 337,
+     "position": 24.8
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 30.0
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 28.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "/de-de/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023",
+   "old_proposed_target": "",
+   "old_destination": "/de-de/blogs/sneaker-sohlen/schuhe-fur-lange-zeit-im-stehen-top-5-2023",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-024",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/sneakers-blog/what-are-the-materials-of-nike-sneakers",
+   "path": "/en-us/blogs/sneakers-blog/what-are-the-materials-of-nike-sneakers",
+   "prefix": "en-us",
+   "base_path": "/blogs/sneakers-blog/what-are-the-materials-of-nike-sneakers",
+   "baseline_clicks": 1,
+   "baseline_impressions": 334,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 144,
+     "position": 40.19
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 188,
+     "position": 29.9
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 10.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-025",
+   "priority": "P1",
+   "cluster": "Air Force 1 originales",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "path": "/de-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "prefix": "de-us",
+   "base_path": "/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "baseline_clicks": 1,
+   "baseline_impressions": 253,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 252,
+     "position": 8.57
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 5.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "/de-de/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "old_proposed_target": "",
+   "old_destination": "/de-de/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "decision": "REDIRECT_CHAIN_REVIEW",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "1 clic/252 impresiones DE. Redirect Shopify /de-us/how-to -> /de-de/how-to; /de-de/how-to parece reescribir a /de-de/como. Inspeccionar saltos; evitar dependencia del mercado.",
+   "next_qa": "Auditar cadena real en Playwright. Sin nueva redirección hasta conocer el destino DE canónico.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "QA_CADENA_PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null,
+   "review_batch": "AF1_L3_2026-11-20",
+   "release_gate": "NO_GO_RETIRO",
+   "source_system": "Shopify Admin article/translation/URL redirect + exportación GSC por país"
+  },
+  {
+   "id": "SEO-026",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/volleyball/best-volleyball-shoes-of-2023-top-5",
+   "path": "/en-us/blogs/volleyball/best-volleyball-shoes-of-2023-top-5",
+   "prefix": "en-us",
+   "base_path": "/blogs/volleyball/best-volleyball-shoes-of-2023-top-5",
+   "baseline_clicks": 1,
+   "baseline_impressions": 229,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 4,
+     "position": 18.0
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 225,
+     "position": 26.63
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-027",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Página sin prefijo",
+   "source": "https://sportlandmx.com/blogs/noticias/what-kind-of-adidas-sneakers-are-there",
+   "path": "/blogs/noticias/what-kind-of-adidas-sneakers-are-there",
+   "prefix": "",
+   "base_path": "/blogs/noticias/what-kind-of-adidas-sneakers-are-there",
+   "baseline_clicks": 1,
+   "baseline_impressions": 160,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 10,
+     "position": 24.9
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 139,
+     "position": 36.57
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 11,
+     "position": 23.09
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "PROTEGER_HASTA_REVISION",
+   "approved_destination": "",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "No redirigir: faltan revisión editorial y valoración del tráfico.",
+   "next_qa": "Clasificar idioma, comparar contenido y monetización; luego proponer decisión.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-028",
+   "priority": "P1",
+   "cluster": "Outfits tenis negros",
+   "legacy_type": "Original español",
+   "source": "https://sportlandmx.com/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre",
+   "path": "/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre",
+   "prefix": "",
+   "base_path": "/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre",
+   "baseline_clicks": 1,
+   "baseline_impressions": 155,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 2,
+     "position": 4.5
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 117,
+     "position": 5.38
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 36,
+     "position": 7.19
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "PROTECTED_ORIGINAL",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre",
+   "old_destination": "",
+   "decision": "PROTEGER_ES",
+   "approved_destination": "/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre",
+   "approval": "PROTEGIDA",
+   "evidence": "Guía española principal; conservar URL y enlaces existentes.",
+   "next_qa": "Smoke 200, canonical propio, links y sitemap.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "NO_APLICA",
+   "commercial_review": "NO_APLICA",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-029",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/sneakers-blog/the-best-basketball-shoes-top-5-2023",
+   "path": "/en-us/blogs/sneakers-blog/the-best-basketball-shoes-top-5-2023",
+   "prefix": "en-us",
+   "base_path": "/blogs/sneakers-blog/the-best-basketball-shoes-top-5-2023",
+   "baseline_clicks": 1,
+   "baseline_impressions": 141,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 4,
+     "position": 26.0
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 135,
+     "position": 18.16
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 25.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-030",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/nutritional-supplements/xtend-original-bcaa",
+   "path": "/en-us/blogs/nutritional-supplements/xtend-original-bcaa",
+   "prefix": "en-us",
+   "base_path": "/blogs/nutritional-supplements/xtend-original-bcaa",
+   "baseline_clicks": 1,
+   "baseline_impressions": 111,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 30.0
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 110,
+     "position": 40.89
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-031",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Blog mixto o extranjero",
+   "source": "https://sportlandmx.com/blogs/reviews/asics-gel-rocket-reviews-opinions-and-features",
+   "path": "/blogs/reviews/asics-gel-rocket-reviews-opinions-and-features",
+   "prefix": "",
+   "base_path": "/blogs/reviews/asics-gel-rocket-reviews-opinions-and-features",
+   "baseline_clicks": 1,
+   "baseline_impressions": 99,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 9.0
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 94,
+     "position": 16.04
+    },
+    "ES": {
+     "clicks": 1,
+     "impressions": 4,
+     "position": 8.25
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "PROTEGER_HASTA_REVISION",
+   "approved_destination": "",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "No redirigir: faltan revisión editorial y valoración del tráfico.",
+   "next_qa": "Clasificar idioma, comparar contenido y monetización; luego proponer decisión.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-032",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/nutritional-supplements/kos-organic-coconut-milk-powder-review-2023",
+   "path": "/en-us/blogs/nutritional-supplements/kos-organic-coconut-milk-powder-review-2023",
+   "prefix": "en-us",
+   "base_path": "/blogs/nutritional-supplements/kos-organic-coconut-milk-powder-review-2023",
+   "baseline_clicks": 1,
+   "baseline_impressions": 93,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 93,
+     "position": 12.04
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-033",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/sneakers-blog/spike-sole-what-is-it-and-what-are-its-benefits",
+   "path": "/en-us/blogs/sneakers-blog/spike-sole-what-is-it-and-what-are-its-benefits",
+   "prefix": "en-us",
+   "base_path": "/blogs/sneakers-blog/spike-sole-what-is-it-and-what-are-its-benefits",
+   "baseline_clicks": 1,
+   "baseline_impressions": 83,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 82,
+     "position": 10.68
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 1.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-034",
+   "priority": "P1",
+   "cluster": "Air Force 1 originales",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/en-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "path": "/en-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "prefix": "en-us",
+   "base_path": "/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "baseline_clicks": 1,
+   "baseline_impressions": 80,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 2.0
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 76,
+     "position": 21.51
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 3,
+     "position": 2.67
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "PROTEGER_EN_TRADUCCION",
+   "approved_destination": "/en-us/blogs/noticias/how-to-know-if-my-af1-are-legit",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "1 clic/76 impresiones US. Shopify: EN body_html y meta marcados outdated=true. No despublicar sin revisar intención/comercial.",
+   "next_qa": "Actualizar traducción EN, probar canonical/hreflang y medir utilidad comercial.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA_DESACTUALIZADA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "QA_HTTP_PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null,
+   "review_batch": "AF1_L3_2026-11-20",
+   "release_gate": "NO_GO_RETIRO",
+   "source_system": "Shopify Admin article/translation/URL redirect + exportación GSC por país"
+  },
+  {
+   "id": "SEO-035",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Página sin prefijo",
+   "source": "https://sportlandmx.com/blogs/noticias/tenis-que-cambian-de-color-con-el-sol-top-5",
+   "path": "/blogs/noticias/tenis-que-cambian-de-color-con-el-sol-top-5",
+   "prefix": "",
+   "base_path": "/blogs/noticias/tenis-que-cambian-de-color-con-el-sol-top-5",
+   "baseline_clicks": 1,
+   "baseline_impressions": 63,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 39,
+     "position": 10.54
+    },
+    "ES": {
+     "clicks": 1,
+     "impressions": 24,
+     "position": 7.62
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "REVISAR_CONTENIDO",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Artículo sin prefijo; no se asume que sea duplicado.",
+   "next_qa": "Revisar calidad, intención, tráfico de 90 días y conversiones.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-036",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "path": "/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "prefix": "",
+   "base_path": "/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "baseline_clicks": 1,
+   "baseline_impressions": 57,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 16.0
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 55,
+     "position": 10.98
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 11.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "",
+   "decision": "REVISAR_RESTAURACION_EN",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Actualmente despublicada en Shopify; tráfico histórico limitado, valor comercial sin comprobar.",
+   "next_qa": "Analizar consultas por país, valor de contenido y capacidad de monetizar antes de decidir.",
+   "note_prev": "No redirigir automáticamente: comparar con equivalente español",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-037",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Blog mixto o extranjero",
+   "source": "https://sportlandmx.com/blogs/sneakers-blog/what-is-a-vulcanized-sole-and-what-are-its-benefits",
+   "path": "/blogs/sneakers-blog/what-is-a-vulcanized-sole-and-what-are-its-benefits",
+   "prefix": "",
+   "base_path": "/blogs/sneakers-blog/what-is-a-vulcanized-sole-and-what-are-its-benefits",
+   "baseline_clicks": 1,
+   "baseline_impressions": 41,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 6,
+     "position": 7.5
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 26,
+     "position": 21.58
+    },
+    "ES": {
+     "clicks": 1,
+     "impressions": 9,
+     "position": 14.0
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "PROTEGER_HASTA_REVISION",
+   "approved_destination": "",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "No redirigir: faltan revisión editorial y valoración del tráfico.",
+   "next_qa": "Clasificar idioma, comparar contenido y monetización; luego proponer decisión.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-038",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Página sin prefijo",
+   "source": "https://sportlandmx.com/blogs/noticias/que-es-la-suela-clay-y-para-que-sirve-descubre-sus-beneficios",
+   "path": "/blogs/noticias/que-es-la-suela-clay-y-para-que-sirve-descubre-sus-beneficios",
+   "prefix": "",
+   "base_path": "/blogs/noticias/que-es-la-suela-clay-y-para-que-sirve-descubre-sus-beneficios",
+   "baseline_clicks": 1,
+   "baseline_impressions": 39,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 49.0
+    },
+    "ES": {
+     "clicks": 1,
+     "impressions": 38,
+     "position": 8.45
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "REVISAR_CONTENIDO",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Artículo sin prefijo; no se asume que sea duplicado.",
+   "next_qa": "Revisar calidad, intención, tráfico de 90 días y conversiones.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-039",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/de-us/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "path": "/de-us/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "prefix": "de-us",
+   "base_path": "/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "baseline_clicks": 1,
+   "baseline_impressions": 31,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 31,
+     "position": 12.29
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "/de-de/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+   "old_destination": "/de-de/blogs/noticias/what-are-puma-soft-foam-insoles-and-what-are-the-benefits",
+   "decision": "REVISAR_TRADUCCION_EN",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "Variante regional de contenido inglés despublicado; no forzar destino español.",
+   "next_qa": "Decidir si recuperar artículo inglés principal o mantener redirección existente.",
+   "note_prev": "Variante regional (HTTP 301) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-040",
+   "priority": "P1",
+   "cluster": "Etiqueta Converse",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "path": "/de-us/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "prefix": "de-us",
+   "base_path": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "baseline_clicks": 1,
+   "baseline_impressions": 31,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 31,
+     "position": 12.65
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "REDIRECT_OK",
+   "baseline_location": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "old_proposed_target": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "old_destination": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "decision": "REDIRECT_ES_APLICADO",
+   "approved_destination": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+   "approval": "APLICADA_PENDIENTE_QA",
+   "evidence": "El reporte anterior registró 301 al español equivalente.",
+   "next_qa": "Revalidar 301 directo, destino 200, enlaces, canonical.",
+   "note_prev": "",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+  },
+  {
+   "id": "SEO-041",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum",
+   "path": "/de-us/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum",
+   "prefix": "de-us",
+   "base_path": "/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum",
+   "baseline_clicks": 1,
+   "baseline_impressions": 22,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 21,
+     "position": 11.0
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 1,
+     "position": 2.0
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "/de-de/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum",
+   "old_proposed_target": "",
+   "old_destination": "/de-de/blogs/sneaker-sohlen/die-5-besten-schuhe-fur-beintraining-und-warum",
+   "decision": "MAPEO_PENDIENTE",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "No hay URL de destino aprobada. Conservar evidencias de clics históricos.",
+   "next_qa": "Validar equivalencia por idioma, intención de búsqueda y negocio.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-042",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/blogs/sneaker-sohlen/was-ist-eine-vulkanisierte-sohle-und-welche-vorteile-hat-sie",
+   "path": "/de-us/blogs/sneaker-sohlen/was-ist-eine-vulkanisierte-sohle-und-welche-vorteile-hat-sie",
+   "prefix": "de-us",
+   "base_path": "/blogs/sneaker-sohlen/was-ist-eine-vulkanisierte-sohle-und-welche-vorteile-hat-sie",
+   "baseline_clicks": 1,
+   "baseline_impressions": 22,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 22,
+     "position": 13.86
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 301,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "/de-de/blogs/sneaker-sohlen/was-ist-eine-vulkanisierte-sohle-und-welche-vorteile-hat-sie",
+   "old_proposed_target": "",
+   "old_destination": "/de-de/blogs/sneaker-sohlen/was-ist-eine-vulkanisierte-sohle-und-welche-vorteile-hat-sie",
+   "decision": "EXCEPCION_REVISAR_DE",
+   "approved_destination": "/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene",
+   "approval": "PENDIENTE",
+   "evidence": "Contenido alemán despublicado y redirigido a español antes de adoptar política; revisar riesgo lingüístico.",
+   "next_qa": "Comparar consultas DE, equivalencia y conveniencia de republicar alemán.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-043",
+   "priority": "P1",
+   "cluster": "Unificar contenido sin perder información",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+   "path": "/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+   "prefix": "",
+   "base_path": "/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+   "baseline_clicks": 1,
+   "baseline_impressions": 17,
+   "metrics": {
+    "DE": {
+     "clicks": 1,
+     "impressions": 17,
+     "position": 21.65
+    },
+    "US": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+   "old_destination": "",
+   "decision": "PROTEGER_DE_ARTICULO_INDEPENDIENTE",
+   "approved_destination": "/blogs/noticias/woher-weiss-ich-ob-meine-air-force-1-sneaker-original-sind",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "Artículo DE independiente publicado, 1 clic/17 impresiones DE. Lenguaje anticuado y generalizaciones en autenticidad. No retirarlo sin consolidación DE→DE aprobada.",
+   "next_qa": "Evaluar contenido alemán antiguo, corregir reglas absolutas y decidir coexistencia o consolidación DE→DE.",
+   "note_prev": "No redirigir automáticamente: comparar con equivalente español",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "REVISADA_REQUIERE_MEJORA",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "QA_HTTP_PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null,
+   "review_batch": "AF1_L3_2026-11-20",
+   "release_gate": "NO_GO_RETIRO",
+   "source_system": "Shopify Admin article/translation/URL redirect + exportación GSC por país"
+  },
+  {
+   "id": "SEO-044",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Blog mixto o extranjero",
+   "source": "https://sportlandmx.com/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "path": "/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "prefix": "",
+   "base_path": "/blogs/healt/autophagy-and-loose-skin-your-pathway-to-tighter-healthier-skin",
+   "baseline_clicks": 1,
+   "baseline_impressions": 15,
+   "metrics": {
+    "DE": {
+     "clicks": 0,
+     "impressions": 3,
+     "position": 15.67
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 12,
+     "position": 5.25
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 200,
+   "baseline_result": "CONTENT_REVIEW",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "PROTEGER_HASTA_REVISION",
+   "approved_destination": "",
+   "approval": "PROTECCION_TEMPORAL",
+   "evidence": "No redirigir: faltan revisión editorial y valoración del tráfico.",
+   "next_qa": "Clasificar idioma, comparar contenido y monetización; luego proponer decisión.",
+   "note_prev": "Revisar intención de búsqueda y destino; no redirigir automáticamente",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "REVALIDAR",
+   "approved_by": null,
+   "approval_timestamp": null
+  },
+  {
+   "id": "SEO-045",
+   "priority": "P1",
+   "cluster": "Sin cluster",
+   "legacy_type": "Prefijo regional",
+   "source": "https://sportlandmx.com/de-us/products/tenis-puma-persist-xt-breathe",
+   "path": "/de-us/products/tenis-puma-persist-xt-breathe",
+   "prefix": "de-us",
+   "base_path": "/products/tenis-puma-persist-xt-breathe",
+   "baseline_clicks": 1,
+   "baseline_impressions": 1,
+   "metrics": {
+    "DE": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    },
+    "US": {
+     "clicks": 1,
+     "impressions": 1,
+     "position": 4.0
+    },
+    "ES": {
+     "clicks": null,
+     "impressions": null,
+     "position": null
+    }
+   },
+   "evidence_clicks_three_countries": 1,
+   "baseline_http": 429,
+   "baseline_result": "MAPPING_REQUIRED",
+   "baseline_location": "",
+   "old_proposed_target": "",
+   "old_destination": "",
+   "decision": "REINTENTAR_429",
+   "approved_destination": "",
+   "approval": "PENDIENTE",
+   "evidence": "El 429 del reporte no equivale a 404 ni acredita que la URL haya desaparecido.",
+   "next_qa": "Repetir petición escalonada, validar producto e inventario.",
+   "note_prev": "Sin destino español válido y expresamente aprobado en la matriz",
+   "snapshot_date": "2026-11-20",
+   "editorial_review": "PENDIENTE",
+   "commercial_review": "PENDIENTE",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": null,
+   "approval_timestamp": null
+  }
+ ],
+ "air_force_review": {
+  "batch": "L3",
+  "reviewed_at": "2026-11-20",
+  "shopify_mutations": 0,
+  "final_decision": "NO_GO_RETIRO_Y_CONSOLIDACION",
+  "why": "Existe traducción DE con 7 clics DE y artículo DE independiente con 1 clic DE; traducciones DE/EN desactualizadas; ruta legacy con posible cadena. El usuario exige revisión y protección del tráfico."
+ }
+}

@@ -1,10 +1,10 @@
-
 import { type Page, type Locator } from '@playwright/test';
 
 export class ProductPage {
   readonly page: Page;
   readonly productHeading: Locator;
   readonly addToCartButton: Locator;
+  readonly sizePicker: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -15,6 +15,12 @@ export class ProductPage {
 
     this.addToCartButton = page.getByRole('button', {
       name: /Agregar al carrito/i
+    });
+
+    // Las tallas viven en un radiogroup llamado "Selecciona tu talla".
+    // Localizar por rol y nombre refleja lo que ve el usuario.
+    this.sizePicker = page.getByRole('radiogroup', {
+      name: 'Selecciona tu talla'
     });
   }
 
@@ -34,12 +40,32 @@ export class ProductPage {
     await this.page.goto(url.toString());
   }
 
+  // El botón de una talla concreta, solo dentro del selector.
+  // exact: true evita que "25" también encuentre "25.5".
+  sizeButton(size: string): Locator {
+    return this.sizePicker.getByRole('button', {
+      name: size,
+      exact: true
+    });
+  }
+
+  // Elegir talla como lo hace un usuario, con un clic.
+  async selectSize(size: string): Promise<void> {
+    await this.sizeButton(size).click();
+  }
+
+  // La primera talla que el usuario PUEDE tocar (botón habilitado).
+  // Así decide un humano; no hace falta consultar ninguna API.
+  async firstAvailableSize(): Promise<string> {
+    const firstEnabled = this.sizePicker.locator('button:enabled').first();
+    await firstEnabled.waitFor({ state: 'visible' });
+    return (await firstEnabled.innerText()).trim();
+  }
+
   availabilityMessage(size: string): Locator {
     return this.page.getByText(
       `Talla ${size} disponible para envío inmediato`,
       { exact: false }
     );
   }
-    
-  }
-
+}

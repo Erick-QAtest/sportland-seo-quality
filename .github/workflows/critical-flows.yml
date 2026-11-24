@@ -1,0 +1,64 @@
+name: Flujos críticos · Producción
+
+on:
+  # Todos los días a las 7:00 de Ciudad de México.
+  # GitHub usa hora UTC; México no tiene horario de verano desde 2022 (UTC-6),
+  # así que 7:00 MX = 13:00 UTC.
+  schedule:
+    - cron: '0 13 * * *'
+
+  # Botón "Run workflow" en GitHub para ejecutarlo a mano cuando quieras
+  # (por ejemplo, justo después de cambiar el tema o un menú).
+  workflow_dispatch:
+
+# Si una ejecución sigue corriendo, no arranques otra encima:
+# dos a la vez duplicarían las peticiones y provocarían más 429.
+concurrency:
+  group: critical-flows
+  cancel-in-progress: false
+
+jobs:
+  critical-flows:
+    name: Flujo 1 · artículo → productos → carrito
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Preparar carpeta del estado de mercado
+        run: mkdir -p playwright/.auth
+
+      # --workers=2: pocas peticiones en paralelo para no saturar a Shopify.
+      # --retries=1: un reintento por si algo fue pasajero. Más reintentos
+      #   multiplicarían las peticiones justo cuando Shopify ya está frenando.
+      # --reporter=list,html: log legible en Actions y reporte HTML como evidencia.
+      - name: Ejecutar flujos críticos contra producción
+        run: npx playwright test --project=critical-flows --workers=2 --retries=1 --reporter=list,html
+        env:
+          CI: true
+
+      # Se sube SIEMPRE (también si falló): es la evidencia para diagnosticar.
+      - name: Guardar reporte y evidencias
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: critical-flows-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
+          if-no-files-found: ignore
