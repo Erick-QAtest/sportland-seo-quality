@@ -1,6 +1,7 @@
 """Compara el cuerpo publicado de un artículo con el cuerpo nuevo que pegaste.
 
-Uso:  python3 scripts/verificar-cuerpo.py <handle>
+Uso:  python3 scripts/verificar-cuerpo.py <handle> [sufijo]
+      sufijo: body-nuevo (por defecto, frases puente) o body-productos
 
 Detecta lo que el editor de Shopify podría alterar al pegar:
 scripts o estilos eliminados, enlaces perdidos o texto cambiado.
@@ -17,11 +18,13 @@ req = urllib.request.Request(f'https://sportlandmx.com{origen}?v={int(time.time(
 page = urllib.request.urlopen(req).read().decode('utf-8')
 i = page.find('<rte-formatter>', page.find('blog-post-content rte')) + len('<rte-formatter>')
 live = page[i:page.find('</rte-formatter>', i)]
-esperado = (DIR / f'{handle}.body-nuevo.html').read_text(encoding='utf-8')
+sufijo = sys.argv[2] if len(sys.argv) > 2 else 'body-nuevo'
+esperado = (DIR / f'{handle}.{sufijo}.html').read_text(encoding='utf-8')
 
 def resumen(b):
     return {
         'frases puente': b.count('SL-PUENTE-LOTE1-20261124'),
+        'bloque productos': b.count('SL-PRODUCTOS-CONVERSE-20261124'),
         '<script>': len(re.findall(r'<script', b)),
         '<style>': len(re.findall(r'<style', b)),
         'enlaces': len(re.findall(r'<a\s', b)),

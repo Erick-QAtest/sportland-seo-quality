@@ -71,3 +71,29 @@ Estado al 24-nov, después de pegar: **12/12 en verde**. Están los 23 enlaces e
 - Tratamiento: los 7 destinos de Originalidad, **excepto Jordan 11**, que cambió de contenido.
 - Control: Tecnología, sin tocar hasta el 24-dic-2026.
 - Fecha de aplicación: 24-nov-2026. Fecha de medición: **24-dic-2026**.
+
+## 6. Monetización: Converse en stock dentro de los artículos de Converse — APLICADO (24-nov-2026)
+
+**Por qué:** quien revisa si sus Converse son originales está a un paso de comprar unos. Los 3 artículos (312 clics en 3 meses) tenían 5 SKUs Converse en stock y **ningún enlace a producto**: solo un CTA genérico a `/collections/disponible-para-envio-inmediato`. Regla aplicada: **producto propio cuando hay stock; afiliado solo cuando no lo hay.**
+
+**Qué cambió:** la sección `…__store` ("Compra tenis con mayor confianza") se reemplazó por "¿Prefieres ir a la segura? Converse originales disponibles", con 4 productos (All Star Ox Black, Ox Navy, Hi Navy, Hi Red) y un botón a `/collections/converse`. Marcador `<!-- SL-PRODUCTOS-CONVERSE-20261124 -->`. Run Star Hike quedó fuera: solo tenía 1 pieza.
+
+| Artículo | Verificado |
+| --- | --- |
+| eiqueta-de-converse-originales-revision-detallada | CORRECTO, HTML idéntico |
+| el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto | CORRECTO, HTML idéntico |
+| c-mo-saber-si-mis-converse-son-originales | CORRECTO, HTML idéntico |
+
+- Generador: `scripts/insertar-productos-converse.py` produce `<handle>.body-productos.html`.
+- Verificación: `python3 scripts/verificar-cuerpo.py <handle> body-productos`.
+- Prueba diaria: `tests/flows/article-products.flow.spec.ts` revisa que los 15 enlaces estén en el cuerpo y que **cada producto siga disponible**. Si un modelo se agota, el test falla y hay que cambiarlo en el artículo.
+- Revertir: pegar `<handle>.body-nuevo.html` (versión con frases puente, sin productos).
+- No afecta la medición del lote 1: son enlaces **salientes** hacia productos, no enlaces entrantes a los destinos medidos.
+
+**Afiliado (paso 2 del plan):** Air Force 1, Jordan 4 y Jordan 11 ya tenían su CTA de Amazon. **Pendiente: Jordan 1 (etiqueta)**, que no tiene enlace de afiliado y necesita uno de la cuenta de Amazon Afiliados.
+
+### Lecciones del pegado (para la próxima vez)
+
+1. **`pbcopy` desde un proceso sin locale UTF-8 rompe los acentos** ("información" → "informaci√≥n"). Siempre: `LANG=en_US.UTF-8 LC_CTYPE=UTF-8 pbcopy < archivo`, y comprobar con `pbpaste | cmp - archivo`. Pasó una vez en la Etiqueta de Converse y se corrigió en minutos.
+2. **Confirmar el título del artículo antes de pegar.** El cuerpo del QR llegó a pegarse en la Etiqueta. El verificador lo detectó (frases puente 3 → 2, texto distinto) y se restauró. Por eso se re-verifican los artículos anteriores después de cada pegado.
+3. Shopify guarda `&` como `&amp;` en los `src`. El generador ya lo escribe así, para que el verificador dé "HTML idéntico".
