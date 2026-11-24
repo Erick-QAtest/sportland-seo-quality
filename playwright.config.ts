@@ -16,10 +16,20 @@ const setupTestPattern =
 const auditTestPattern =
   /.*\.audit\.spec\.ts/;
 
+const governanceTestPattern =
+  /.*\.contract\.spec\.ts/;
+
+// NUEVO (cambio 1): los flujos críticos tienen su propio patrón de nombre.
+const flowTestPattern =
+  /.*\.flow\.spec\.ts/;
+
 const browserRegressionIgnoredTests = [
   unitTestPattern,
   setupTestPattern,
   auditTestPattern,
+  governanceTestPattern,
+  // NUEVO (cambio 2): chromium, firefox y webkit no ejecutan los flujos.
+  flowTestPattern,
 ];
 
 const marketState = path.join(
@@ -56,6 +66,11 @@ export default defineConfig({
       testMatch: unitTestPattern,
     },
     {
+      // Contrato del JSON de gobernanza: sin navegador y sin dependencias.
+      name: 'governance',
+      testMatch: governanceTestPattern,
+    },
+    {
       name: 'setup-market',
       testMatch: setupTestPattern,
       dependencies: ['unit'],
@@ -63,6 +78,17 @@ export default defineConfig({
     {
       name: 'sitemap-audit',
       testMatch: auditTestPattern,
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: marketState,
+      },
+      dependencies: ['setup-market'],
+    },
+    {
+      // NUEVO (cambio 3): flujos de negocio contra producción.
+      // Corren solo cuando se piden o de forma programada, no en cada push.
+      name: 'critical-flows',
+      testMatch: flowTestPattern,
       use: {
         ...devices['Desktop Chrome'],
         storageState: marketState,
