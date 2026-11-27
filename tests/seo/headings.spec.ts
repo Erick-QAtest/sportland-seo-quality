@@ -1,6 +1,7 @@
 
 import { test, expect } from '@playwright/test';
 import { seoPages } from '../../data/seo-pages';
+import { gotoRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 const BASE_URL = 'https://sportlandmx.com';
 
@@ -8,7 +9,8 @@ for (const seoPage of seoPages) {
   test(`SEO-003: H1 de ${seoPage.name}`, async ({ page }) => {
 
     // ARRANGE: abrir la página
-    await page.goto(BASE_URL + seoPage.path);
+    const response = await gotoRespectingRateLimit(page, BASE_URL + seoPage.path);
+    skipIfBlocked(response, seoPage.path);
 
     // ACT: localizar los H1 visibles
     const headings = page.locator('h1:visible');

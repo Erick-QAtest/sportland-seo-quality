@@ -1,5 +1,6 @@
 
 import { test, expect } from '@playwright/test';
+import { gotoRespectingRateLimit, getRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 test('SF-005: la variante 22 coincide con Shopify', async ({
   page,
@@ -22,22 +23,9 @@ test('SF-005: la variante 22 coincide con Shopify', async ({
   // ACT 1: consultar los datos públicos del producto
   const endpoint = `${baseUrl}${productPath}.js`;
 
-  const response = await request.get(endpoint, {
-    timeout: 10_000,
-    failOnStatusCode: false,
-  });
-
-  // BLOCKER: límite de solicitudes de Shopify
-  if (response.status() === 429) {
-    const retryAfter =
-      response.headers()['retry-after'] ?? 'no indicado';
-
-    throw new Error(
-      `BLOCKED — RATE_LIMITED: Shopify respondió HTTP 429. ` +
-      `Retry-After: ${retryAfter}. ` +
-      `No fue posible verificar la variante ${variantId}.`
-    );
-  }
+  // BLOCKER: si Shopify sigue frenando (429), la prueba queda omitida.
+  const response = await getRespectingRateLimit(request, endpoint, { timeout: 10_000 });
+  skipIfBlocked(response, `${productPath}.js (variante ${variantId})`);
 
   // ASSERT 1: respuesta HTTP correcta
   expect(
@@ -64,9 +52,11 @@ test('SF-005: la variante 22 coincide con Shopify', async ({
   expect(variant.available).toBe(true);
 
   // ACT 2: abrir la ficha de producto
-  const pageResponse = await page.goto(
+  const pageResponse = await gotoRespectingRateLimit(
+    page,
     productUrl.toString()
   );
+  skipIfBlocked(pageResponse, productPath);
 
   expect(pageResponse?.status()).toBe(200);
 

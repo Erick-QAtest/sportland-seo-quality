@@ -1,12 +1,14 @@
 import { test, expect } from '../fixtures/softfoam.fixture';
 import { routes } from '../../data/routes';
+import { gotoRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 test('SF-001: el artículo SoftFoam carga correctamente', async ({ page }) => {
   // ARRANGE: definimos la URL que queremos probar.
   const url = 'https://sportlandmx.com' + routes.softfoamArticle;
 
   // ACT: navegamos al artículo.
-  const response = await page.goto(url);
+  const response = await gotoRespectingRateLimit(page, url);
+  skipIfBlocked(response, routes.softfoamArticle);
 
   // ASSERT: comprobamos la respuesta del servidor.
   expect(response?.status()).toBe(200);

@@ -2,6 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { seoPages } from '../../data/seo-pages';
 import { canCrawl } from '../../services/robots-auditor';
+import { getRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 const BASE_URL = 'https://sportlandmx.com';
 const ROBOTS_URL = `${BASE_URL}/robots.txt`;
@@ -11,7 +12,8 @@ for (const seoPage of seoPages) {
   test(`SEO-005: rastreo de ${seoPage.name}`, async ({ request }) => {
 
     // ARRANGE: obtener robots.txt
-    const response = await request.get(ROBOTS_URL);
+    const response = await getRespectingRateLimit(request, ROBOTS_URL);
+    skipIfBlocked(response, '/robots.txt');
 
     // ASSERT 1: robots.txt debe responder correctamente
     expect(response.status()).toBe(200);

@@ -1,5 +1,6 @@
 
 import { test, expect } from '@playwright/test';
+import { getRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 const baseURL = 'https://sportlandmx.com';
 
@@ -44,13 +45,12 @@ test.describe('SPORTLAND SEO — International Redirects', () => {
     test(`International SEO: ${route.old}`, async ({ request }) => {
 
       // 1. Consultar la URL internacional sin seguir redirecciones.
-      const oldResponse = await request.get(
+      const oldResponse = await getRespectingRateLimit(
+        request,
         baseURL + route.old,
-        {
-          maxRedirects: 0,
-          failOnStatusCode: false,
-        }
+        { maxRedirects: 0 }
       );
+      skipIfBlocked(oldResponse, route.old);
 
       const status = oldResponse.status();
 
@@ -84,12 +84,11 @@ test.describe('SPORTLAND SEO — International Redirects', () => {
       }
 
       // 4. Verificar que el artículo español funcione.
-      const targetResponse = await request.get(
-        baseURL + route.target,
-        {
-          failOnStatusCode: false,
-        }
+      const targetResponse = await getRespectingRateLimit(
+        request,
+        baseURL + route.target
       );
+      skipIfBlocked(targetResponse, route.target);
 
       const targetStatus = targetResponse.status();
 
