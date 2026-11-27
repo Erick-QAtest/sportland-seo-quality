@@ -1,0 +1,9 @@
+    {%- comment -%} SL-UPLOADDATE-TZ-20261125: el VideoObject del cuerpo trae uploadDate sin zona horaria; se completa al renderizar. {%- endcomment -%}
+    {%- assign sl_body = article.content -%}
+    {%- if sl_vid != blank and sl_body contains "VideoObject" and article.metafields.custom.video_fecha.value != blank -%}
+      {%- assign sl_d = article.metafields.custom.video_fecha.value | date: "%Y-%m-%d" -%}
+      {%- assign sl_from = sl_d | prepend: '"' | append: '"' -%}
+      {%- assign sl_to = sl_d | prepend: '"' | append: 'T12:00:00-06:00"' -%}
+      {%- assign sl_body = sl_body | replace: sl_from, sl_to -%}
+    {%- endif -%}
+    {{ sl_body }}
