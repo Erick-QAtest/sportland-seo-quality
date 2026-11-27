@@ -1,4 +1,5 @@
 import { type Page, type Locator } from '@playwright/test';
+import { gotoRespectingRateLimit, skipIfBlocked } from '../services/rate-limit';
 
 export class ProductPage {
   readonly page: Page;
@@ -37,7 +38,9 @@ export class ProductPage {
     url.searchParams.set('variant', variantId);
     url.searchParams.set('size', size);
 
-    await this.page.goto(url.toString());
+    // Si Shopify frena (429), la prueba queda omitida, no en rojo.
+    const response = await gotoRespectingRateLimit(this.page, url.toString());
+    skipIfBlocked(response, productPath);
   }
 
   // El botón de una talla concreta, solo dentro del selector.

@@ -1,0 +1,309 @@
+<title>Mapa de interlinking Sportland</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: cabecera con cifras, grafo por niveles (Inicio → Hubs → Guías ← Tráfico) y panel de detalle al lado. */
+:root {
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --ink: #0b1f3a;
+  --muted: #55657a;
+  --line: #d9e0ea;
+  --brand: #e30613;
+  --c-home: #0b1f3a;
+  --c-hub: #2f6fdb;
+  --c-l1: #8a9bb3;
+  --c-l2: #e30613;
+  --c-guia: #d98a00;
+  --node-money: #fff1f1;
+  --node-money-line: #f2b3b6;
+  --node-mid: #fff6e6;
+  --node-mid-line: #efc983;
+  --node-hub: #eaf1fd;
+  --node-hub-line: #b7cdf4;
+  --node-traffic: #ffffff;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1420; --surface: #121d2c; --ink: #e8eef6; --muted: #94a3b8; --line: #26354a;
+    --c-home: #e8eef6; --c-hub: #6ea2ff; --c-l1: #6c7f99; --c-l2: #ff4d57; --c-guia: #f2a93b;
+    --node-money: #2a1519; --node-money-line: #7a2a31; --node-mid: #2a2111; --node-mid-line: #7a5a1f; --node-hub: #13243f; --node-hub-line: #2f4f86; --node-traffic: #121d2c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1420; --surface: #121d2c; --ink: #e8eef6; --muted: #94a3b8; --line: #26354a;
+  --c-home: #e8eef6; --c-hub: #6ea2ff; --c-l1: #6c7f99; --c-l2: #ff4d57; --c-guia: #f2a93b;
+  --node-money: #2a1519; --node-money-line: #7a2a31; --node-mid: #2a2111; --node-mid-line: #7a5a1f; --node-hub: #13243f; --node-hub-line: #2f4f86; --node-traffic: #121d2c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-block: 28px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1320px; margin: 0 auto; display: grid; gap: 22px; }
+header { display: grid; gap: 10px; }
+.eyebrow { font: 600 11px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--brand); }
+h1 { font: 800 clamp(26px, 4vw, 38px)/1.1 var(--display); margin: 0; letter-spacing: -.02em; text-wrap: balance; }
+.lead { margin: 0; max-width: 70ch; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 6px; }
+.stat { display: grid; gap: 2px; }
+.stat b { font: 700 22px/1 var(--display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--muted); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filters .lbl { font-size: 12px; color: var(--muted); margin-right: 4px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 500 13px var(--body); cursor: pointer;
+}
+.chip i { width: 18px; height: 3px; border-radius: 2px; display: block; }
+.chip[aria-pressed="false"] { opacity: .45; }
+.chip:focus-visible, .node:focus-visible { outline: 3px solid var(--c-hub); outline-offset: 2px; }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
+@media (max-width: 980px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.canvas { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow-x: auto; }
+svg { display: block; min-width: 1060px; width: 100%; height: auto; }
+.col-title { font: 700 12px var(--display); letter-spacing: .08em; text-transform: uppercase; fill: var(--muted); }
+.col-sub { font: 400 11px var(--body); fill: var(--muted); }
+.edge { fill: none; stroke-width: 1.6; opacity: .55; transition: opacity .15s; }
+.edge.k-lote2 { stroke-width: 2.4; opacity: .85; }
+.edge.dim { opacity: .07; }
+.edge.hot { opacity: 1; stroke-width: 2.6; }
+.edge.off { display: none; }
+.node { cursor: pointer; }
+.node rect { stroke-width: 1; transition: opacity .15s; }
+.node.dim { opacity: .3; }
+.node text { font: 500 12px var(--body); fill: var(--ink); }
+.node .clk { font: 500 10.5px var(--mono); fill: var(--muted); }
+.node.sel rect { stroke-width: 2.2; }
+.t-home rect { fill: var(--c-home); stroke: var(--c-home); }
+.t-home text { fill: var(--bg); font-weight: 700; }
+.t-hub rect { fill: var(--node-hub); stroke: var(--node-hub-line); }
+.t-money rect { fill: var(--node-money); stroke: var(--node-money-line); }
+.t-traffic rect { fill: var(--node-traffic); stroke: var(--line); }
+.t-mid rect { fill: var(--node-mid); stroke: var(--node-mid-line); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 10px; border-radius: 3px; border: 1px solid; display: block; }
+.bar { fill: var(--c-l1); opacity: .35; }
+aside { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 14px; position: sticky; top: max(12px, env(safe-area-inset-top, 0px)); }
+@media (max-width: 980px) { aside { position: static; } }
+aside h2 { font: 700 18px/1.25 var(--display); margin: 0; text-wrap: balance; }
+aside .path { font: 500 11px/1.4 var(--mono); color: var(--muted); word-break: break-all; }
+aside .kind { font-size: 12px; font-weight: 600; }
+aside h3 { font: 600 11px var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+aside ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+aside li { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 8px; font-size: 13px; }
+aside li i { width: 10px; height: 10px; border-radius: 3px; margin-top: 5px; }
+aside li small { display: block; color: var(--muted); font-size: 12px; }
+aside a { color: var(--c-hub); }
+.empty { color: var(--muted); font-size: 13px; margin: 0; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.note { border-top: 2px solid var(--line); padding-top: 10px; font-size: 13px; color: var(--muted); }
+.note b { color: var(--ink); display: block; font-size: 14px; margin-bottom: 2px; }
+@media (prefers-reduced-motion: reduce) { .edge, .node rect { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">sportlandmx.com · interlinking al 27-nov-2026</span>
+    <h1>Cómo fluye la autoridad hacia las páginas de dinero</h1>
+    <p class="lead">Cada caja es una página y cada línea un enlace dentro del contenido. Las páginas de tráfico (derecha) y los hubs (izquierda) empujan hacia las páginas de dinero (centro, en rojo claro). El nivel sale de una regla: intención de búsqueda × monetización medida en vivo. Toca una página para ver qué la enlaza y con qué ancla.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="legend"><span><i style="background:var(--node-money);border-color:var(--node-money-line)"></i>Dinero: intención de compra y monetiza</span><span><i style="background:var(--node-mid);border-color:var(--node-mid-line)"></i>Tráfico que monetiza: otra intención, pero con afiliados o productos</span><span><i style="background:var(--node-traffic);border-color:var(--line)"></i>Tráfico: no monetiza</span></div>
+  <div class="filters" id="filters"><span class="lbl">Tipo de enlace:</span></div>
+
+  <div class="main">
+    <div class="canvas"><svg id="g" role="img" aria-label="Grafo de enlaces internos por niveles"></svg></div>
+    <aside id="panel" aria-live="polite">
+      <p class="empty">Selecciona una página del grafo para ver sus enlaces entrantes y salientes.</p>
+    </aside>
+  </div>
+
+  <div class="notes">
+    <div class="note"><b>Inicio → Hubs</b>La home enlaza a los 4 hubs con tarjetas; los hubs reparten esa autoridad a sus guías.</div>
+    <div class="note"><b>Hub ↔ Guía</b>Las guías de actividad devuelven el enlace al hub con la miga de pan (metacampo custom.hub).</div>
+    <div class="note"><b>Lote 1</b>Frases puente entre páginas de originalidad: refuerzan el cluster de tráfico.</div>
+    <div class="note"><b>Lote 2</b>Frases puente de páginas de tráfico hacia guías de dinero. Es el lote que más importa para afiliados.</div>
+    <div class="note"><b>Clics</b>La cifra de cada caja son clics orgánicos de 3 meses (GSC al 24-nov). «nueva» = página sin histórico.</div>
+  </div>
+</div>
+
+<script>
+const DATA = {"edges": [{"s": "/", "t": "/pages/guias-tenis-originales", "k": "home", "a": ""}, {"s": "/", "t": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie", "k": "home", "a": ""}, {"s": "/", "t": "/pages/cuidado-de-tenis", "k": "home", "a": ""}, {"s": "/", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "home", "a": ""}, {"s": "/pages/guias-tenis-originales", "t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "k": "hub", "a": ""}, {"s": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie", "t": "/blogs/noticias/talla-nike-air-force-1-guia", "k": "hub", "a": ""}, {"s": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie", "t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "k": "hub", "a": ""}, {"s": "/pages/cuidado-de-tenis", "t": "/blogs/noticias/como-lavar-tenis-en-lavadora", "k": "hub", "a": ""}, {"s": "/pages/cuidado-de-tenis", "t": "/blogs/noticias/como-agrandar-tenis", "k": "hub", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/mejores-tenis-para-jugar-tenis", "k": "hub", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo", "k": "hub", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu", "k": "hub", "a": ""}, {"s": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10", "k": "hub", "a": ""}, {"s": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/blogs/noticias/mejores-tenis-para-jugar-tenis", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023", "k": "hub", "a": ""}, {"s": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "k": "hub", "a": ""}, {"s": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/tenis-para-parkour-top-5", "k": "hub", "a": ""}, {"s": "/blogs/noticias/tenis-para-parkour-top-5", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/pages/tenis-segun-actividad-y-necesidad", "t": "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022", "k": "hub", "a": ""}, {"s": "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022", "t": "/pages/tenis-segun-actividad-y-necesidad", "k": "breadcrumb", "a": ""}, {"s": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto", "t": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "k": "lote1", "a": "Nike Air Force 1 originales"}, {"s": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "k": "lote1", "a": "Jordan 4 son originales"}, {"s": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "k": "lote1", "a": "etiqueta de Converse originales"}, {"s": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "k": "lote1", "a": "dónde se fabrican los tenis FILA originales"}, {"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "k": "lote1", "a": "Etiqueta de Converse originales: cómo revisarla"}, {"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "k": "lote1", "a": "dónde se fabrican los tenis FILA originales"}, {"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion", "k": "lote1", "a": "cómo saber si unos Jordan 11 son originales"}, {"s": "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales", "t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "k": "lote1", "a": "Etiqueta de Converse originales: cómo revisarla"}, {"s": "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "k": "lote1", "a": "Cómo saber si mis Jordan 4 son originales"}, {"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "k": "lote1", "a": "Etiqueta de Converse originales: cómo revisarla"}, {"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "k": "lote1", "a": "cómo saber si tus Jordan 1 son originales por su etiqueta"}, {"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "k": "lote1", "a": "dónde se fabrican los tenis FILA originales"}, {"s": "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales", "t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "k": "lote1", "a": "Etiqueta de Converse originales: cómo revisarla"}, {"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "k": "lote1", "a": "cómo saber si unas Jordan 4 son originales"}, {"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales", "t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "k": "lote1", "a": "Etiqueta de Jordan 1 originales: cómo revisarla"}, {"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "k": "lote1", "a": "Etiqueta de Jordan 1 originales: cómo revisarla"}, {"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "k": "lote1", "a": "de dónde es la marca FILA"}, {"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "k": "lote1", "a": "Jordan 4 son originales"}, {"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales", "t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "k": "lote1", "a": "Etiqueta de Jordan 1 originales: cómo revisarla"}, {"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales", "t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "k": "lote1", "a": "dónde se fabrican los tenis FILA originales"}, {"s": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "k": "lote1", "a": "Cómo saber si mis Jordan 4 son originales"}, {"s": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "t": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto", "k": "lote1", "a": "Converse QR code"}, {"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion", "t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "k": "lote1", "a": "etiqueta de Jordan 1 originales: cómo revisarla"}, {"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "k": "lote2", "a": "convertir tu talla de mujer a hombre"}, {"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales", "t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "k": "lote2", "a": "convertir tu talla de mujer a hombre"}, {"s": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma", "t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "k": "lote2", "a": "tenis para estar de pie todo el día"}, {"s": "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios", "t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "k": "lote2", "a": "tenis para estar de pie todo el día"}, {"s": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios", "t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "k": "lote2", "a": "tenis para estar de pie todo el día"}, {"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales", "t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "k": "lote2", "a": "cómo saber si unos adidas Superstar son originales"}, {"s": "/blogs/noticias/tenis-adidas-superstar-concha", "t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "k": "lote2", "a": "cómo saber si unos adidas Superstar son originales"}, {"s": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu", "t": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023", "k": "lote2", "a": "mejores tenis para CrossFit de mujer"}, {"s": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "t": "/blogs/noticias/como-saber-que-talla-de-tenis-soy", "k": "guia", "a": ""}, {"s": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "t": "/blogs/noticias/talla-nike-air-force-1-guia", "k": "guia", "a": ""}, {"s": "/blogs/noticias/talla-nike-air-force-1-guia", "t": "/blogs/noticias/como-saber-que-talla-de-tenis-soy", "k": "guia", "a": ""}, {"s": "/blogs/noticias/talla-nike-air-force-1-guia", "t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "k": "guia", "a": ""}, {"s": "/blogs/noticias/talla-nike-air-force-1-guia", "t": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "k": "guia", "a": ""}, {"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "t": "/blogs/noticias/talla-nike-air-force-1-guia", "k": "guia", "a": ""}, {"s": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "t": "/blogs/noticias/como-saber-si-mis-tenis-son-originales", "k": "guia", "a": ""}, {"s": "/blogs/noticias/mejores-tenis-para-jugar-tenis", "t": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo", "k": "guia", "a": ""}, {"s": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo", "t": "/blogs/noticias/mejores-tenis-para-jugar-tenis", "k": "guia", "a": ""}], "money": ["/blogs/noticias/como-lavar-tenis-en-lavadora", "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu", "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022", "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023", "/blogs/noticias/mejores-tenis-para-jugar-tenis", "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10", "/blogs/noticias/talla-nike-air-force-1-guia", "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "/blogs/noticias/tenis-para-parkour-top-5", "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo"], "clics": {"/": null, "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales": 42, "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios": 199, "/blogs/noticias/como-agrandar-tenis": null, "/blogs/noticias/como-lavar-tenis-en-lavadora": null, "/blogs/noticias/como-saber-que-talla-de-tenis-soy": 1, "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales": null, "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales": 368, "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion": 25, "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales": 76, "/blogs/noticias/como-saber-si-mis-tenis-son-originales": 23, "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales": 26, "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer": 41, "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma": 190, "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales": 33, "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu": 45, "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022": 1, "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023": 2, "/blogs/noticias/mejores-tenis-para-jugar-tenis": null, "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10": 3, "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios": 3, "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales": 25, "/blogs/noticias/talla-nike-air-force-1-guia": null, "/blogs/noticias/tenis-adidas-superstar-concha": 11, "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021": 1, "/blogs/noticias/tenis-para-parkour-top-5": 21, "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada": 187, "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto": 83, "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad": 99, "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo": null, "/pages/cuidado-de-tenis": null, "/pages/guias-tenis-originales": null, "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie": null, "/pages/tenis-segun-actividad-y-necesidad": null}, "nivel": {"/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto": {"path": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: verificacion 97%; entidad_ambigua 3%", "afiliados_amazon": "0", "productos_sportland": "4", "monetiza_con": "inventario", "clics_3m": "83"}, "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales": {"path": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: verificacion 95%; entidad_ambigua 5%", "afiliados_amazon": "3", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "368"}, "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion": {"path": "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "25"}, "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales": {"path": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "Originalidad de un par que ya tienes", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/blogs/noticias/mejores-tenis-para-jugar-tenis": {"path": "/blogs/noticias/mejores-tenis-para-jugar-tenis", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "«Mejores tenis para…»", "afiliados_amazon": "5", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/pages/tenis-segun-actividad-y-necesidad": {"path": "/pages/tenis-segun-actividad-y-necesidad", "nivel": "hub", "intencion": "navegacion", "fuente_intencion": "fija", "confianza": "alta", "motivo_intencion": "Página de navegación", "afiliados_amazon": "", "productos_sportland": "", "monetiza_con": "", "clics_3m": ""}, "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo": {"path": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "«Mejores zapatos de…»", "afiliados_amazon": "4", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales": {"path": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "0", "productos_sportland": "4", "monetiza_con": "inventario", "clics_3m": "42"}, "/blogs/noticias/tenis-adidas-superstar-concha": {"path": "/blogs/noticias/tenis-adidas-superstar-concha", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "tipo de consulta", "confianza": "media", "motivo_intencion": "Nombre de modelo: quien lo busca está evaluando comprarlo", "afiliados_amazon": "3", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "11"}, "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma": {"path": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma", "nivel": "dinero", "intencion": "transaccional", "fuente_intencion": "GSC (intención secundaria)", "confianza": "media", "motivo_intencion": "Mezcla de consultas: entidad_ambigua 52%; transaccional 44%; informativa 4%", "afiliados_amazon": "6", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "190"}, "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios": {"path": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios", "nivel": "trafico_monetiza", "intencion": "informativa", "fuente_intencion": "GSC (intención secundaria)", "confianza": "media", "motivo_intencion": "Mezcla de consultas: entidad_ambigua 50%; informativa 46%; transaccional 2%", "afiliados_amazon": "2", "productos_sportland": "3", "monetiza_con": "afiliado+inventario", "clics_3m": "199"}, "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie": {"path": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie", "nivel": "hub", "intencion": "navegacion", "fuente_intencion": "fija", "confianza": "alta", "motivo_intencion": "Página de navegación", "afiliados_amazon": "", "productos_sportland": "", "monetiza_con": "", "clics_3m": ""}, "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10": {"path": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "5", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "3"}, "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad": {"path": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad", "nivel": "trafico", "intencion": "verificacion", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: verificacion 100%", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "99"}, "/blogs/noticias/como-saber-si-mis-tenis-son-originales": {"path": "/blogs/noticias/como-saber-si-mis-tenis-son-originales", "nivel": "trafico", "intencion": "verificacion", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "23"}, "/blogs/noticias/como-agrandar-tenis": {"path": "/blogs/noticias/como-agrandar-tenis", "nivel": "trafico_monetiza", "intencion": "informativa", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "Cómo hacer algo con tenis que ya tienes", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/blogs/noticias/talla-nike-air-force-1-guia": {"path": "/blogs/noticias/talla-nike-air-force-1-guia", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "Duda de talla antes de comprar", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales": {"path": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales", "nivel": "trafico", "intencion": "verificacion", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: verificacion 51%; informativa 26%; entidad_ambigua 23%", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "33"}, "/blogs/noticias/como-saber-que-talla-de-tenis-soy": {"path": "/blogs/noticias/como-saber-que-talla-de-tenis-soy", "nivel": "trafico", "intencion": "informativa", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "1"}, "/pages/cuidado-de-tenis": {"path": "/pages/cuidado-de-tenis", "nivel": "hub", "intencion": "navegacion", "fuente_intencion": "fija", "confianza": "alta", "motivo_intencion": "Página de navegación", "afiliados_amazon": "", "productos_sportland": "", "monetiza_con": "", "clics_3m": ""}, "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer": {"path": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer", "nivel": "trafico_monetiza", "intencion": "informativa", "fuente_intencion": "GSC (intención secundaria)", "confianza": "media", "motivo_intencion": "Mezcla de consultas: entidad_ambigua 39%; informativa 33%; estilo 27%", "afiliados_amazon": "4", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "41"}, "/blogs/noticias/como-lavar-tenis-en-lavadora": {"path": "/blogs/noticias/como-lavar-tenis-en-lavadora", "nivel": "trafico_monetiza", "intencion": "informativa", "fuente_intencion": "formato (página nueva)", "confianza": "media", "motivo_intencion": "Cómo hacer algo con tenis que ya tienes", "afiliados_amazon": "2", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": ""}, "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada": {"path": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "0", "productos_sportland": "4", "monetiza_con": "inventario", "clics_3m": "187"}, "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022": {"path": "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "tipo de consulta", "confianza": "media", "motivo_intencion": "Busca el mejor tenis para un uso («best…», «tenis para…»)", "afiliados_amazon": "4", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "1"}, "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu": {"path": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: investigacion_comercial 100%", "afiliados_amazon": "4", "productos_sportland": "6", "monetiza_con": "afiliado+inventario", "clics_3m": "45"}, "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales": {"path": "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales", "nivel": "trafico_monetiza", "intencion": "informativa", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "25"}, "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales": {"path": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales", "nivel": "trafico_monetiza", "intencion": "verificacion", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: verificacion 94%; entidad_ambigua 6%", "afiliados_amazon": "1", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "76"}, "/pages/guias-tenis-originales": {"path": "/pages/guias-tenis-originales", "nivel": "hub", "intencion": "navegacion", "fuente_intencion": "fija", "confianza": "alta", "motivo_intencion": "Página de navegación", "afiliados_amazon": "", "productos_sportland": "", "monetiza_con": "", "clics_3m": ""}, "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios": {"path": "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios", "nivel": "trafico", "intencion": "transaccional", "fuente_intencion": "GSC (intención secundaria)", "confianza": "media", "motivo_intencion": "Mezcla de consultas: entidad_ambigua 69%; transaccional 31%", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "3"}, "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales": {"path": "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales", "nivel": "trafico", "intencion": "verificacion", "fuente_intencion": "FORMATO (hipótesis)", "confianza": "media", "motivo_intencion": "Sin consultas asignadas: se infiere del formato del artículo", "afiliados_amazon": "0", "productos_sportland": "0", "monetiza_con": "", "clics_3m": "26"}, "/": {"path": "/", "nivel": "inicio", "intencion": "navegacion", "fuente_intencion": "fija", "confianza": "alta", "motivo_intencion": "Página de navegación", "afiliados_amazon": "", "productos_sportland": "", "monetiza_con": "", "clics_3m": ""}, "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023": {"path": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: investigacion_comercial 50%; entidad_ambigua 50%", "afiliados_amazon": "4", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "2"}, "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021": {"path": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: investigacion_comercial 100%", "afiliados_amazon": "5", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "1"}, "/blogs/noticias/tenis-para-parkour-top-5": {"path": "/blogs/noticias/tenis-para-parkour-top-5", "nivel": "dinero", "intencion": "investigacion_comercial", "fuente_intencion": "GSC", "confianza": "alta", "motivo_intencion": "Mezcla de consultas: investigacion_comercial 68%; entidad_ambigua 32%", "afiliados_amazon": "5", "productos_sportland": "0", "monetiza_con": "afiliado", "clics_3m": "21"}}};
+const LABELS = {"/": "Inicio", "/pages/guias-tenis-originales": "Hub · Originalidad", "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie": "Hub · Tallas", "/pages/cuidado-de-tenis": "Hub · Cuidado", "/pages/tenis-segun-actividad-y-necesidad": "Hub · Según actividad", "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales": "Converse originales", "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios": "Cloudfoam Adidas", "/blogs/noticias/como-agrandar-tenis": "Cómo agrandar tenis", "/blogs/noticias/como-lavar-tenis-en-lavadora": "Lavar tenis en lavadora", "/blogs/noticias/como-saber-que-talla-de-tenis-soy": "Qué talla de tenis soy", "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales": "Superstar originales", "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales": "Air Force 1 originales", "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion": "Jordan 11 originales", "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales": "Jordan 4 originales", "/blogs/noticias/como-saber-si-mis-tenis-son-originales": "Tenis originales (general)", "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales": "Ultraboost originales", "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer": "Hombre vs mujer (talla)", "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma": "SoftFoam Puma", "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales": "Dónde se fabrican FILA", "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu": "Tenis para hacer pierna", "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022": "Tenis para basketball", "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023": "CrossFit de mujer", "/blogs/noticias/mejores-tenis-para-jugar-tenis": "Tenis para jugar tenis", "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10": "Tenis para voleibol", "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios": "Suela EVA", "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales": "Suela de Converse", "/blogs/noticias/talla-nike-air-force-1-guia": "Talla Air Force 1", "/blogs/noticias/tenis-adidas-superstar-concha": "Adidas Superstar «concha»", "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021": "Estar de pie todo el día", "/blogs/noticias/tenis-para-parkour-top-5": "Tenis para parkour", "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada": "Etiqueta Converse", "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto": "QR Converse VMDMX", "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad": "Etiqueta Jordan 1", "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo": "Zapatos de pádel"};
+
+const TYPES = {
+  home:  { name: 'Inicio → hub', color: 'var(--c-home)' },
+  hub:   { name: 'Hub ↔ guía', color: 'var(--c-hub)' },
+  lote1: { name: 'Puente lote 1', color: 'var(--c-l1)' },
+  lote2: { name: 'Puente lote 2', color: 'var(--c-l2)' },
+  guia:  { name: 'Guía ↔ guía', color: 'var(--c-guia)' },
+};
+
+// Fusionar hub→guía y guía→hub (breadcrumb) en una línea de ida y vuelta.
+const back = new Set(DATA.edges.filter(e => e.k === 'breadcrumb').map(e => e.s + '|' + e.t));
+const edges = DATA.edges.filter(e => e.k !== 'breadcrumb').map(e => ({ ...e, both: e.k === 'hub' && back.has(e.t + '|' + e.s) }));
+const NIVEL = DATA.nivel;
+const hubs = ['/pages/guias-tenis-originales', '/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie', '/pages/cuidado-de-tenis', '/pages/tenis-segun-actividad-y-necesidad'];
+const all = [...new Set(edges.flatMap(e => [e.s, e.t]))];
+const hubOf = {};
+edges.filter(e => e.k === 'hub').forEach(e => { hubOf[e.t] = e.s; });
+// Nivel desde data/seo/niveles-paginas-*.csv (regla: intención × monetización en vivo).
+const tier = p => ({ inicio: 'home', hub: 'hub', dinero: 'money', trafico_monetiza: 'mid' })[NIVEL[p]?.nivel] || 'traffic';
+const colOf = p => tier(p) === 'mid' ? 'traffic' : tier(p);
+
+// Orden: guías agrupadas por hub; tráfico ordenado por el promedio de la posición de sus destinos.
+const guides = all.filter(p => tier(p) === 'money').sort((a, b) => (hubs.indexOf(hubOf[a] ?? '') - hubs.indexOf(hubOf[b] ?? '')) || (LABELS[a] || a).localeCompare(LABELS[b] || b));
+const traffic = all.filter(p => colOf(p) === 'traffic');
+const gIndex = Object.fromEntries(guides.map((p, i) => [p, i]));
+const score = p => {
+  const t = edges.filter(e => e.s === p && gIndex[e.t] !== undefined).map(e => gIndex[e.t]);
+  return t.length ? t.reduce((x, y) => x + y, 0) / t.length : -1;
+};
+traffic.sort((a, b) => score(a) - score(b) || (DATA.clics[b] || 0) - (DATA.clics[a] || 0));
+
+const W = 1060, ROW = 40, TOP = 74, BW = 214, BH = 30;
+const X = { home: 24, hub: 216, money: 470, traffic: 806 };
+const rows = Math.max(guides.length, traffic.length);
+const H = TOP + rows * ROW + 24;
+const pos = {};
+const place = (list, col, span) => list.forEach((p, i) => {
+  const off = (rows - list.length) * ROW / 2;
+  pos[p] = { x: X[col], y: TOP + off + i * ROW, w: col === 'home' ? 140 : col === 'hub' ? 200 : BW };
+});
+place(['/'], 'home'); place(hubs, 'hub'); place(guides, 'money'); place(traffic, 'traffic');
+
+const svg = document.getElementById('g');
+svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+const NS = 'http://www.w3.org/2000/svg';
+const el = (n, a = {}, parent = svg) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); parent.appendChild(e); return e; };
+
+const defs = el('defs');
+for (const k in TYPES) {
+  const m = el('marker', { id: 'arr-' + k, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+  el('path', { d: 'M0 0L10 5L0 10z', fill: TYPES[k].color }, m);
+}
+
+[['home', 'Inicio', ''], ['hub', 'Hubs', '4 páginas'], ['money', 'Dinero', guides.length + ' intención de compra + monetiza'], ['traffic', 'Tráfico', traffic.filter(p => tier(p) === 'mid').length + ' monetizan · ' + traffic.filter(p => tier(p) === 'traffic').length + ' no']].forEach(([c, t, s]) => {
+  el('text', { x: X[c], y: 30, class: 'col-title' }).textContent = t;
+  el('text', { x: X[c], y: 48, class: 'col-sub' }).textContent = s;
+});
+
+const gEdges = el('g'), gNodes = el('g');
+const edgeEls = edges.map(e => {
+  const a = pos[e.s], b = pos[e.t];
+  let d;
+  if (a.x === b.x) {
+    // Mismo nivel: arco por la derecha de la columna.
+    const x0 = a.x + a.w, y0 = a.y + BH / 2, y1 = b.y + BH / 2;
+    const bulge = 22 + Math.min(70, Math.abs(y1 - y0) * 0.18);
+    d = `M${x0} ${y0} C${x0 + bulge} ${y0}, ${x0 + bulge} ${y1}, ${x0 + 2} ${y1}`;
+  } else if (a.x < b.x) {
+    const x0 = a.x + a.w, x1 = b.x, y0 = a.y + BH / 2, y1 = b.y + BH / 2, m = (x0 + x1) / 2;
+    d = `M${x0} ${y0} C${m} ${y0}, ${m} ${y1}, ${x1 - 2} ${y1}`;
+  } else {
+    const x0 = a.x, x1 = b.x + b.w, y0 = a.y + BH / 2, y1 = b.y + BH / 2, m = (x0 + x1) / 2;
+    d = `M${x0} ${y0} C${m} ${y0}, ${m} ${y1}, ${x1 + 2} ${y1}`;
+  }
+  const p = el('path', { d, class: 'edge k-' + e.k, stroke: TYPES[e.k].color, 'marker-end': `url(#arr-${e.k})` }, gEdges);
+  if (e.both) p.setAttribute('marker-start', `url(#arr-${e.k})`);
+  return { e, p };
+});
+
+const fmt = n => n == null ? 'nueva' : n.toLocaleString('es-MX') + ' clics';
+const maxClics = Math.max(...traffic.map(p => DATA.clics[p] || 0), 1);
+const nodeEls = {};
+all.forEach(p => {
+  const t = tier(p), q = pos[p];
+  const g = el('g', { class: `node t-${t}`, tabindex: 0, role: 'button', 'aria-label': LABELS[p] || p }, gNodes);
+  el('rect', { x: q.x, y: q.y, width: q.w, height: BH, rx: 7 }, g);
+  if ((t === 'traffic' || t === 'mid') && DATA.clics[p]) el('rect', { x: q.x + 1, y: q.y + BH - 4, width: Math.max(3, (q.w - 2) * DATA.clics[p] / maxClics), height: 3, rx: 1.5, class: 'bar' }, g);
+  el('text', { x: q.x + 10, y: q.y + 19 }, g).textContent = LABELS[p] || p;
+  if (t === 'money' || t === 'traffic' || t === 'mid') {
+    const c = el('text', { x: q.x + q.w - 8, y: q.y + 19, 'text-anchor': 'end', class: 'clk' }, g);
+    c.textContent = DATA.clics[p] == null ? 'nueva' : DATA.clics[p];
+  }
+  g.addEventListener('click', () => select(p));
+  g.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(p); } });
+  nodeEls[p] = g;
+});
+
+// Filtros
+const active = new Set(Object.keys(TYPES));
+const filters = document.getElementById('filters');
+for (const k in TYPES) {
+  const b = document.createElement('button');
+  b.className = 'chip'; b.id = 'f-' + k; b.setAttribute('aria-pressed', 'true');
+  b.innerHTML = `<i style="background:${TYPES[k].color}"></i>${TYPES[k].name} · ${edges.filter(e => e.k === k).length}`;
+  b.addEventListener('click', () => {
+    active.has(k) ? active.delete(k) : active.add(k);
+    b.setAttribute('aria-pressed', active.has(k));
+    render();
+  });
+  filters.appendChild(b);
+}
+
+// Cifras
+const into = p => edges.filter(e => e.t === p).length;
+const l2 = edges.filter(e => e.k === 'lote2');
+const clicsL2 = [...new Set(l2.map(e => e.s))].reduce((s, p) => s + (DATA.clics[p] || 0), 0);
+document.getElementById('stats').innerHTML = [
+  [all.length, 'páginas en el mapa'],
+  [edges.length, 'enlaces internos'],
+  [guides.length, 'páginas de dinero'],
+  [l2.length, 'puentes del lote 2'],
+  [clicsL2.toLocaleString('es-MX'), 'clics/3 meses de las páginas que donan en el lote 2'],
+].map(([n, t]) => `<div class="stat"><b>${n}</b><span>${t}</span></div>`).join('');
+
+let selected = null;
+function render() {
+  const rel = selected ? new Set([selected, ...edges.filter(e => e.s === selected || e.t === selected).flatMap(e => [e.s, e.t])]) : null;
+  edgeEls.forEach(({ e, p }) => {
+    p.classList.toggle('off', !active.has(e.k));
+    const touches = selected && (e.s === selected || e.t === selected);
+    p.classList.toggle('hot', !!touches);
+    p.classList.toggle('dim', !!selected && !touches);
+  });
+  for (const p in nodeEls) {
+    nodeEls[p].classList.toggle('dim', !!rel && !rel.has(p));
+    nodeEls[p].classList.toggle('sel', p === selected);
+  }
+}
+
+const KIND = { home: 'Inicio', hub: 'Hub', money: 'Dinero', mid: 'Tráfico que monetiza', traffic: 'Tráfico' };
+function item(e, other) {
+  const a = e.a ? `<small>Ancla: «${e.a}»</small>` : (e.both ? '<small>Ida y vuelta (miga de pan)</small>' : '');
+  return `<li><i style="background:${TYPES[e.k].color}"></i><div>${LABELS[other] || other} <small>${TYPES[e.k].name}</small>${a}</div></li>`;
+}
+function select(p) {
+  selected = selected === p ? null : p;
+  render();
+  const panel = document.getElementById('panel');
+  if (!selected) { panel.innerHTML = '<p class="empty">Selecciona una página del grafo para ver sus enlaces entrantes y salientes.</p>'; return; }
+  const inc = edges.filter(e => e.t === p), out = edges.filter(e => e.s === p);
+  const url = 'https://sportlandmx.com' + p;
+  panel.innerHTML = `
+    <div><div class="kind" style="color:${tier(p) === 'money' ? 'var(--brand)' : 'var(--muted)'}">${KIND[tier(p)]}</div>
+    <h2>${LABELS[p] || p}</h2>
+    <div class="path">${p}</div></div>
+    <div><b>${fmt(DATA.clics[p])}</b> <span style="color:var(--muted);font-size:13px">en 3 meses</span></div>
+    ${NIVEL[p] && NIVEL[p].intencion !== 'navegacion' ? `<div style="font-size:13px;display:grid;gap:4px"><div><b>Intención:</b> ${NIVEL[p].intencion.replace('_', ' ')} <span style="color:var(--muted)">(${NIVEL[p].fuente_intencion}, confianza ${NIVEL[p].confianza})</span></div><div style="color:var(--muted)">${NIVEL[p].motivo_intencion}</div><div><b>Monetiza con:</b> ${NIVEL[p].monetiza_con || 'nada'} <span style="color:var(--muted)">· ${NIVEL[p].afiliados_amazon || 0} afiliados, ${NIVEL[p].productos_sportland || 0} productos</span></div></div>` : ''}
+    <div><h3>Recibe enlaces de · ${inc.length}</h3>${inc.length ? '<ul>' + inc.map(e => item(e, e.s)).join('') + '</ul>' : '<p class="empty">Ninguno en este mapa.</p>'}</div>
+    <div><h3>Enlaza a · ${out.length}</h3>${out.length ? '<ul>' + out.map(e => item(e, e.t)).join('') + '</ul>' : '<p class="empty">Ninguno en este mapa.</p>'}</div>
+    <a href="${url}" target="_blank" rel="noopener">Abrir la página ↗</a>`;
+}
+
+// Estado inicial: la guía que más enlaces recibe, para que la vista ya cuente algo.
+const primera = guides.slice().sort((a, b) => into(b) - into(a))[0];
+select(primera);
+</script>

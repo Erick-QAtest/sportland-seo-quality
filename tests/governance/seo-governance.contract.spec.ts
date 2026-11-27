@@ -48,7 +48,8 @@ test.beforeAll(() => {
 
 test.describe('SPORTLAND SEO — Gobernanza (contrato del JSON)', () => {
   test('contrato: los datos están bien formados', () => {
-    expect(governance.records).toHaveLength(45);
+    // 45 del corte del 20-nov + SEO-046 (QR Converse en inglés, 27-nov).
+    expect(governance.records).toHaveLength(46);
 
     const violations = validateContract(governance);
 
@@ -70,7 +71,9 @@ test.describe('SPORTLAND SEO — Gobernanza (contrato del JSON)', () => {
   test('candados: variantes del SoftFoam alemán apuntan al alemán', () => {
     const variants = governance.records.filter(
       (r) =>
-        r.decision === 'REDIRECT_A_DE_APLICADO' &&
+        // Aplicada (SEO-005) o aprobada sin efecto por mercado activo (SEO-004, SEO-015).
+        // El candado vigila el destino, no el estado de la aplicación.
+        r.decision.startsWith('REDIRECT_A_DE') &&
         new URL(r.source).pathname.endsWith(SOFTFOAM_DE)
     );
 

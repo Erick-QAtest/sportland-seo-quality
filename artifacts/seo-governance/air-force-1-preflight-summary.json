@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-23T18:48:35.512Z",
+  "count": 6,
+  "issues": [
+    {
+      "kind": "DE_INDEPENDENT",
+      "issues": [
+        "HTML_LANG_REVIEW"
+      ]
+    },
+    {
+      "kind": "DE_US_LEGACY",
+      "issues": [
+        "HTML_LANG_REVIEW"
+      ]
+    },
+    {
+      "kind": "DE_US_DE_LEGACY",
+      "issues": [
+        "HTML_LANG_REVIEW"
+      ]
+    }
+  ],
+  "deTranslationOutdated": true,
+  "enTranslationOutdated": true,
+  "readiness": "NO_GO",
+  "note": "La auditoría HTTP no constituye aprobación editorial. Se requiere confirmar canonical/hreflang, actualizar traducciones y revisar duplicidad DE antes de retirar mercados."
+}

@@ -1,0 +1,38 @@
+{%- comment -%}
+  SL-SIN-ADSENSE-20261127
+  Quita el código de AdSense pegado dentro del contenido (artículos, páginas,
+  descripciones). Quedó en traducciones viejas de/en de los artículos y se
+  servía en /de-de/ y /en-us/. Elimina cada <script>…</script> y cada
+  <ins>…</ins> que mencione adsbygoogle o googlesyndication; el resto del
+  HTML sale intacto.
+  Uso: {% capture x %}{% render 'sl-sin-adsense', html: x %}{% endcapture %}
+{%- endcomment -%}
+{%- if html contains 'adsbygoogle' or html contains 'googlesyndication' -%}
+  {%- assign sl_partes = html | split: '<script' -%}
+  {%- capture sl_paso1 -%}
+    {{- sl_partes[0] -}}
+    {%- for sl_parte in sl_partes offset: 1 -%}
+      {%- assign sl_trozos = sl_parte | split: '</script>' -%}
+      {%- if sl_trozos[0] contains 'adsbygoogle' or sl_trozos[0] contains 'googlesyndication' -%}
+        {{- sl_parte | remove_first: sl_trozos[0] | remove_first: '</script>' -}}
+      {%- else -%}
+        <script{{- sl_parte -}}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign sl_partes = sl_paso1 | split: '<ins' -%}
+  {%- capture sl_paso2 -%}
+    {{- sl_partes[0] -}}
+    {%- for sl_parte in sl_partes offset: 1 -%}
+      {%- assign sl_trozos = sl_parte | split: '</ins>' -%}
+      {%- if sl_trozos[0] contains 'adsbygoogle' -%}
+        {{- sl_parte | remove_first: sl_trozos[0] | remove_first: '</ins>' -}}
+      {%- else -%}
+        <ins{{- sl_parte -}}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {{- sl_paso2 -}}
+{%- else -%}
+  {{- html -}}
+{%- endif -%}

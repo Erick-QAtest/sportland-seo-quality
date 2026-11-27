@@ -93,10 +93,13 @@
    "note_prev": "No redirigir automáticamente: comparar con equivalente español",
    "snapshot_date": "2026-11-20",
    "editorial_review": "REVISADA",
-   "commercial_review": "PENDIENTE",
-   "qa_evidence": "PENDIENTE_PUBLICO",
+   "commercial_review": "EVALUADA",
+   "qa_evidence": "REVALIDAR",
    "approved_by": "Erick Noe Cortes Pena",
-   "approval_timestamp": "2026-11-23T13:13:38-06:00"
+   "approval_timestamp": "2026-11-23T13:13:38-06:00",
+   "commercial_decision": "Monetizar con afiliado Amazon.de (plantillas PUMA SoftFoam). Consultas de compra: «puma soft foam einlegesohlen kaufen», «sohle nachkaufen». Sportland no vende en Alemania. Bloqueado hasta que exista la cuenta de Amazon.de PartnerNet (tarea del propietario).",
+   "commercial_timestamp": "2026-11-27T12:00:00-06:00",
+   "qa_note": "27-nov: 200 y canonical propio OK; FALLA lang=\"es\" y hreflang la declara \"es\" aunque el contenido es alemán. Corregir antes de dar QA por PASA."
   },
   {
    "id": "SEO-003",
@@ -179,9 +182,9 @@
    "baseline_location": "",
    "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
    "old_destination": "",
-   "decision": "REDIRECT_A_DE_APLICADO",
+   "decision": "REDIRECT_A_DE",
    "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
-   "approval": "APLICADA_PENDIENTE_QA",
+   "approval": "PENDIENTE",
    "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
    "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
    "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
@@ -189,8 +192,9 @@
    "editorial_review": "REVISADA",
    "commercial_review": "PENDIENTE",
    "qa_evidence": "PENDIENTE",
-   "approved_by": null,
-   "approval_timestamp": null
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-27T13:00:00-06:00",
+   "qa_note": "Prueba en tiempo real de GSC (27-nov 13:30): «La URL está disponible para Google», indexable, 200, lang=\"de\". La redirección de Shopify NO se ejecuta: Shopify solo redirige rutas que darían 404, y con el mercado activo el artículo existe en esta ruta. El registro decía APLICADO por error. Bloqueada por la regla 11 (auditoría de mercados); alternativa: canonical a la URL sin prefijo."
   },
   {
    "id": "SEO-005",
@@ -702,9 +706,9 @@
    "baseline_location": "",
    "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
    "old_destination": "",
-   "decision": "REDIRECT_A_DE_APLICADO",
+   "decision": "REDIRECT_A_DE",
    "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
-   "approval": "APLICADA_PENDIENTE_QA",
+   "approval": "PENDIENTE",
    "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
    "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
    "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
@@ -712,8 +716,9 @@
    "editorial_review": "REVISADA",
    "commercial_review": "PENDIENTE",
    "qa_evidence": "PENDIENTE",
-   "approved_by": null,
-   "approval_timestamp": null
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-27T13:00:00-06:00",
+   "qa_note": "No probada en GSC; mismo mecanismo que SEO-004 (mercado en-us activo). La redirección de Shopify NO se ejecuta: Shopify solo redirige rutas que darían 404, y con el mercado activo el artículo existe en esta ruta. El registro decía APLICADO por error. Bloqueada por la regla 11 (auditoría de mercados); alternativa: canonical a la URL sin prefijo."
   },
   {
    "id": "SEO-016",
@@ -2133,6 +2138,60 @@
    "qa_evidence": "PENDIENTE",
    "approved_by": null,
    "approval_timestamp": null
+  },
+  {
+   "id": "SEO-046",
+   "priority": "P1",
+   "cluster": "Converse QR / VMDMX",
+   "legacy_type": "Artículo independiente en otro idioma",
+   "source": "https://sportlandmx.com/blogs/sneakers-blog/the-qr-code-of-your-converse-leads-to-vmdmx-have-to-know-this",
+   "path": "/blogs/sneakers-blog/the-qr-code-of-your-converse-leads-to-vmdmx-have-to-know-this",
+   "prefix": "",
+   "base_path": "/blogs/sneakers-blog/the-qr-code-of-your-converse-leads-to-vmdmx-have-to-know-this",
+   "baseline_clicks": 47,
+   "baseline_impressions": 784,
+   "metrics": {
+    "GLOBAL": {
+     "clicks": 47,
+     "impressions": 784,
+     "position": 4.52
+    },
+    "US": {
+     "clicks": 0,
+     "impressions": 17,
+     "position": 10.0
+    },
+    "DE": {
+     "clicks": 0,
+     "impressions": 2,
+     "position": 7.5
+    },
+    "ES": {
+     "clicks": 0,
+     "impressions": 4,
+     "position": 10.75
+    }
+   },
+   "variant_clicks": {
+    "/en-us/": 9,
+    "/de-us/": 2
+   },
+   "baseline_http": 200,
+   "baseline_result": "EDITORIAL_REVIEW",
+   "baseline_location": "",
+   "decision": "REDIRECT_ES",
+   "approved_destination": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+   "approval": "PENDIENTE",
+   "evidence": "GSC global 24-nov (3 meses): 47 clics + 11 en variantes. 0 clics en US/DE/ES. Consultas «vmdmx», «vmdmx converse» (distribuidor mexicano): compite con la guía en español del mismo tema (69 clics, 1,648 palabras, con productos). Fuente: 192 palabras, sin enlaces.",
+   "risk": "Política regla 7 (301 entre idiomas): si sus clics vienen de países de habla inglesa, llegarían a una página en español. Reversión: restaurar el artículo y borrar la redirección.",
+   "precondition": "Confirmar en GSC (filtro de página → Países) que los clics vienen de México/LatAm antes de aplicar.",
+   "next_qa": "301 directo al destino; destino 200 con canonical propio; variantes /en-us/ y /de-us/ sin cadenas.",
+   "snapshot_date": "2026-11-27",
+   "editorial_review": "REVISADA",
+   "commercial_review": "EVALUADA",
+   "qa_evidence": "PENDIENTE",
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-27T12:00:00-06:00"
   }
  ],
  "air_force_review": {

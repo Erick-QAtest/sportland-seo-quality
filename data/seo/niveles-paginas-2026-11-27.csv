@@ -1,0 +1,95 @@
+path,nivel,intencion,fuente_intencion,confianza,motivo_intencion,afiliados_amazon,productos_sportland,monetiza_con,clics_3m
+/,inicio,navegacion,fija,alta,Página de navegación,,,,
+/pages/guias-tenis-originales,hub,navegacion,fija,alta,Página de navegación,,,,
+/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie,hub,navegacion,fija,alta,Página de navegación,,,,
+/pages/cuidado-de-tenis,hub,navegacion,fija,alta,Página de navegación,,,,
+/pages/tenis-segun-actividad-y-necesidad,hub,navegacion,fija,alta,Página de navegación,,,,
+/blogs/noticias/como-saber-si-mis-air-force-1-son-originales,trafico_monetiza,verificacion,GSC,alta,Mezcla de consultas: verificacion 95%; entidad_ambigua 5%,3,0,afiliado,368
+/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios,trafico_monetiza,informativa,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 50%; informativa 46%; transaccional 2%,2,3,afiliado+inventario,199
+/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma,dinero,transaccional,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 52%; transaccional 44%; informativa 4%,6,0,afiliado,190
+/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada,trafico_monetiza,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,4,inventario,187
+/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad,trafico,verificacion,GSC,alta,Mezcla de consultas: verificacion 100%,0,0,,99
+/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto,trafico_monetiza,verificacion,GSC,alta,Mezcla de consultas: verificacion 97%; entidad_ambigua 3%,0,4,inventario,83
+/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales,trafico_monetiza,verificacion,GSC,alta,Mezcla de consultas: verificacion 94%; entidad_ambigua 6%,1,0,afiliado,76
+/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,4,6,afiliado+inventario,45
+/blogs/noticias/c-mo-saber-si-mis-converse-son-originales,trafico_monetiza,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,4,inventario,42
+/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer,trafico_monetiza,informativa,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 39%; informativa 33%; estilo 27%,4,0,afiliado,41
+/blogs/noticias/como-combinar-mis-tenis-negros-2021-outfits-para-hombre,trafico_monetiza,estilo,GSC,alta,Mezcla de consultas: estilo 100%; entidad_ambigua 0%,3,0,afiliado,39
+/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales,trafico,verificacion,GSC,alta,Mezcla de consultas: verificacion 51%; informativa 26%; entidad_ambigua 23%,0,0,,33
+/blogs/noticias/suela-vulcanizada-que-es-y-que-beneficios-tiene,trafico,informativa,GSC,alta,Mezcla de consultas: informativa 100%,0,0,,32
+/blogs/noticias/como-saber-si-mis-ultraboost-son-originales,trafico,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,26
+/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion,trafico_monetiza,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,1,0,afiliado,25
+/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales,trafico_monetiza,informativa,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,1,0,afiliado,25
+/blogs/athleisure/mejores-tenis-que-parecen-zapatos-top-5,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,7,3,afiliado+inventario,23
+/blogs/noticias/como-saber-si-mis-tenis-son-originales,trafico,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,23
+/blogs/noticias/evertrack-descubre-la-tecnologia-que-puma-pone-a-tus-pies,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,22
+/blogs/noticias/tenis-para-parkour-top-5,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 68%; entidad_ambigua 32%,5,0,afiliado,21
+/blogs/originales-o-fake/como-saber-si-mis-jordan-1-son-originales-o-piratas-revisa-esto,trafico,verificacion,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,21
+/blogs/noticias/vestir-camisa-con-tenis-primero-debes-saber-esto,trafico,estilo,GSC,alta,Mezcla de consultas: estilo 89%; investigacion_comercial 11%,0,0,,16
+/blogs/noticias/cu-les-son-los-materiales-de-los-tenis-nike,trafico,informativa,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,14
+/blogs/athleisure/tenis-que-parecen-calcetines-top-5,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,5,0,afiliado,13
+/blogs/noticias/tenis-adidas-superstar-concha,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,3,0,afiliado,11
+/blogs/nike/tenis-nike-air-force-1-resena-detallada-valen-la-pena,trafico,verificacion,GSC,alta,Mezcla de consultas: verificacion 62%; entidad_ambigua 38%,0,0,,10
+/blogs/adidas/adidas-climacool-que-es-y-que-beneficios-tiene,trafico_monetiza,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,1,0,afiliado,9
+/blogs/noticias/tenis-que-cambian-de-color-con-el-sol-top-5,trafico,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 96%; entidad_ambigua 4%,0,0,,9
+/blogs/noticias/suelas-antiderrapante-que-son-y-como-identificarlas,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,8
+/blogs/noticias/todo-lo-que-debes-saber-sobre-tenis-deportivos-guia-completa-para-principiantes-y-expertos,trafico,informativa,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,6
+/blogs/noticias/top-5-tenis-mas-resistentes-para-2023,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,5,0,afiliado,6
+/blogs/resenas/adidas-stan-smith-resena-detallada,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,1,0,afiliado,6
+/blogs/noticias/qu-es-dri-fit-la-tecnolog-a-de-nike,trafico,informativa,GSC,alta,Mezcla de consultas: informativa 62%; entidad_ambigua 38%,0,0,,5
+/blogs/noticias/tenis-con-casquillo-top-5,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,5,0,afiliado,5
+/blogs/noticias/nike-air-zoom-winflo-8-resena-y-opiniones,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,3,0,afiliado,4
+/blogs/noticias/rick-and-morty-y-puma-colaboran-para-lanzar-estos-tenis-2022,trafico,verificacion,GSC,alta,Mezcla de consultas: verificacion 92%; entidad_ambigua 8%,0,0,,4
+/blogs/noticias/suela-all-court-que-es-y-para-que-sirve,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,4
+/blogs/noticias/suela-de-espiga-que-es-y-que-beneficios-tiene,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,4
+/blogs/noticias/tecnologia-ignite-puma-que-es-y-cuales-son-sus-beneficios,trafico_monetiza,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,1,0,afiliado,4
+/blogs/noticias/la-bola-de-nieve-de-los-simpson-se-convierte-en-un-superstar-de-adidas,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,3
+/blogs/noticias/la-colaboracion-puma-x-minecraft-que-todos-estabamos-esperando,trafico,noticia_tendencia,tipo de consulta,media,Lanzamiento o colaboración,0,0,,3
+/blogs/noticias/los-mejores-zapatos-de-voleibol-nike-para-2023-y-por-que,dinero,investigacion_comercial,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 74%; investigacion_comercial 26%,5,0,afiliado,3
+/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,5,0,afiliado,3
+/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios,trafico,transaccional,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 69%; transaccional 31%,0,0,,3
+/blogs/noticias/tenis-nike-anchos-que-mejorarian-tu-calidad-de-vida-top-3,dinero,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",3,0,afiliado,3
+/blogs/resenas/nike-zoom-hyperace-resena-caracteristicas-y-opiniones,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,1,0,afiliado,3
+/blogs/resenas/resena-de-rendimiento-de-nike-react-hyperset-en-volleyball,trafico,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",0,0,,3
+/blogs/resenas/tenis-converse-chuck-taylor-resena-caracteristicas-y-opiniones,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,6,0,afiliado,3
+/blogs/noticias/adidas-advantage-vs-stan-smith,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,0,1,inventario,2
+/blogs/noticias/beneficios-de-andar-en-bicicleta-10-mejores-beneficios,trafico,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,0,0,,2
+/blogs/noticias/cuales-son-los-peores-tenis-del-mundo,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,2
+/blogs/noticias/cuales-son-los-tenis-mas-caros-del-mundo,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,2
+/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 50%; entidad_ambigua 50%,4,0,afiliado,2
+/blogs/noticias/nike-disena-detalles-de-gamuza-en-la-parte-superior-del-uptempo,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,2
+/blogs/noticias/tenis-de-billie-elisih-top-4-adidas-2022-donde-comprar-precio,dinero,transaccional,GSC,alta,Mezcla de consultas: transaccional 97%; verificacion 3%,1,0,afiliado,2
+/blogs/resenas/tenis-puma-rickie-todo-lo-que-tienes-que-saber-resena,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,1,inventario,2
+/blogs/noticias/5-colaboraciones-de-tenis-mas-raras-inspiradas-en-comida,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,1
+/blogs/noticias/adidas-response-caracteristicas-comodidad-amortiguacion-y-para-que-sirven,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,1,0,afiliado,1
+/blogs/noticias/como-blanquear-tenis-de-tela,trafico,informativa,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,1
+/blogs/noticias/como-combinar-mis-tenis-blancos-1,trafico_monetiza,estilo,tipo de consulta,media,Cómo combinar tenis,4,0,afiliado,1
+/blogs/noticias/como-saber-que-talla-de-tenis-soy,trafico,informativa,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,1
+/blogs/noticias/juego-de-padel-smash-todo-lo-que-debes-saber,trafico,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",0,0,,1
+/blogs/noticias/lanzamiento-de-air-jordan-11-s-en-cool-grey,trafico_monetiza,noticia_tendencia,tipo de consulta,media,Lanzamiento o colaboración,1,0,afiliado,1
+/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022,dinero,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",4,0,afiliado,1
+/blogs/noticias/los-mejores-tenis-para-enfermeras-y-porqu,trafico,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,1
+/blogs/noticias/mejores-tenis-contra-el-agua-top-5-2022,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,5,0,afiliado,1
+/blogs/noticias/puma-slipstream-caracteristicas-materiales-comodidad-y-para-que-sirven,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,1,0,afiliado,1
+/blogs/noticias/que-es-la-suela-clay-y-para-que-sirve-descubre-sus-beneficios,trafico_monetiza,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,1,0,afiliado,1
+/blogs/noticias/que-es-puma-netfit,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,1
+/blogs/noticias/suela-boost-todo-sobre-la-suela-boost-adidas,trafico,informativa,tipo de consulta,media,Nombre de tecnología o material: quien lo busca quiere entender qué es,0,0,,1
+/blogs/noticias/tenis-de-bad-bunny-top-4-y-donde-comprarlos-2022,trafico,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,1
+/blogs/noticias/tenis-mas-comodos-del-2022-top-5,dinero,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",5,0,afiliado,1
+/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021,dinero,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,5,0,afiliado,1
+/blogs/noticias/top-5-mejores-tenis-para-saltar-cuerda-en-2022,trafico,investigacion_comercial,GSC,alta,Mezcla de consultas: investigacion_comercial 100%,0,0,,1
+/blogs/resenas/nike-kyrie-infinity-resena-caracteristicas-y-opiniones,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,16,0,afiliado,1
+/blogs/resenas/resena-opiniones-y-caracteristicas-puma-rebound-joy,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,1,0,afiliado,1
+/blogs/adidas/tenis-de-bad-bunny-blancos-x-adidas-nueva-colaboracion,trafico,noticia_tendencia,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,0,0,,0
+/blogs/noticias/nike-kd-15-resena-caracteristicas-y-opiniones,dinero,investigacion_comercial,FORMATO (hipótesis),media,Sin consultas asignadas: se infiere del formato del artículo,13,0,afiliado,0
+/blogs/noticias/nike-zoom-gravity-resena-opiniones-y-caracteristicas,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,5,0,afiliado,0
+/blogs/noticias/que-son-lo-tenis-sneakers,trafico,informativa,tipo de consulta,media,Qué son / diferencias: quiere entender,0,0,,0
+/blogs/noticias/tenis-para-alto-impacto-top-4-2022,dinero,investigacion_comercial,GSC (intención secundaria),media,Mezcla de consultas: entidad_ambigua 62%; investigacion_comercial 38%,4,0,afiliado,0
+/blogs/noticias/top-mejores-marcas-de-tenis-en-2022,trafico,investigacion_comercial,tipo de consulta,media,"Busca el mejor tenis para un uso («best…», «tenis para…»)",0,0,,0
+/blogs/resenas/resena-de-nike-lebron-20-la-combinacion-perfecta-de-comodidad-y-rendimiento,dinero,investigacion_comercial,tipo de consulta,media,Nombre de modelo: quien lo busca está evaluando comprarlo,17,0,afiliado,0
+/blogs/noticias/talla-nike-air-force-1-guia,dinero,investigacion_comercial,formato (página nueva),media,Duda de talla antes de comprar,1,0,afiliado,
+/blogs/noticias/como-lavar-tenis-en-lavadora,trafico_monetiza,informativa,formato (página nueva),media,Cómo hacer algo con tenis que ya tienes,2,0,afiliado,
+/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales,trafico_monetiza,verificacion,formato (página nueva),media,Originalidad de un par que ya tienes,1,0,afiliado,
+/blogs/noticias/mejores-tenis-para-jugar-tenis,dinero,investigacion_comercial,formato (página nueva),media,«Mejores tenis para…»,5,0,afiliado,
+/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo,dinero,investigacion_comercial,formato (página nueva),media,«Mejores zapatos de…»,4,0,afiliado,
+/blogs/noticias/como-agrandar-tenis,trafico_monetiza,informativa,formato (página nueva),media,Cómo hacer algo con tenis que ya tienes,1,0,afiliado,

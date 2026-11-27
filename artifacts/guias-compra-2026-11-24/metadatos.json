@@ -1,0 +1,30 @@
+{
+  "_nota": "Títulos y metadatos de las guías de compra (24-nov-2026). 'accion' indica qué se cambia en Shopify.",
+  "hombre-mujer": {
+    "accion": "reescribir cuerpo + título + SEO",
+    "path": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+    "titulo_antes": "¿Cuál Es La Diferencia Entre Los Tenis Nike De Hombre y De Mujer?",
+    "titulo": "Tenis de hombre vs mujer: 5 diferencias reales y cómo convertir tu talla",
+    "seo_title": "Diferencia entre tenis de hombre y mujer (y cómo convertir la talla)",
+    "seo_description": "Horma, ancho, numeración y cuándo sí conviene comprar el modelo del otro género. Tabla para convertir tu talla de mujer a hombre en Nike, adidas, Vans y Converse."
+  },
+  "talla-af1": {
+    "accion": "crear artículo nuevo en el blog noticias",
+    "path": "/blogs/noticias/talla-nike-air-force-1-guia",
+    "handle": "talla-nike-air-force-1-guia",
+    "titulo": "Talla de Nike Air Force 1: ¿vienen grandes o chicos? Guía por tipo de pie",
+    "seo_title": "Talla Nike Air Force 1: ¿vienen grandes? Guía por tipo de pie",
+    "seo_description": "¿Los Air Force 1 vienen grandes o chicos? Qué talla pedir según tu pie, si Mid y Low tallan igual y cómo convertir de talla de mujer a hombre. Con video.",
+    "revisar_antes_de_publicar": "La recomendación (medio número menos con pie normal o angosto) debe coincidir con lo que dices en tu video hwx3pBH8GIQ."
+  },
+  "pierna": {
+    "accion": "solo SEO description (está vacía); el cuerpo ya cumple el patrón",
+    "path": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu",
+    "seo_description": "Qué tenis usar para hacer pierna en el gym: training para un poco de todo, halterofilia para sentadilla pesada y suela plana para peso muerto. Con video y comparativa."
+  },
+  "voleibol": {
+    "accion": "solo SEO description (está vacía); el cuerpo ya cumple el patrón",
+    "path": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10",
+    "seo_description": "Qué tenis usar para voleibol: tracción, estabilidad lateral y amortiguación. Comparamos ASICS GEL-ROCKET, Nike HyperSet, adidas Crazyflight, Ligra y UPCOURT. Con video."
+  }
+}

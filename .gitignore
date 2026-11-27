@@ -17,3 +17,7 @@ node_modules/
 
 # Archivos de editores
 .vscode/*.local.json
+
+# Páginas completas descargadas: ruido del tema; para revertir bastan los .body-antes.html
+artifacts/**/*.pagina.html
+artifacts/**/*-pagina-completa.html

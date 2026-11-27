@@ -2,6 +2,7 @@
 import { expect, type Page, type Locator } from '@playwright/test';
 import { routes } from '../data/routes';
 import { getSelectableSizes } from '../helpers/getSelectableSizes';
+import { gotoRespectingRateLimit, skipIfBlocked } from '../services/rate-limit';
 
 export class SoftfoamArticlePage {
   readonly page: Page;
@@ -15,9 +16,12 @@ export class SoftfoamArticlePage {
   }
 
   async goto(): Promise<void> {
-    await this.page.goto(
+    // Si Shopify frena (429), la prueba queda omitida, no en rojo.
+    const response = await gotoRespectingRateLimit(
+      this.page,
       'https://sportlandmx.com' + routes.softfoamArticle
     );
+    skipIfBlocked(response, routes.softfoamArticle);
   }
 
   async getAvailableSizes(): Promise<string[]> {

@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { linkingRules } from '../../data/linking-rules';
 import { auditLinks } from '../../services/link-auditor';
+import { gotoRespectingRateLimit, getRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 const BASE_URL = 'https://sportlandmx.com';
 
@@ -10,9 +11,11 @@ for (const rule of linkingRules) {
     // ARRANGE: abrir la página de origen
     const sourceUrl = new URL(rule.source, BASE_URL);
 
-    const pageResponse = await page.goto(
+    const pageResponse = await gotoRespectingRateLimit(
+      page,
       sourceUrl.toString()
     );
+    skipIfBlocked(pageResponse, rule.source);
 
     // ASSERT: la página de origen debe responder HTTP 200
     expect(pageResponse?.status()).toBe(200);
@@ -47,10 +50,12 @@ for (const rule of linkingRules) {
       BASE_URL
     );
 
-    const response = await page.request.get(
+    const response = await getRespectingRateLimit(
+      page.request,
       destinationUrl.toString(),
       { maxRedirects: 0 }
     );
+    skipIfBlocked(response, rule.target);
 
     expect(
       response.status(),

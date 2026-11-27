@@ -1,6 +1,7 @@
 
 import { test, expect } from '@playwright/test';
 import { seoPages } from '../../data/seo-pages';
+import { gotoRespectingRateLimit, skipIfBlocked } from '../../services/rate-limit';
 
 const BASE_URL = 'https://sportlandmx.com';
 
@@ -9,7 +10,8 @@ for (const seoPage of seoPages) {
 
     // ARRANGE: abrir la página
     const url = new URL(seoPage.path, BASE_URL);
-    const response = await page.goto(url.toString());
+    const response = await gotoRespectingRateLimit(page, url.toString());
+    skipIfBlocked(response, seoPage.path);
 
     // ASSERT 1: respuesta HTTP correcta
     expect(response?.status()).toBe(200);
