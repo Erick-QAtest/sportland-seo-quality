@@ -48,7 +48,8 @@ test.beforeAll(() => {
 
 test.describe('SPORTLAND SEO — Gobernanza (contrato del JSON)', () => {
   test('contrato: los datos están bien formados', () => {
-    expect(governance.records).toHaveLength(45);
+    // 45 del corte del 20-nov + SEO-046 (QR Converse en inglés, 27-nov).
+    expect(governance.records).toHaveLength(46);
 
     const violations = validateContract(governance);
 

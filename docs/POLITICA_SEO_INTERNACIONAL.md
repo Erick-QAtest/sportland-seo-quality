@@ -45,6 +45,19 @@
 - **REVISAR**: SoftFoam inglés y Suela vulcanizada alemán fueron despublicados antes de esta política. Son *excepciones históricas*; no considerar el `301` como aprobación editorial definitiva.
 - **BLOQUEAR**: desactivación general de mercados hasta resolver pendientes por URL y pasar el release gate.
 
+### Decisiones del 27-nov-2026 (registradas en `data/seo/governance-decisions-45.json`)
+
+Base: análisis de intención de todo el sitio (`docs/INTENCION_SITIO_2026-11-27.md`). Solo dos páginas extranjeras superan los 14 clics en 3 meses.
+
+- **SEO-002 · SoftFoam alemán → CONSERVAR Y MONETIZAR.** Tiene 123 clics, sumando sus variantes. Las consultas son de compra («einlegesohlen kaufen», «sohle nachkaufen») y Sportland no vende en Alemania, así que se monetiza con el afiliado de Amazon.de.
+  - **Bloqueo:** falta la cuenta de Amazon.de PartnerNet, que abre el propietario.
+  - **QA en REVALIDAR:** la página responde con `lang="es"` y su hreflang la declara `es` aunque el contenido está en alemán. No cumple el gate técnico («`lang` y `hreflang` correctos»).
+- **SEO-046 · QR de Converse en inglés → REDIRIGIR (301) a la guía en español del QR de Converse.** Excepción aprobada a la regla 7.
+  - **Datos:** 0 clics en EE. UU., Alemania y España. Las consultas que la traen son «vmdmx», el distribuidor mexicano. La página tiene 192 palabras; la guía en español tiene 1,648 y monetiza.
+  - **Precondición:** confirmar en GSC el país de sus clics antes de aplicar.
+  - **Reversión:** restaurar el artículo y borrar la redirección.
+  - **Estado:** `PENDIENTE` hasta aplicarla y pasar el QA.
+
 ## Fuente y limitaciones
 
 Los clics e impresiones del libro provienen de exportaciones GSC de **Alemania, Estados Unidos y España, tipo Web, últimos tres meses**, disponibles como archivos CSV aportados por el propietario. Una URL ausente de los CSV no equivale a cero tráfico: puede ser un límite del listado. Las métricas por país no son métricas de ingresos ni incluyen todos los países. La columna «Estado HTTP anterior» es una **foto previa** a cambios posteriores en Shopify.
