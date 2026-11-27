@@ -18,6 +18,7 @@ export const DEFAULT_GOVERNANCE_FILE =
 export const DECISIONS = [
   'REDIRECT_ES', // aprobado, aún sin aplicar en Shopify
   'REDIRECT_ES_APLICADO',
+  'REDIRECT_A_DE', // aprobado, sin efecto: bloqueado por mercado activo
   'REDIRECT_A_DE_APLICADO',
   'REDIRECT_CHAIN_REVIEW',
   'PROTEGER_ES',

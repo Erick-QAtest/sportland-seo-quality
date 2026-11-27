@@ -182,9 +182,9 @@
    "baseline_location": "",
    "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
    "old_destination": "",
-   "decision": "REDIRECT_A_DE_APLICADO",
+   "decision": "REDIRECT_A_DE",
    "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
-   "approval": "APLICADA_PENDIENTE_QA",
+   "approval": "PENDIENTE",
    "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
    "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
    "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
@@ -194,7 +194,7 @@
    "qa_evidence": "PENDIENTE",
    "approved_by": "Erick Noe Cortes Pena",
    "approval_timestamp": "2026-11-27T13:00:00-06:00",
-   "qa_note": "27-nov: firmada por el propietario. Prueba en vivo desde México: 302 al destino correcto (probable redirección de mercado de Shopify, no la URL redirect). Falta confirmar 301 con Inspección de URL de GSC antes de pasar QA a PASA."
+   "qa_note": "Prueba en tiempo real de GSC (27-nov 13:30): «La URL está disponible para Google», indexable, 200, lang=\"de\". La redirección de Shopify NO se ejecuta: Shopify solo redirige rutas que darían 404, y con el mercado activo el artículo existe en esta ruta. El registro decía APLICADO por error. Bloqueada por la regla 11 (auditoría de mercados); alternativa: canonical a la URL sin prefijo."
   },
   {
    "id": "SEO-005",
@@ -706,9 +706,9 @@
    "baseline_location": "",
    "old_proposed_target": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
    "old_destination": "",
-   "decision": "REDIRECT_A_DE_APLICADO",
+   "decision": "REDIRECT_A_DE",
    "approved_destination": "/blogs/noticias/was-sind-puma-soft-foam-einlegesohlen-und-was-sind-die-vorteile",
-   "approval": "APLICADA_PENDIENTE_QA",
+   "approval": "PENDIENTE",
    "evidence": "Rutas regionales del mismo artículo alemán; redirecciones de Shopify actualizadas.",
    "next_qa": "Comprobar 301 directo hacia URL alemana sin prefijo, destino 200.",
    "note_prev": "Variante regional (HTTP 200) de artículo extranjero; comparar y aprobar destino antes de retirar el mercado",
@@ -718,7 +718,7 @@
    "qa_evidence": "PENDIENTE",
    "approved_by": "Erick Noe Cortes Pena",
    "approval_timestamp": "2026-11-27T13:00:00-06:00",
-   "qa_note": "27-nov: firmada por el propietario. Prueba en vivo desde México: 302 al destino correcto (probable redirección de mercado de Shopify, no la URL redirect). Falta confirmar 301 con Inspección de URL de GSC antes de pasar QA a PASA."
+   "qa_note": "No probada en GSC; mismo mecanismo que SEO-004 (mercado en-us activo). La redirección de Shopify NO se ejecuta: Shopify solo redirige rutas que darían 404, y con el mercado activo el artículo existe en esta ruta. El registro decía APLICADO por error. Bloqueada por la regla 11 (auditoría de mercados); alternativa: canonical a la URL sin prefijo."
   },
   {
    "id": "SEO-016",
