@@ -1,0 +1,444 @@
+{
+"edges": [
+{
+"s": "/",
+"t": "/pages/guias-tenis-originales",
+"k": "home",
+"a": ""
+},
+{
+"s": "/",
+"t": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie",
+"k": "home",
+"a": ""
+},
+{
+"s": "/",
+"t": "/pages/cuidado-de-tenis",
+"k": "home",
+"a": ""
+},
+{
+"s": "/",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "home",
+"a": ""
+},
+{
+"s": "/pages/guias-tenis-originales",
+"t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie",
+"t": "/blogs/noticias/talla-nike-air-force-1-guia",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie",
+"t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/cuidado-de-tenis",
+"t": "/blogs/noticias/como-lavar-tenis-en-lavadora",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/cuidado-de-tenis",
+"t": "/blogs/noticias/como-agrandar-tenis",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/mejores-tenis-para-jugar-tenis",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/blogs/noticias/mejores-tenis-para-jugar-tenis",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/tenis-para-parkour-top-5",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/tenis-para-parkour-top-5",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/pages/tenis-segun-actividad-y-necesidad",
+"t": "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022",
+"k": "hub",
+"a": ""
+},
+{
+"s": "/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022",
+"t": "/pages/tenis-segun-actividad-y-necesidad",
+"k": "breadcrumb",
+"a": ""
+},
+{
+"s": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+"t": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"k": "lote1",
+"a": "Nike Air Force 1 originales"
+},
+{
+"s": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"k": "lote1",
+"a": "Jordan 4 son originales"
+},
+{
+"s": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"k": "lote1",
+"a": "etiqueta de Converse originales"
+},
+{
+"s": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"k": "lote1",
+"a": "dónde se fabrican los tenis FILA originales"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"k": "lote1",
+"a": "Etiqueta de Converse originales: cómo revisarla"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"k": "lote1",
+"a": "dónde se fabrican los tenis FILA originales"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion",
+"k": "lote1",
+"a": "cómo saber si unos Jordan 11 son originales"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales",
+"t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"k": "lote1",
+"a": "Etiqueta de Converse originales: cómo revisarla"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-ultraboost-son-originales",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"k": "lote1",
+"a": "Cómo saber si mis Jordan 4 son originales"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"k": "lote1",
+"a": "Etiqueta de Converse originales: cómo revisarla"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"k": "lote1",
+"a": "cómo saber si tus Jordan 1 son originales por su etiqueta"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"k": "lote1",
+"a": "dónde se fabrican los tenis FILA originales"
+},
+{
+"s": "/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales",
+"t": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"k": "lote1",
+"a": "Etiqueta de Converse originales: cómo revisarla"
+},
+{
+"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"k": "lote1",
+"a": "cómo saber si unas Jordan 4 son originales"
+},
+{
+"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales",
+"t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"k": "lote1",
+"a": "Etiqueta de Jordan 1 originales: cómo revisarla"
+},
+{
+"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"k": "lote1",
+"a": "Etiqueta de Jordan 1 originales: cómo revisarla"
+},
+{
+"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"k": "lote1",
+"a": "de dónde es la marca FILA"
+},
+{
+"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"k": "lote1",
+"a": "Jordan 4 son originales"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales",
+"t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"k": "lote1",
+"a": "Etiqueta de Jordan 1 originales: cómo revisarla"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales",
+"t": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"k": "lote1",
+"a": "dónde se fabrican los tenis FILA originales"
+},
+{
+"s": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"t": "/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales",
+"k": "lote1",
+"a": "Cómo saber si mis Jordan 4 son originales"
+},
+{
+"s": "/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales",
+"t": "/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto",
+"k": "lote1",
+"a": "Converse QR code"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion",
+"t": "/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad",
+"k": "lote1",
+"a": "etiqueta de Jordan 1 originales: cómo revisarla"
+},
+{
+"s": "/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada",
+"t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"k": "lote2",
+"a": "convertir tu talla de mujer a hombre"
+},
+{
+"s": "/blogs/noticias/c-mo-saber-si-mis-converse-son-originales",
+"t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"k": "lote2",
+"a": "convertir tu talla de mujer a hombre"
+},
+{
+"s": "/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma",
+"t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"k": "lote2",
+"a": "tenis para estar de pie todo el día"
+},
+{
+"s": "/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios",
+"t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"k": "lote2",
+"a": "tenis para estar de pie todo el día"
+},
+{
+"s": "/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios",
+"t": "/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"k": "lote2",
+"a": "tenis para estar de pie todo el día"
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-tenis-son-originales",
+"t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales",
+"k": "lote2",
+"a": "cómo saber si unos adidas Superstar son originales"
+},
+{
+"s": "/blogs/noticias/tenis-adidas-superstar-concha",
+"t": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales",
+"k": "lote2",
+"a": "cómo saber si unos adidas Superstar son originales"
+},
+{
+"s": "/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu",
+"t": "/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023",
+"k": "lote2",
+"a": "mejores tenis para CrossFit de mujer"
+},
+{
+"s": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"t": "/blogs/noticias/como-saber-que-talla-de-tenis-soy",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"t": "/blogs/noticias/talla-nike-air-force-1-guia",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/talla-nike-air-force-1-guia",
+"t": "/blogs/noticias/como-saber-que-talla-de-tenis-soy",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/talla-nike-air-force-1-guia",
+"t": "/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/talla-nike-air-force-1-guia",
+"t": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-air-force-1-son-originales",
+"t": "/blogs/noticias/talla-nike-air-force-1-guia",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales",
+"t": "/blogs/noticias/como-saber-si-mis-tenis-son-originales",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/noticias/mejores-tenis-para-jugar-tenis",
+"t": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo",
+"k": "guia",
+"a": ""
+},
+{
+"s": "/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo",
+"t": "/blogs/noticias/mejores-tenis-para-jugar-tenis",
+"k": "guia",
+"a": ""
+}
+],
+"money": [
+"/blogs/noticias/como-lavar-tenis-en-lavadora",
+"/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales",
+"/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer",
+"/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu",
+"/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022",
+"/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023",
+"/blogs/noticias/mejores-tenis-para-jugar-tenis",
+"/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10",
+"/blogs/noticias/talla-nike-air-force-1-guia",
+"/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021",
+"/blogs/noticias/tenis-para-parkour-top-5",
+"/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo"
+],
+"clics": {
+"/": null,
+"/blogs/noticias/c-mo-saber-si-mis-converse-son-originales": 42,
+"/blogs/noticias/cloudfoam-adidas-que-es-y-cuales-son-sus-beneficios": 199,
+"/blogs/noticias/como-agrandar-tenis": null,
+"/blogs/noticias/como-lavar-tenis-en-lavadora": null,
+"/blogs/noticias/como-saber-que-talla-de-tenis-soy": 1,
+"/blogs/noticias/como-saber-si-mis-adidas-superstar-son-originales": null,
+"/blogs/noticias/como-saber-si-mis-air-force-1-son-originales": 368,
+"/blogs/noticias/como-saber-si-mis-jordan-retro-11-son-originales-te-damos-la-solucion": 25,
+"/blogs/noticias/como-saber-si-mis-jordan-retro-4-son-originales": 76,
+"/blogs/noticias/como-saber-si-mis-tenis-son-originales": 23,
+"/blogs/noticias/como-saber-si-mis-ultraboost-son-originales": 26,
+"/blogs/noticias/cual-es-la-diferencia-entre-tenis-nike-hombre-y-mujer": 41,
+"/blogs/noticias/cuales-son-los-beneficios-de-las-plantilla-soft-foam-puma": 190,
+"/blogs/noticias/donde-se-fabrican-los-tenis-fila-originales": 33,
+"/blogs/noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu": 45,
+"/blogs/noticias/los-mejores-tenis-para-basketball-top-5-2022": 1,
+"/blogs/noticias/los-mejores-tenis-para-crossfit-de-mujer-top-5-2023": 2,
+"/blogs/noticias/mejores-tenis-para-jugar-tenis": null,
+"/blogs/noticias/mejores-tenis-para-voleibol-del-2022-top-10": 3,
+"/blogs/noticias/que-es-una-suela-eva-y-cuales-son-sus-beneficios": 3,
+"/blogs/noticias/suela-de-converse-que-las-hace-suela-tan-especiales": 25,
+"/blogs/noticias/talla-nike-air-force-1-guia": null,
+"/blogs/noticias/tenis-adidas-superstar-concha": 11,
+"/blogs/noticias/tenis-para-estar-de-pie-mucho-tiempo-top-5-2021": 1,
+"/blogs/noticias/tenis-para-parkour-top-5": 21,
+"/blogs/originales-o-fake/eiqueta-de-converse-originales-revision-detallada": 187,
+"/blogs/originales-o-fake/el-codigo-qr-de-tus-converse-te-dirigen-a-vmdmx-revisa-esto": 83,
+"/blogs/originales-o-fake/etiqueta-de-los-jordan-1-originales-compara-su-autenticidad": 99,
+"/blogs/padel/los-mejores-zapatos-de-padel-elige-sabiamente-para-un-rendimiento-optimo": null,
+"/pages/cuidado-de-tenis": null,
+"/pages/guias-tenis-originales": null,
+"/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie": null,
+"/pages/tenis-segun-actividad-y-necesidad": null
+}
+}
