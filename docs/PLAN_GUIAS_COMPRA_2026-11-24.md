@@ -137,3 +137,35 @@ Cuerpos armados con `scripts/armar-guias-compra.py`, que agrega `SL-AFFILIATE-EV
 - Prueba: `tests/flows/buying-guides.flow.spec.ts` (aviso de afiliado, `rel="sponsored"`, máximo de afiliados, sin precios fijos, enlaces internos, video).
 
 **Restricción vigente:** no tocar Tecnología (SoftFoam, Cloudfoam, Evertrack) hasta el 24-dic-2026. Ninguna guía de esta lista pertenece a ese grupo.
+
+## Videos indexables en todos los artículos con video (24-nov)
+
+**Decisión del usuario:** todos los artículos con video propio deben poder indexarse como video, también los de Tecnología. **Tecnología deja de ser grupo de control** y el lote 1 se medirá el 24-dic con antes/después.
+
+**Cómo se hizo (escalable):**
+- 3 metacampos de artículo: `custom.video_youtube_id` (regex de 11 caracteres), `custom.video_titulo` y `custom.video_fecha`.
+- Bloque `blocks/_blog-post-content.liquid` (marcador `SL-VIDEO-DESTACADO-20261124`):
+  - Si el cuerpo no trae el video, lo muestra **arriba del contenido**. Google pide que el video sea prominente para indexarlo.
+  - Si el cuerpo no trae `VideoObject`, lo genera desde los metacampos. No hay duplicados con las guías que ya traen uno.
+- 28 artículos con su video asignado (`data/seo/videos-articulos-2026-11-24.csv`). Para un video nuevo basta con llenar el metacampo.
+- Hecho en una **copia del tema** (`SPORTLAND Videos destacados - 2026-11-24`, gid 187571241183), porque Shopify no permite guardar en el tema publicado desde la API. Hay que publicarla desde el admin.
+- Vista previa verificada: 28/28 con video y `VideoObject` válido. En 8 el video aparece arriba gracias al tema; en 20 ya estaba en el cuerpo.
+- Prueba `tests/flows/video-articles.flow.spec.ts`: antes de publicar el tema fallan 19 (falta `VideoObject`). Después de publicar deben pasar todas.
+
+**Videos sin artículo** (pendiente de crear guía): Stan Smith originales, mal olor (76 k), limpiar en casa (43 k), ocultar agujetas (480 k + 899 k), atar AF1 (71 k + 37 k).
+
+## Hub de actividades (24-nov)
+
+- `/pages/tenis-segun-actividad-y-necesidad` (pegado a mano, verificado idéntico). Destacadas: pierna, voleibol y estar de pie, las tres con video. Se agregan tenis y pádel. La guía en inglés "waterproof sneakers" se reemplaza por la guía en español "tenis contra el agua". Quedan 20 guías enlazadas.
+- SEO: título "Mejores tenis según tu deporte o actividad | Guías Sportland" y meta descripción nueva (por API). Respaldo en `hub-actividad.body-antes.html` y `hub-actividad.metadatos-antes.json`.
+- **Corrección:** caminar, supinadores, pronación, correr en pavimento y largas distancias **ya estaban reescritas** (875 a 1,595 palabras en español). No se podan; la clasificación del 23-nov estaba desactualizada para ellas.
+- Metacampo de artículo `custom.hub` (page_reference) asignado a 20 guías. En el tema (copia "SPORTLAND Hubs y breadcrumb - 2026-11-24", gid 187572027615) el breadcrumb, el `BreadcrumbList` y la tarjeta contextual apuntan al hub. Verificado en vista previa. **Hay que publicar esa copia.**
+- Home: no se tocó. Las tarjetas de hub son una cuadrícula de 6 en código incrustado y agregar una séptima arriesga el diseño. La ruta home → `/pages/guias` → hub ya existe (2 clics).
+- Prueba: `tests/flows/hub-breadcrumb.flow.spec.ts`.
+
+## Home → hub de actividades (24-nov) — EN VIVO
+
+- Tarjeta destacada "Deporte y actividad" a lo ancho, **arriba de los 6 hubs** del bloque "Guías y consejos". La cuadrícula de 3×2 queda intacta. En móvil es la primera de la lista. Marcador `SL-HOME-HUB-ACTIVIDAD-20261124`.
+- Por qué se pegó a mano: al guardar por API, Shopify dejó `templates/index.json` como "esperando publicación" y solo aplica ese archivo al publicar desde la herramienta (no permitido en copias hechas por el usuario). Se pegó el bloque completo en el Liquid personalizado del editor: `artifacts/guias-compra-2026-11-24/home/liquid-guias-home-completo.liquid`.
+- **Lección:** los cambios a plantillas JSON (`templates/*.json`) se aplican desde el editor del tema; los archivos `.liquid` (secciones y bloques) sí se guardan por API en una copia.
+- Verificado en vivo: tarjeta presente, enlace al hub, 6 hubs intactos, acentos correctos. `hub-breadcrumb.flow.spec.ts` en verde (incluye "la home enlaza al hub").

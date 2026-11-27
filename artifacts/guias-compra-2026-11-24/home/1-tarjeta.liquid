@@ -1,0 +1,72 @@
+
+      {% comment %}
+        ======================================================
+        0. ACTIVIDAD (destacada a lo ancho) · SL-HOME-HUB-ACTIVIDAD-20261124
+        ======================================================
+      {% endcomment %}
+
+      {% assign hub_actividad = pages['tenis-segun-actividad-y-necesidad'] %}
+      {% assign hub_actividad_url = hub_actividad.url | default: '/pages/tenis-segun-actividad-y-necesidad' %}
+      {% assign guide_actividad = articles['noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu'] %}
+
+      <a
+        href="{{ hub_actividad_url }}"
+        class="sportland-guide-card sportland-guide-card--actividad"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_actividad.image %}
+
+            {{
+              guide_actividad.image
+              | image_url: width: 1200
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900, 1200',
+                sizes: '(min-width: 1101px) 640px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guías para elegir tenis según tu deporte o actividad'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder"
+              aria-hidden="true"
+            >
+              <span>SPORT</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            DEPORTE Y ACTIVIDAD
+          </span>
+
+          <h3>
+            ¿Qué tenis necesitas para tu deporte?
+          </h3>
+
+          <p>
+            Gimnasio, voleibol, tenis, pádel, CrossFit, correr
+            o estar de pie: guías con video y comparativa
+            de modelos para elegir según lo que haces.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            VER GUÍAS POR ACTIVIDAD
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+

@@ -1,0 +1,2030 @@
+{% comment %}
+  ============================================================
+  SPORTLAND MX — GUÍAS Y CONSEJOS · HOME · V2
+  ============================================================
+
+  OBJETIVO
+  - Mantener la HOME enfocada en tenis/calzado.
+  - Distribuir autoridad hacia los hubs estratégicos.
+  - Incorporar Reviews como capa comercial/editorial.
+  - No elevar Pádel, Salud o Suplementos a navegación principal.
+
+  ARQUITECTURA
+
+  HOME
+    ↓
+  Guías Sportland — HUB MAESTRO
+    ↓
+  Actividad y deporte (destacado · 24-nov-2026)
+  Originalidad
+  Tecnologías
+  Tallas
+  Cuidado
+  Marcas
+  Reseñas
+{% endcomment %}
+
+
+{% comment %}
+  ============================================================
+  ARTÍCULOS REPRESENTATIVOS PARA IMÁGENES
+  ============================================================
+{% endcomment %}
+
+{% assign guide_originalidad = articles['noticias/como-saber-si-mis-tenis-son-originales'] %}
+{% assign guide_tecnologia = articles['noticias/suela-boost-todo-sobre-la-suela-boost-adidas'] %}
+{% assign guide_tallas = articles['noticias/como-saber-que-talla-de-tenis-soy'] %}
+{% assign guide_cuidado = articles['noticias/como-blanquear-tenis-de-tela'] %}
+{% assign guide_resenas = articles['resenas/nike-kyrie-infinity-resena-caracteristicas-y-opiniones'] %}
+{% assign guide_actividad = articles['noticias/los-5-mejores-tenis-para-hacer-pierna-y-porqu'] %}
+
+
+{% comment %}
+  ============================================================
+  HUB MAESTRO
+  ============================================================
+{% endcomment %}
+
+{% assign hub_guias = pages['guias'] %}
+
+{% if hub_guias == blank %}
+  {% assign hub_guias = pages['guias-sportland'] %}
+{% endif %}
+
+
+{% comment %}
+  ============================================================
+  HUBS ESTRATÉGICOS
+  ============================================================
+{% endcomment %}
+
+{% assign hub_originalidad = pages['guias-tenis-originales'] %}
+{% assign hub_tecnologia = pages['tecnologias-de-tenis'] %}
+{% assign hub_tallas = pages['que-talla-de-tenis-eres-aprende-a-medir-tu-pie'] %}
+{% assign hub_cuidado = pages['cuidado-de-tenis'] %}
+{% assign hub_marcas = pages['marcas-de-tenis-origen-tecnologias-y-modelos'] %}
+{% assign hub_resenas = blogs['resenas'] %}
+{% assign hub_actividad = pages['tenis-segun-actividad-y-necesidad'] %}
+
+
+{% comment %}
+  ============================================================
+  URL FALLBACKS
+  ============================================================
+{% endcomment %}
+
+{% assign hub_guias_url = hub_guias.url | default: '/pages/guias-sportland' %}
+{% assign hub_originalidad_url = hub_originalidad.url | default: '/pages/guias-tenis-originales' %}
+{% assign hub_tecnologia_url = hub_tecnologia.url | default: '/pages/tecnologias-de-tenis' %}
+{% assign hub_tallas_url = hub_tallas.url | default: '/pages/que-talla-de-tenis-eres-aprende-a-medir-tu-pie' %}
+{% assign hub_cuidado_url = hub_cuidado.url | default: '/pages/cuidado-de-tenis' %}
+{% assign hub_marcas_url = hub_marcas.url | default: '/pages/marcas-de-tenis-origen-tecnologias-y-modelos' %}
+{% assign hub_resenas_url = hub_resenas.url | default: '/blogs/resenas' %}
+{% assign hub_actividad_url = hub_actividad.url | default: '/pages/tenis-segun-actividad-y-necesidad' %}
+
+
+<section
+  class="sportland-guides"
+  aria-labelledby="sportland-guides-title"
+>
+  <div class="sportland-guides__inner">
+
+
+    {% comment %}
+      ========================================================
+      HEADER
+      ========================================================
+    {% endcomment %}
+
+    <div class="sportland-guides__header">
+
+      <div class="sportland-guides__header-copy">
+
+        <span class="sportland-guides__eyebrow">
+          APRENDE ANTES DE ELEGIR
+        </span>
+
+        <h2 id="sportland-guides-title">
+          Guías para elegir mejor tus próximos tenis
+        </h2>
+
+        <p>
+          Elige tenis según tu deporte y resuelve tus dudas sobre originalidad, tecnologías,
+          tallas, cuidado, marcas y modelos antes de elegir.
+        </p>
+
+      </div>
+
+      <a
+        href="{{ hub_guias_url }}"
+        class="sportland-guides__all"
+      >
+        VER TODAS LAS GUÍAS
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
+
+
+    {% comment %}
+      ========================================================
+      HUB MAESTRO / SPORTLAND FINDER
+      ========================================================
+    {% endcomment %}
+
+    <a
+      href="{{ hub_guias_url }}"
+      class="sportland-guides__finder"
+    >
+
+      <div class="sportland-guides__finder-content">
+
+        <span class="sportland-guides__finder-kicker">
+          SPORTLAND FINDER
+        </span>
+
+        <h3>
+          ¿Qué quieres resolver
+
+          <span>
+            antes de elegir?
+          </span>
+        </h3>
+
+        <p>
+          Empieza por tu duda y encuentra la guía adecuada
+          para tomar una decisión con más información.
+        </p>
+
+
+        <div class="sportland-guides__finder-tags">
+
+          <span>ORIGINALIDAD</span>
+          <span>TECNOLOGÍA</span>
+          <span>TALLAS</span>
+          <span>CUIDADO</span>
+          <span>MARCAS</span>
+          <span>RESEÑAS</span>
+
+        </div>
+
+
+        <span class="sportland-guides__finder-link">
+
+          ENCONTRAR MI GUÍA
+
+          <span aria-hidden="true">→</span>
+
+        </span>
+
+      </div>
+
+
+      {% comment %}
+        ======================================================
+        VISUAL FINDER
+        Decorativo. Oculto para lectores de pantalla.
+        ======================================================
+      {% endcomment %}
+
+      <div
+        class="sportland-guides__finder-visual"
+        aria-hidden="true"
+      >
+
+        <div class="sportland-finder-map">
+
+          <div class="sportland-finder-map__center">
+            START
+          </div>
+
+
+          <span class="sportland-finder-map__line sportland-finder-map__line--1"></span>
+          <span class="sportland-finder-map__line sportland-finder-map__line--2"></span>
+          <span class="sportland-finder-map__line sportland-finder-map__line--3"></span>
+          <span class="sportland-finder-map__line sportland-finder-map__line--4"></span>
+          <span class="sportland-finder-map__line sportland-finder-map__line--5"></span>
+          <span class="sportland-finder-map__line sportland-finder-map__line--6"></span>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--auth">
+
+            <small>01</small>
+
+            <strong>
+              ORIGINALIDAD
+            </strong>
+
+            <span>
+              ¿Es auténtico?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--technology">
+
+            <small>02</small>
+
+            <strong>
+              TECNOLOGÍA
+            </strong>
+
+            <span>
+              ¿Cómo funciona?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--size">
+
+            <small>03</small>
+
+            <strong>
+              TALLAS
+            </strong>
+
+            <span>
+              ¿Cuál necesito?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--care">
+
+            <small>04</small>
+
+            <strong>
+              CUIDADO
+            </strong>
+
+            <span>
+              ¿Cómo los conservo?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--brands">
+
+            <small>05</small>
+
+            <strong>
+              MARCAS
+            </strong>
+
+            <span>
+              ¿Qué quiero conocer?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__node sportland-finder-map__node--reviews">
+
+            <small>06</small>
+
+            <strong>
+              RESEÑAS
+            </strong>
+
+            <span>
+              ¿Vale la pena?
+            </span>
+
+          </div>
+
+
+          <div class="sportland-finder-map__result">
+
+            <small>RESULT</small>
+
+            <strong>
+              TU GUÍA
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </a>
+
+
+    {% comment %}
+      ========================================================
+      HUBS PRINCIPALES
+      ========================================================
+    {% endcomment %}
+
+    <div class="sportland-guides__grid">
+
+
+      {% comment %}
+        ======================================================
+        0. ACTIVIDAD (destacada a lo ancho) · SL-HOME-HUB-ACTIVIDAD-20261124
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_actividad_url }}"
+        class="sportland-guide-card sportland-guide-card--actividad"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_actividad.image %}
+
+            {{
+              guide_actividad.image
+              | image_url: width: 1200
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900, 1200',
+                sizes: '(min-width: 1101px) 640px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guías para elegir tenis según tu deporte o actividad'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder"
+              aria-hidden="true"
+            >
+              <span>SPORT</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            DEPORTE Y ACTIVIDAD
+          </span>
+
+          <h3>
+            ¿Qué tenis necesitas para tu deporte?
+          </h3>
+
+          <p>
+            Gimnasio, voleibol, tenis, pádel, CrossFit, correr
+            o estar de pie: guías con video y comparativa
+            de modelos para elegir según lo que haces.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            VER GUÍAS POR ACTIVIDAD
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        1. ORIGINALIDAD
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_originalidad_url }}"
+        class="sportland-guide-card sportland-guide-card--originalidad"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_originalidad.image %}
+
+            {{
+              guide_originalidad.image
+              | image_url: width: 900
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900',
+                sizes: '(min-width: 1101px) 400px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guías para revisar la originalidad de tus tenis'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder sportland-guide-card__placeholder--originalidad"
+              aria-hidden="true"
+            >
+              <span>AUTH</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            ORIGINALIDAD
+          </span>
+
+          <h3>
+            ¿Tus tenis son originales?
+          </h3>
+
+          <p>
+            Aprende a revisar etiquetas, códigos, cajas,
+            materiales y otros detalles en Nike, Jordan,
+            Converse, Adidas y más.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            EXPLORAR ORIGINALIDAD
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        2. TECNOLOGÍAS
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_tecnologia_url }}"
+        class="sportland-guide-card sportland-guide-card--tecnologia"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_tecnologia.image %}
+
+            {{
+              guide_tecnologia.image
+              | image_url: width: 900
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900',
+                sizes: '(min-width: 1101px) 400px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guías sobre tecnologías utilizadas en tenis'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder sportland-guide-card__placeholder--tech"
+              aria-hidden="true"
+            >
+              <span>TECH</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            TECNOLOGÍAS
+          </span>
+
+          <h3>
+            ¿Qué tecnología usan tus tenis?
+          </h3>
+
+          <p>
+            Entiende tecnologías como Boost, Cloudfoam,
+            SoftFoam, EVA, Climacool y los materiales
+            que forman parte del calzado.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            EXPLORAR TECNOLOGÍAS
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        3. TALLAS
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_tallas_url }}"
+        class="sportland-guide-card sportland-guide-card--tallas"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_tallas.image %}
+
+            {{
+              guide_tallas.image
+              | image_url: width: 900
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900',
+                sizes: '(min-width: 1101px) 400px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guía para conocer tu talla de tenis'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder sportland-guide-card__placeholder--tallas"
+              aria-hidden="true"
+            >
+              <span>FIT</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            TALLAS Y AJUSTE
+          </span>
+
+          <h3>
+            ¿Qué talla necesitas?
+          </h3>
+
+          <p>
+            Aprende a medir tu pie y entiende largo,
+            ancho y ajuste antes de elegir
+            tu próximo par.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            VER GUÍA DE TALLAS
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        4. CUIDADO
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_cuidado_url }}"
+        class="sportland-guide-card sportland-guide-card--cuidado"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_cuidado.image %}
+
+            {{
+              guide_cuidado.image
+              | image_url: width: 900
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900',
+                sizes: '(min-width: 1101px) 400px, (min-width: 750px) 50vw, 116px',
+                alt: 'Guías para limpiar y conservar tus tenis'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder sportland-guide-card__placeholder--care"
+              aria-hidden="true"
+            >
+              <span>CARE</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            CUIDADO
+          </span>
+
+          <h3>
+            ¿Cómo cuidar mejor tus tenis?
+          </h3>
+
+          <p>
+            Aprende a limpiar diferentes materiales,
+            evitar errores comunes y conservar
+            mejor cada par.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            EXPLORAR CUIDADO
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        5. MARCAS
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_marcas_url }}"
+        class="sportland-guide-card sportland-guide-card--marcas"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          <div
+            class="sportland-guide-card__placeholder sportland-guide-card__placeholder--brands"
+            aria-hidden="true"
+          >
+            <span>BRANDS</span>
+          </div>
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            MARCAS
+          </span>
+
+          <h3>
+            Conoce mejor cada marca
+          </h3>
+
+          <p>
+            Explora historia, tecnologías y modelos de
+            Nike, Adidas, Puma, Reebok, Fila,
+            Jordan, Converse y más.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            EXPLORAR MARCAS
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+
+      {% comment %}
+        ======================================================
+        6. RESEÑAS
+        ======================================================
+      {% endcomment %}
+
+      <a
+        href="{{ hub_resenas_url }}"
+        class="sportland-guide-card sportland-guide-card--resenas"
+      >
+
+        <div class="sportland-guide-card__media">
+
+          {% if guide_resenas.image %}
+
+            {{
+              guide_resenas.image
+              | image_url: width: 900
+              | image_tag:
+                loading: 'lazy',
+                widths: '240, 360, 480, 640, 900',
+                sizes: '(min-width: 1101px) 400px, (min-width: 750px) 50vw, 116px',
+                alt: 'Reseñas y análisis de modelos de tenis'
+            }}
+
+          {% else %}
+
+            <div
+              class="sportland-guide-card__placeholder sportland-guide-card__placeholder--reviews"
+              aria-hidden="true"
+            >
+              <span>REVIEW</span>
+            </div>
+
+          {% endif %}
+
+        </div>
+
+
+        <div class="sportland-guide-card__content">
+
+          <span class="sportland-guide-card__category">
+            RESEÑAS
+          </span>
+
+          <h3>
+            ¿Vale la pena ese modelo?
+          </h3>
+
+          <p>
+            Revisa comodidad, ajuste, materiales,
+            amortiguación y tracción antes de decidir
+            si un modelo es para ti.
+          </p>
+
+          <span class="sportland-guide-card__link">
+
+            VER RESEÑAS
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+
+/* =========================================================
+   SPORTLAND MX — GUÍAS HOME · V2
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BASE
+   --------------------------------------------------------- */
+
+.sportland-guides {
+  width:100%;
+  box-sizing:border-box;
+  padding:64px 40px;
+  background:#fff;
+  color:#0b1f3a;
+}
+
+.sportland-guides *,
+.sportland-guides *::before,
+.sportland-guides *::after {
+  box-sizing:border-box;
+}
+
+.sportland-guides__inner {
+  width:100%;
+  max-width:1280px;
+  margin:0 auto;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.sportland-guides__header {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:32px;
+  margin-bottom:30px;
+}
+
+.sportland-guides__header-copy {
+  max-width:760px;
+}
+
+.sportland-guides__eyebrow {
+  display:block;
+  margin-bottom:8px;
+
+  color:#697586;
+
+  font-size:11px;
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:.11em;
+}
+
+.sportland-guides h2 {
+  margin:0;
+
+  color:#0b1f3a;
+
+  font-size:clamp(30px,2.7vw,42px);
+  font-weight:760;
+  line-height:1.06;
+  letter-spacing:-.035em;
+
+  text-wrap:balance;
+}
+
+.sportland-guides__header p {
+  max-width:660px;
+  margin:11px 0 0;
+
+  color:#5f6b7a;
+
+  font-size:15px;
+  line-height:1.55;
+
+  text-wrap:pretty;
+}
+
+.sportland-guides__all {
+  display:inline-flex!important;
+  flex:0 0 auto;
+  align-items:center;
+  gap:8px;
+
+  min-height:40px;
+
+  color:#0b1f3a!important;
+
+  font-size:12px;
+  font-weight:800;
+  line-height:1;
+
+  text-decoration:none!important;
+  white-space:nowrap;
+}
+
+.sportland-guides__all > span {
+  font-size:17px;
+  transition:transform .18s ease;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER
+   --------------------------------------------------------- */
+
+.sportland-guides__finder {
+  display:grid!important;
+
+  grid-template-columns:
+    minmax(0,1.08fr)
+    minmax(380px,.92fr);
+
+  min-height:390px;
+  margin-bottom:34px;
+
+  overflow:hidden;
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      125deg,
+      #071b31 0%,
+      #0c2949 100%
+    );
+
+  color:#fff!important;
+
+  text-decoration:none!important;
+
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease;
+}
+
+.sportland-guides__finder:focus-visible {
+  outline:3px solid #ef2634;
+  outline-offset:4px;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER CONTENT
+   --------------------------------------------------------- */
+
+.sportland-guides__finder-content {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  padding:clamp(34px,5vw,62px);
+}
+
+.sportland-guides__finder-kicker {
+  display:block;
+
+  margin-bottom:12px;
+
+  color:#ff6671;
+
+  font-size:10px;
+  font-weight:900;
+  line-height:1.2;
+  letter-spacing:.12em;
+}
+
+.sportland-guides__finder h3 {
+  max-width:620px;
+  margin:0;
+
+  color:#fff;
+
+  font-size:clamp(34px,3.5vw,50px);
+  font-weight:790;
+  line-height:1.01;
+  letter-spacing:-.045em;
+
+  text-wrap:balance;
+}
+
+.sportland-guides__finder h3 span {
+  display:block;
+}
+
+.sportland-guides__finder-content > p {
+  max-width:570px;
+
+  margin:17px 0 0;
+
+  color:rgba(255,255,255,.69);
+
+  font-size:14px;
+  line-height:1.6;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER TAGS
+   --------------------------------------------------------- */
+
+.sportland-guides__finder-tags {
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:7px;
+
+  margin-top:23px;
+}
+
+.sportland-guides__finder-tags span {
+  display:inline-flex;
+  align-items:center;
+
+  min-height:28px;
+
+  padding:5px 10px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+
+  border-radius:999px;
+
+  background:
+    rgba(255,255,255,.055);
+
+  color:
+    rgba(255,255,255,.80);
+
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.07em;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER CTA
+   --------------------------------------------------------- */
+
+.sportland-guides__finder-link {
+  display:inline-flex;
+  align-items:center;
+
+  gap:9px;
+
+  width:fit-content;
+
+  margin-top:28px;
+
+  color:#fff;
+
+  font-size:11px;
+  font-weight:850;
+  line-height:1;
+  letter-spacing:.035em;
+}
+
+.sportland-guides__finder-link > span {
+  font-size:18px;
+  transition:transform .18s ease;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER VISUAL
+   --------------------------------------------------------- */
+
+.sportland-guides__finder-visual {
+  position:relative;
+
+  display:grid;
+  place-items:center;
+
+  min-height:390px;
+
+  overflow:hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(255,255,255,.10),
+      transparent 40%
+    );
+}
+
+.sportland-finder-map {
+  position:relative;
+
+  width:min(350px,80%);
+
+  aspect-ratio:1 / 1;
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  border-radius:50%;
+}
+
+.sportland-finder-map::before {
+  content:"";
+
+  position:absolute;
+  inset:44px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.065);
+
+  border-radius:50%;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER CENTER
+   --------------------------------------------------------- */
+
+.sportland-finder-map__center {
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  z-index:3;
+
+  display:grid;
+  place-items:center;
+
+  width:68px;
+  height:68px;
+
+  transform:
+    translate(-50%,-50%);
+
+  border-radius:50%;
+
+  background:#ef2634;
+
+  color:#fff;
+
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.04em;
+
+  box-shadow:
+    0 15px 30px
+    rgba(0,0,0,.18);
+}
+
+
+/* ---------------------------------------------------------
+   FINDER LINES
+   --------------------------------------------------------- */
+
+.sportland-finder-map__line {
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  width:118px;
+  height:1px;
+
+  transform-origin:left center;
+
+  background:
+    rgba(255,255,255,.17);
+}
+
+.sportland-finder-map__line--1 {
+  transform:rotate(-135deg);
+}
+
+.sportland-finder-map__line--2 {
+  transform:rotate(-45deg);
+}
+
+.sportland-finder-map__line--3 {
+  transform:rotate(180deg);
+}
+
+.sportland-finder-map__line--4 {
+  transform:rotate(0deg);
+}
+
+.sportland-finder-map__line--5 {
+  transform:rotate(135deg);
+}
+
+.sportland-finder-map__line--6 {
+  transform:rotate(45deg);
+}
+
+
+/* ---------------------------------------------------------
+   FINDER NODES
+   --------------------------------------------------------- */
+
+.sportland-finder-map__node,
+.sportland-finder-map__result {
+  position:absolute;
+
+  z-index:4;
+
+  display:flex;
+  flex-direction:column;
+
+  min-width:116px;
+  max-width:132px;
+
+  padding:10px 12px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.13);
+
+  border-radius:10px;
+
+  background:
+    rgba(255,255,255,.075);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.sportland-finder-map__node small,
+.sportland-finder-map__result small {
+  margin-bottom:3px;
+
+  color:#ff6671;
+
+  font-size:7px;
+  font-weight:900;
+}
+
+.sportland-finder-map__node strong,
+.sportland-finder-map__result strong {
+  color:#fff;
+
+  font-size:10px;
+  line-height:1.14;
+}
+
+.sportland-finder-map__node > span {
+  margin-top:3px;
+
+  color:
+    rgba(255,255,255,.57);
+
+  font-size:8px;
+  line-height:1.2;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER NODE POSITIONS
+   --------------------------------------------------------- */
+
+.sportland-finder-map__node--auth {
+  top:7%;
+  left:-4%;
+}
+
+.sportland-finder-map__node--technology {
+  top:7%;
+  right:-4%;
+}
+
+.sportland-finder-map__node--size {
+  top:50%;
+  left:-13%;
+
+  transform:
+    translateY(-50%);
+}
+
+.sportland-finder-map__node--care {
+  top:50%;
+  right:-13%;
+
+  transform:
+    translateY(-50%);
+}
+
+.sportland-finder-map__node--brands {
+  bottom:7%;
+  left:-4%;
+}
+
+.sportland-finder-map__node--reviews {
+  right:-4%;
+  bottom:7%;
+}
+
+
+/* ---------------------------------------------------------
+   FINDER RESULT
+   --------------------------------------------------------- */
+
+.sportland-finder-map__result {
+  left:50%;
+  bottom:-8%;
+
+  min-width:104px;
+
+  transform:
+    translateX(-50%);
+
+  background:#fff;
+}
+
+.sportland-finder-map__result small {
+  color:#ef2634;
+}
+
+.sportland-finder-map__result strong {
+  color:#0b1f3a;
+
+  font-size:12px;
+}
+
+
+/* ---------------------------------------------------------
+   GUIDES GRID
+   1 destacado a lo ancho + 6 hubs = balanced 3 × 2
+   --------------------------------------------------------- */
+
+.sportland-guides__grid {
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:
+    34px 22px;
+}
+
+
+/* ---------------------------------------------------------
+   CARD
+   --------------------------------------------------------- */
+
+.sportland-guide-card {
+  display:flex!important;
+  flex-direction:column;
+
+  min-width:0;
+
+  color:#0b1f3a!important;
+
+  text-decoration:none!important;
+
+  background:#fff;
+
+  border-radius:12px;
+
+  transition:
+    transform .2s ease;
+}
+
+.sportland-guide-card:focus-visible {
+  outline:3px solid #ef2634;
+  outline-offset:4px;
+}
+
+
+/* ---------------------------------------------------------
+   CARD MEDIA
+   --------------------------------------------------------- */
+
+.sportland-guide-card__media {
+  width:100%;
+
+  aspect-ratio:16 / 10;
+
+  overflow:hidden;
+
+  border-radius:10px;
+
+  background:#f4f6f8;
+}
+
+.sportland-guide-card__media img {
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:
+    transform .3s ease;
+}
+
+
+/* ---------------------------------------------------------
+   PLACEHOLDERS
+   --------------------------------------------------------- */
+
+.sportland-guide-card__placeholder {
+  display:grid;
+  place-items:center;
+
+  width:100%;
+  height:100%;
+
+  background:#f5f7fa;
+}
+
+.sportland-guide-card__placeholder span {
+  color:#0b1f3a;
+
+  font-size:clamp(25px,4vw,44px);
+  font-weight:880;
+  line-height:1;
+
+  letter-spacing:-.055em;
+}
+
+
+.sportland-guide-card__placeholder--originalidad {
+  background:
+    radial-gradient(
+      circle at 65% 40%,
+      rgba(239,38,52,.10),
+      transparent 30%
+    ),
+    #f5f7fa;
+}
+
+
+.sportland-guide-card__placeholder--tech {
+  background:
+    radial-gradient(
+      circle at 55% 45%,
+      rgba(8,33,62,.12),
+      transparent 31%
+    ),
+    #f5f7fa;
+}
+
+
+.sportland-guide-card__placeholder--tallas {
+  background:
+    linear-gradient(
+      135deg,
+      #f7f8fa 0%,
+      #edf1f4 100%
+    );
+}
+
+
+.sportland-guide-card__placeholder--care {
+  background:
+    radial-gradient(
+      circle at 45% 42%,
+      rgba(239,38,52,.08),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f8fa 0%,
+      #edf1f4 100%
+    );
+}
+
+
+.sportland-guide-card__placeholder--brands {
+  background:
+    radial-gradient(
+      circle at 72% 30%,
+      rgba(239,38,52,.13),
+      transparent 29%
+    ),
+    linear-gradient(
+      135deg,
+      #eef2f6 0%,
+      #e3e9ef 100%
+    );
+}
+
+
+.sportland-guide-card__placeholder--reviews {
+  background:
+    radial-gradient(
+      circle at 30% 32%,
+      rgba(239,38,52,.13),
+      transparent 30%
+    ),
+    linear-gradient(
+      140deg,
+      #edf1f6 0%,
+      #dfe6ed 100%
+    );
+}
+
+
+/* ---------------------------------------------------------
+   CARD CONTENT
+   --------------------------------------------------------- */
+
+.sportland-guide-card__content {
+  display:flex;
+  flex:1;
+  flex-direction:column;
+
+  padding-top:16px;
+}
+
+.sportland-guide-card__category {
+  display:block;
+
+  margin-bottom:7px;
+
+  color:#697586;
+
+  font-size:10px;
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:.09em;
+}
+
+.sportland-guide-card h3 {
+  margin:0;
+
+  color:#0b1f3a;
+
+  font-size:21px;
+  font-weight:760;
+  line-height:1.2;
+  letter-spacing:-.02em;
+
+  text-wrap:balance;
+}
+
+.sportland-guide-card p {
+  flex:1;
+
+  margin:9px 0 0;
+
+  color:#5f6b7a;
+
+  font-size:13px;
+  line-height:1.55;
+
+  text-wrap:pretty;
+}
+
+.sportland-guide-card__link {
+  display:inline-flex;
+  align-items:center;
+
+  gap:8px;
+
+  width:fit-content;
+
+  margin-top:17px;
+
+  color:#0b1f3a;
+
+  font-size:11px;
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:.02em;
+}
+
+.sportland-guide-card__link > span {
+  font-size:16px;
+
+  transition:
+    transform .18s ease;
+}
+
+
+/* ---------------------------------------------------------
+   DESKTOP HOVER
+   Evita efectos innecesarios en touch.
+   --------------------------------------------------------- */
+
+@media (hover:hover) and (pointer:fine) {
+
+  .sportland-guides__all:hover > span {
+    transform:
+      translateX(3px);
+  }
+
+  .sportland-guides__finder:hover {
+    transform:
+      translateY(-3px);
+
+    box-shadow:
+      0 22px 46px
+      rgba(8,33,62,.14);
+  }
+
+  .sportland-guides__finder:hover
+  .sportland-guides__finder-link > span {
+    transform:
+      translateX(4px);
+  }
+
+  .sportland-guide-card:hover {
+    transform:
+      translateY(-3px);
+  }
+
+  .sportland-guide-card:hover
+  .sportland-guide-card__media img {
+    transform:
+      scale(1.025);
+  }
+
+  .sportland-guide-card:hover
+  .sportland-guide-card__link > span {
+    transform:
+      translateX(3px);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width:1100px) {
+
+  .sportland-guides {
+    padding:
+      54px 30px;
+  }
+
+  .sportland-guides__finder {
+    grid-template-columns:
+      minmax(0,1fr)
+      minmax(300px,.82fr);
+  }
+
+  .sportland-guides__finder-content {
+    padding:
+      42px 38px;
+  }
+
+  .sportland-finder-map {
+    width:min(310px,78%);
+  }
+
+  .sportland-finder-map__node {
+    min-width:104px;
+  }
+
+  .sportland-guides__grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+    gap:
+      30px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width:749px) {
+
+  .sportland-guides {
+    padding:
+      40px 18px 44px;
+  }
+
+  .sportland-guides__inner {
+    width:100%;
+    max-width:none;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE HEADER
+     ------------------------------------------------------- */
+
+  .sportland-guides__header {
+    display:block;
+
+    margin-bottom:22px;
+  }
+
+  .sportland-guides__header-copy {
+    max-width:none;
+  }
+
+  .sportland-guides__eyebrow {
+    margin-bottom:7px;
+
+    font-size:10px;
+
+    letter-spacing:.10em;
+  }
+
+  .sportland-guides h2 {
+    max-width:350px;
+
+    font-size:30px;
+    line-height:1.06;
+    letter-spacing:-.038em;
+  }
+
+  .sportland-guides__header p {
+    max-width:355px;
+
+    margin-top:10px;
+
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .sportland-guides__all {
+    display:none!important;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE FINDER
+     ------------------------------------------------------- */
+
+  .sportland-guides__finder {
+    display:block!important;
+
+    min-height:0;
+
+    margin-bottom:28px;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #071b31 0%,
+        #0c2949 100%
+      );
+
+    box-shadow:none;
+  }
+
+  .sportland-guides__finder-content {
+    display:block;
+
+    padding:
+      27px 22px 24px;
+  }
+
+  .sportland-guides__finder-kicker {
+    margin-bottom:10px;
+
+    font-size:9px;
+  }
+
+  .sportland-guides__finder h3 {
+    max-width:320px;
+
+    font-size:30px;
+    line-height:1.02;
+  }
+
+  .sportland-guides__finder-content > p {
+    max-width:330px;
+
+    margin-top:13px;
+
+    font-size:13px;
+    line-height:1.52;
+  }
+
+  .sportland-guides__finder-tags {
+    gap:6px;
+
+    margin-top:18px;
+  }
+
+  .sportland-guides__finder-tags span {
+    min-height:26px;
+
+    padding:
+      5px 9px;
+
+    font-size:7px;
+  }
+
+  .sportland-guides__finder-link {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width:100%;
+
+    margin-top:22px;
+    padding-top:17px;
+
+    border-top:
+      1px solid
+      rgba(255,255,255,.12);
+
+    font-size:11px;
+  }
+
+  .sportland-guides__finder-link > span {
+    font-size:18px;
+  }
+
+  .sportland-guides__finder-visual {
+    display:none!important;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE CARDS
+     ------------------------------------------------------- */
+
+  .sportland-guides__grid {
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:0;
+  }
+
+  .sportland-guide-card {
+    display:grid!important;
+
+    grid-template-columns:
+      116px minmax(0,1fr);
+
+    gap:16px;
+
+    width:100%;
+
+    padding:
+      18px 0;
+
+    border-top:
+      1px solid
+      rgba(11,31,58,.10);
+
+    border-radius:0;
+
+    background:#fff;
+  }
+
+  .sportland-guide-card:last-child {
+    border-bottom:
+      1px solid
+      rgba(11,31,58,.10);
+  }
+
+  .sportland-guide-card__media {
+    width:116px;
+    height:116px;
+
+    aspect-ratio:1;
+
+    align-self:start;
+
+    border-radius:10px;
+  }
+
+
+  /* ORIGINALIDAD */
+
+  .sportland-guide-card--originalidad
+  .sportland-guide-card__media img {
+    object-fit:contain;
+
+    padding:4px;
+
+    background:#fff;
+  }
+
+
+  /* TECNOLOGÍA */
+
+  .sportland-guide-card--tecnologia
+  .sportland-guide-card__media img {
+    object-fit:cover;
+
+    padding:0;
+  }
+
+
+  /* TALLAS */
+
+  .sportland-guide-card--tallas
+  .sportland-guide-card__media img {
+    object-fit:contain;
+
+    padding:4px;
+
+    background:#fff;
+  }
+
+
+  /* CUIDADO */
+
+  .sportland-guide-card--cuidado
+  .sportland-guide-card__media img {
+    object-fit:cover;
+
+    padding:0;
+  }
+
+
+  /* RESEÑAS */
+
+  .sportland-guide-card--resenas
+  .sportland-guide-card__media img {
+    object-fit:cover;
+
+    object-position:center;
+  }
+
+
+  .sportland-guide-card__placeholder span {
+    font-size:22px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE CARD CONTENT
+     ------------------------------------------------------- */
+
+  .sportland-guide-card__content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    min-width:0;
+
+    padding:0;
+  }
+
+  .sportland-guide-card__category {
+    margin-bottom:5px;
+
+    font-size:8px;
+
+    letter-spacing:.10em;
+  }
+
+  .sportland-guide-card h3 {
+    font-size:17px;
+    line-height:1.15;
+  }
+
+  .sportland-guide-card p {
+    flex:none;
+
+    display:-webkit-box;
+
+    margin-top:6px;
+
+    overflow:hidden;
+
+    font-size:11px;
+    line-height:1.43;
+
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+  }
+
+  .sportland-guide-card__link {
+    margin-top:9px;
+
+    font-size:9px;
+  }
+
+  .sportland-guide-card__link > span {
+    font-size:14px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion:reduce) {
+
+  .sportland-guides__all > span,
+  .sportland-guides__finder,
+  .sportland-guides__finder-link > span,
+  .sportland-guide-card,
+  .sportland-guide-card__media img,
+  .sportland-guide-card__link > span {
+    transition:none!important;
+  }
+
+}
+
+
+/* =========================================================
+   SL-HOME-HUB-ACTIVIDAD-20261124
+   Tarjeta destacada a lo ancho (arriba de los 6 hubs)
+   ========================================================= */
+
+.sportland-guide-card--actividad {
+  grid-column:1 / -1;
+}
+
+@media screen and (min-width:750px) {
+
+  .sportland-guide-card--actividad {
+    display:grid!important;
+
+    grid-template-columns:
+      minmax(0,1.1fr)
+      minmax(0,1fr);
+
+    gap:32px;
+
+    align-items:center;
+  }
+
+}
+
+</style>
