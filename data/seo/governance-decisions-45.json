@@ -192,8 +192,9 @@
    "editorial_review": "REVISADA",
    "commercial_review": "PENDIENTE",
    "qa_evidence": "PENDIENTE",
-   "approved_by": null,
-   "approval_timestamp": null
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-27T13:00:00-06:00",
+   "qa_note": "27-nov: firmada por el propietario. Prueba en vivo desde México: 302 al destino correcto (probable redirección de mercado de Shopify, no la URL redirect). Falta confirmar 301 con Inspección de URL de GSC antes de pasar QA a PASA."
   },
   {
    "id": "SEO-005",
@@ -715,8 +716,9 @@
    "editorial_review": "REVISADA",
    "commercial_review": "PENDIENTE",
    "qa_evidence": "PENDIENTE",
-   "approved_by": null,
-   "approval_timestamp": null
+   "approved_by": "Erick Noe Cortes Pena",
+   "approval_timestamp": "2026-11-27T13:00:00-06:00",
+   "qa_note": "27-nov: firmada por el propietario. Prueba en vivo desde México: 302 al destino correcto (probable redirección de mercado de Shopify, no la URL redirect). Falta confirmar 301 con Inspección de URL de GSC antes de pasar QA a PASA."
   },
   {
    "id": "SEO-016",
